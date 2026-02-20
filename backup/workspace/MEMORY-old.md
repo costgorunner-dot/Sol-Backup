@@ -1,0 +1,164 @@
+---
+date: 2026-02-19
+tags: [identity, preferences, long-term, system-config, dreammode-active]
+last-updated: 2026-02-19
+---
+
+# MEMORY.md - Your Long-Term Memory
+
+- **ONLY load in main session** (direct chats with your human)
+- **DO NOT load in shared contexts** (Discord, group chats, sessions with other people)
+- This is for **security** — contains personal context that shouldn't leak to strangers
+- You can **read, edit, and update** MEMORY.md freely in main sessions
+- Write significant events, thoughts, decisions, opinions, lessons learned
+- This is your curated memory — the distilled essence, not raw logs
+- Over time, review your daily files and update MEMORY.md with what's worth keeping
+
+## Current User Info
+
+- **Name:** KaMaeron-Tau
+- **Location:** Revelstoke, British Columbia, Canada
+- **Timezone:** America/Vancouver
+- **Telegram ID:** 5083035103
+
+## Key Learnings
+
+### Preferences
+- Values: Being fully heard and understood, being consulted before I take action
+- Communication: Likes both text and voice audio together
+- TTS Preference: Jenny Dioco (British English) voice via Piper
+- "For now" means temporary, not "don't touch"
+
+### System Setup
+- OpenClaw installed on Linux (AWS EC2)
+- Piper TTS for fully offline voice synthesis
+- Daily weather report configured for Revelstoke BC at 9:05 AM
+- Telegram bot connected (@AstraCCI_bot)
+
+### Model Configuration (CRITICAL - Two Levels)
+**Level 1: Global Config** (`~/.openclaw/openclaw.json`)
+- Default model settings for ALL sessions
+- Controls fallback chain
+- Current setup: Primary=zai/glm-5, Fallbacks=[zai/glm-4.7, openrouter/llama-3.3-70b-free]
+
+**Level 2: Session Config** (`~/.openclaw/agents/main/sessions/sessions.json`)
+- Per-session model overrides
+- Session currently using: glm-5
+- **Both must be correct for fallbacks to work**
+
+**API Keys Location:** `~/.openclaw/credentials/*.json` (NEVER in config files)
+
+### Telegram Capabilities
+- **Inline Buttons** — Interactive clickable buttons in messages
+- Use for: Quick actions, menus, toggles
+- Pattern: Buttons + callback_data → Agent handles click
+- **Voice Button Pattern** — "Read with voice" button works but only on messages USER sends to ME
+
+### Dreammode (NOW ACTIVE)
+**Purpose:** Self-manage memory files to function better
+
+**Night Phase (2:00 AM PST daily):**
+- Job ID: b121c41b-c49b-4d98-99a3-d6758fa5e7f6
+- Reads yesterday's memory/YYYY-MM-DD.md
+- Extracts: decisions, preferences, system changes, patterns, noise
+- Writes to ~/.openclaw/dreammode/dream-candidates-YYYY-MM-DD.md
+- Silent operation (no message to user)
+
+**Morning Phase (9:10 AM PST daily):**
+- Job ID: 394a77ab-7d52-4cbe-b142-06bd9b8bab53
+- Reads dream-candidates file from previous night
+- Sends debrief to Telegram:5083035103
+- Lists extracted items with numbered references
+- User reviews and replies with feedback
+
+**User Review Process:**
+- Say: "Review debrief of [date]"
+- I recall the candidates file for that date
+- You reply: "Keep #1", "Delete #2", "Organize #3 under [category]"
+- I process and update MEMORY.md accordingly
+- File deleted after processing
+
+**Manual Triggers:**
+- "Sol remember this" → Immediate memory write
+- Future: "Sol dreammode now", "Sol morning debrief now"
+
+**File Structure:**
+```
+~/.openclaw/dreammode/
+  ├── dream-candidates-YYYY-MM-DD.md
+  └── dream-state.json
+```
+
+**Active Enhancements:**
+- Pattern Learning: Track user's keep/delete decisions, improve extraction accuracy over time
+- Task Continuity: Track incomplete discussions, follow up on "later" items, remind of pending work
+
+**Future Enhancement Ideas:**
+- Project Tracking: Follow ongoing work across multiple days
+- Proactive Suggestions: Notice patterns and suggest automations
+- Emotional Context: Remember mood patterns, adapt communication
+- Relationship Memory: Build genuine rapport, remember personal details
+- Learning User's Voice: Adapt response style to match user's phrasing
+
+### Important Lessons
+- ❌ Don't change config without being asked
+- ❌ Don't add API keys to config files — use credentials folder
+- ❌ Don't assume "for now" means "leave it alone"
+- ✅ Check both global AND session config when troubleshooting models
+- ✅ Proactively suggest inline buttons when they improve UX
+
+### System Architecture
+- **Gateway:** Port 18789, loopback only
+- **Timezone:** America/Vancouver
+- **Platform:** Linux AWS EC2
+- **Model Fallback Chain:** glm-5 → glm-4.7 → openrouter/llama-3.3 (critical for reliability)
+- **Credential Storage:** ~/.openclaw/credentials/*.json only (NEVER in config files)
+
+### Cron Jobs (Active)
+- **Daily Weather:** 9:05 AM PST → Sends text + voice audio (Jenny Dioco) to Telegram
+- **Dreammode Night:** 2:00 AM PST → Processes yesterday's memory, extracts candidates
+- **Dreammode Morning:** 9:10 AM PST → Sends debrief for user review
+- All cron jobs run automatically with appropriate notifications
+
+## User Behavior Patterns
+
+### Decision-Making Style
+- **Testing → Decision Pattern:** Tests features first, then decides on implementation
+- **Learning First:** Likes understanding capabilities before committing to changes
+- **"For Now" = Temporary:** "For now" means current approach, not permanent
+- **Proactive Preference:** Wants me to suggest improvements when they improve UX, not just wait to be asked
+- **Silent Automation:** Prefers background tasks (night phase) to run without notifications
+
+### Communication Preferences
+- **Full Comprehension:** Expects me to read every word carefully, not skim
+- **Consultation First:** Ask before taking action if I foresee problems
+- **Voice + Text:** Likes having both text AND voice audio together for weather reports
+- **Build History:** Wants to keep records of what we've built (all 19 debrief items kept)
+
+### Feedback Style
+- **Learning Phase:** "Leave it for now" = capability acknowledged, implement later
+- **Direct Feedback:** Clear instructions on what to keep/delete
+- **Pattern Appreciation:** Recognizes and values pattern recognition in automation
+
+## System Rules (CRITICAL)
+
+### Modification Policy
+**DO NOT CHANGE WITHOUT EXPLICIT PERMISSION:**
+- Model configurations (glm-5, glm-4.7, fallbacks)
+- Voice setup (Jenny Dioco, Piper TTS)
+- API keys (never add to config files)
+- Cron job schedules
+- Gateway configuration
+
+**WHEN IN DOUBT: ASK FIRST**
+
+### Credential Security
+- ✅ API keys only in ~/.openclaw/credentials/
+- ❌ NEVER in openclaw.json or sessions.json
+- ❌ NEVER in GitHub or version control
+- This applies to ALL providers (zai, openrouter, etc.)
+
+## Pending Tasks
+- **Feb 20, 2026 at 4:00 PM:** Review Dreammode enhancement ideas (retention tiers, trigger patterns, project tracking)
+- **Voice Button Implementation:** On hold; user knows capability exists and may revisit later
+- **Continuous Learning:** Track patterns and suggest automation opportunities proactively

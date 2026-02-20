@@ -1,0 +1,22 @@
+{
+  "githubRepo": "costgorunner-dot/Sol-Backup",
+  "githubUser": "costgorunner-dot",
+  "branch": "main",
+  "autoBackup": true,
+  "backupInterval": "2 days",
+  "lastBackup": null,
+  "created": "2026-02-20T14:30:00Z",
+  "backupPaths": {
+    "skills": "/home/ubuntu/.openclaw/workspace/skills",
+    "memory": "/home/ubuntu/.openclaw/workspace/memory",
+    "workspace": "/home/ubuntu/.openclaw/workspace",
+    "config": "/home/ubuntu/.openclaw/openclaw.json",
+    "cron": "/home/ubuntu/.openclaw/cron"
+  },
+  "excludePatterns": [
+    "*.log",
+    "*.tmp",
+    "cache/*",
+    "sessions/*.jsonl"
+  ]
+}

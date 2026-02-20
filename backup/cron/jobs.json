@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "4ff4de1e-ea92-4c33-a8ef-c4203e69ee1c",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Daily Weather - Revelstoke BC",
+      "enabled": true,
+      "createdAtMs": 1771442836117,
+      "updatedAtMs": 1771607172123,
+      "schedule": {
+        "kind": "cron",
+        "expr": "05 09 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Get the weather report for Revelstoke, British Columbia, Canada. Send it as a text message AND also generate a voice audio file using Piper TTS with the Jenny Dioco voice (/home/ubuntu/.local/share/piper/voices/en/en_GB/jenny_dioco/medium/en_GB-jenny_dioco-medium.onnx) and attach both to the message using the message tool to send to telegram:5083035103."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5083035103"
+      },
+      "state": {
+        "nextRunAtMs": 1771693500000,
+        "lastRunAtMs": 1771607100005,
+        "lastStatus": "ok",
+        "lastDurationMs": 72118,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "fb28016c-ea54-4100-9c23-56c54a06270b",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Test Weather - Today at 11:55 AM",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771444132728,
+      "updatedAtMs": 1771444574403,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-02-18T19:55:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Get the current weather report for Revelstoke, British Columbia, Canada. Send it as a text message AND generate a voice audio file using Piper TTS with Jenny Dioco voice (/home/ubuntu/.local/share/piper/voices/en/en_GB/jenny_dioco/medium/en_GB-jenny_dioco-medium.onnx) and attach both to the message using the message tool to send to telegram:5083035103."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5083035103"
+      },
+      "state": {
+        "lastRunAtMs": 1771444500009,
+        "lastStatus": "error",
+        "lastDurationMs": 74394,
+        "lastError": "cron announce delivery failed",
+        "consecutiveErrors": 1
+      }
+    },
+    {
+      "id": "b121c41b-c49b-4d98-99a3-d6758fa5e7f6",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Dreammode Night Phase",
+      "enabled": true,
+      "createdAtMs": 1771457217097,
+      "updatedAtMs": 1771616707584,
+      "schedule": {
+        "kind": "cron",
+        "expr": "00 02 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "DREAMMODE NIGHT PHASE:\n\n1. Get yesterday's date (the day before today)\n\n2. CHECK FOR EMERGENCY SNAPSHOTS:\n   - List all files in memory/raw/emergency-YYYY-MM-DD-*.md for yesterday\n   - If emergency snapshots exist: Read and merge them into memory/raw/YYYY-MM-DD.md\n   - Add section to daily file: \"## Emergency Snapshots Merged\"\n   - List times and brief summary of each emergency snapshot\n\n3. Read memory/raw/YYYY-MM-DD.md for yesterday (now includes merged emergency snapshots)\n\n4. Analyze the conversations and extract:\n   - Important decisions made\n   - New preferences learned about KaMaeron-Tau\n   - System changes or configurations\n   - Patterns or insights noticed\n   - Noise/chatter to delete\n   - Incomplete tasks or \"later\" items (task continuity)\n   - Items from emergency snapshots (mark as \"from emergency snapshot\")\n   - Apply tags from tagging schema (memory/metadata/tagging-schema.md)\n\n5. Read ~/.openclaw/dreammode/pattern-learning.json if it exists to improve extraction accuracy\n\n6. Create file: ~/.openclaw/dreammode/dream-candidates-YYYY-MM-DD.md (use yesterday's date)\n\n7. Write extracted items to that file in this format:\n   # Dreammode Candidates - [Date]\n   \n   ## Extracted Items\n   1. [Item description] [tags: #type #topic]\n   2. [Item description] [tags: #type #topic]\n   \n   ## Emergency Snapshot Items\n   - [Item] (from snapshot at HH:MM) [tags: #type]\n   \n   ## Incomplete Tasks / Follow-ups\n   - [Task] - [Context if any] [tags: #task #status]\n   \n   ## Noise to Delete\n   - [Item]\n   \n   ## Patterns Noticed\n   - [Pattern] [tags: #pattern]\n\n8. AUTO-UPDATE INDEX:\n   - Read memory/index.md\n   - Add new entries to appropriate sections:\n     - New preferences → Add to ## Preferences section\n     - New patterns → Add to ## Patterns section\n     - New projects → Add to ## Projects section\n     - New system configs → Add to ## System Config section\n   - Format: \"**[Date]** - [Brief description] → [File reference]\"\n   - Keep index concise (quick reference only)\n   - Update \"Last Updated\" timestamp\n\n9. Update ~/.openclaw/dreammode/dream-state.json:\n   - Set lastNightPhase to current timestamp\n   - Add date to pendingDebriefs array\n   - Record number of emergency snapshots processed (if any)\n   - Record number of index updates made\n\n10. DO NOT send any message to user\n\n11. Reply with: 'Dreammode night phase complete for [date]'\n    - Include: 'Processed X emergency snapshots' if any were found\n    - Include: 'Updated index with X new entries'\n\nIf no memory file exists for yesterday, reply: 'No memory file for yesterday, skipping night phase'\n\nIf only emergency snapshots exist (no daily file), create daily file from emergency snapshots first."
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1771668000000,
+        "lastRunAtMs": 1771581600003,
+        "lastStatus": "error",
+        "lastDurationMs": 50849,
+        "consecutiveErrors": 2,
+        "lastError": "cron announce delivery failed"
+      }
+    },
+    {
+      "id": "394a77ab-7d52-4cbe-b142-06bd9b8bab53",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Dreammode Morning Debrief",
+      "enabled": true,
+      "createdAtMs": 1771457235161,
+      "updatedAtMs": 1771607455191,
+      "schedule": {
+        "expr": "10 09 * * *",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "DREAMMODE MORNING DEBRIEF:\n\n1. Read ~/.openclaw/dreammode/dream-state.json\n2. Get yesterday's date (for the file name)\n3. Read ~/.openclaw/dreammode/dream-candidates-YYYY-MM-DD.md (yesterday's file)\n4. Format and send debrief message to telegram:5083035103:\n\n🌙 Dreammode Debrief - [Date]\n\n**Extracted Items:**\n1. [Item] - [Brief description]\n2. [Item] - [Brief description]\n\n**Incomplete Tasks / Follow-ups:**\n- [Task] - [Context]\n\n**Marked as Noise:**\n- [Item]\n\n**Patterns Noticed:**\n- [Pattern]\n\nReply with:\n• \"Keep #1, #2\" - Move to MEMORY.md\n• \"Delete #1\" - Remove permanently\n• \"Organize #2 under [category]\" - File accordingly\n• \"Follow up on [task]\" - Add to task continuity\n\n5. Update dream-state.json:\n   - Set lastMorningPhase to current timestamp\n\nIf no candidates file exists, send: \"No dreammode candidates for yesterday\"\n\nFormat the message cleanly for Telegram reading."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5083035103"
+      },
+      "state": {
+        "nextRunAtMs": 1771693800000,
+        "lastRunAtMs": 1771607400010,
+        "lastStatus": "error",
+        "lastDurationMs": 55181,
+        "consecutiveErrors": 2,
+        "lastError": "cron announce delivery failed"
+      }
+    }
+  ]
+}

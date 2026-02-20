@@ -1,0 +1,6 @@
+# Ignore sensitive credentials
+.backup-credentials
+
+# Ignore temporary files
+*.tmp
+*.log
