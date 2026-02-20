@@ -125,6 +125,31 @@
         "consecutiveErrors": 2,
         "lastError": "cron announce delivery failed"
       }
+    },
+    {
+      "id": "a6b57952-55cc-4138-a3a7-655dfc133935",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "OpenClaw Backup (every 2 days)",
+      "enabled": true,
+      "createdAtMs": 1771629134551,
+      "updatedAtMs": 1771629134551,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3 */2 * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run the OpenClaw backup script:\n\n1. Execute: bash /home/ubuntu/.openclaw/workspace/skills/openclaw-backup/scripts/backup.sh\n2. Report if backup succeeded or failed\n3. Include link to GitHub repository\n\nIf backup fails, explain what went wrong."
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1771671600000
+      }
     }
   ]
 }
