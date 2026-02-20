@@ -156,6 +156,12 @@ commit_backup() {
     # Commit
     git commit -m "Backup: $TIMESTAMP" -m "Automated backup of OpenClaw customizations"
     
+    # Check if this is the WORKING MODEL backup
+    if [ -f "$BACKUP_REPO_DIR/backup/WORKING_MODEL.md" ]; then
+        log_info "WORKING MODEL backup - marking as PERMANENT"
+        git tag -a "WORKING-MODEL-$(date +%Y-%m-%d)" -m "Permanent backup - never delete"
+    fi
+    
     # Push
     log_info "Pushing to GitHub..."
     if git push origin "$BRANCH" 2>&1; then

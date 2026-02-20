@@ -130,13 +130,13 @@
       "id": "a6b57952-55cc-4138-a3a7-655dfc133935",
       "agentId": "main",
       "sessionKey": "agent:main:main",
-      "name": "OpenClaw Backup (every 2 days)",
+      "name": "OpenClaw Backup (daily after debrief)",
       "enabled": true,
       "createdAtMs": 1771629134551,
-      "updatedAtMs": 1771629134551,
+      "updatedAtMs": 1771629450161,
       "schedule": {
-        "kind": "cron",
-        "expr": "0 3 */2 * *"
+        "expr": "30 9 * * *",
+        "kind": "cron"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
@@ -148,7 +148,32 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771671600000
+        "nextRunAtMs": 1771695000000
+      }
+    },
+    {
+      "id": "b51bcfc7-a312-44e9-ae61-5e0c1e5349db",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Weekly Summary (Sunday evening)",
+      "enabled": true,
+      "createdAtMs": 1771629898820,
+      "updatedAtMs": 1771629898820,
+      "schedule": {
+        "expr": "0 18 * * 0",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "WEEKLY SUMMARY - Sunday Review:\n\n1. Review the past week's accomplishments:\n   - Read memory/raw/ files for the last 7 days\n   - Identify key decisions made\n   - Note patterns and improvements\n   - List completed projects/tasks\n\n2. Create weekly summary file:\n   - File: memory/weekly/2026-WXX.md\n   - Include: Key accomplishments, decisions, patterns, next week focus\n\n3. Provide summary to user:\n   - Brief overview of the week\n   - Highlights and achievements\n   - Any recommendations for next week\n\nKeep it concise and actionable. Focus on what matters."
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1771812000000
       }
     }
   ]
