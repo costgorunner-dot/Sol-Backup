@@ -10,3 +10,4 @@ backup/config/agents/
 # Temporary files
 *.tmp
 *.log
+.backup-credentials
