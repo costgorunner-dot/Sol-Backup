@@ -73,6 +73,15 @@ create_backup() {
     log_info "Backing up memory..."
     if [ -d "$WORKSPACE_DIR/memory" ]; then
         cp -r "$WORKSPACE_DIR/memory"/* backup/memory/ 2>/dev/null || true
+        
+        # REDACT all API keys in memory files
+        log_info "Redacting sensitive data from memory files..."
+        find backup/memory -type f -name "*.md" -exec sed -i \
+            -e 's/sk-or-v1-[a-zA-Z0-9]*/INSERT_OPENROUTER_API_KEY_HERE/g' \
+            -e 's/tvly-dev-[a-zA-Z0-9]*/INSERT_TAVILY_API_KEY_HERE/g' \
+            -e 's/ghp_[a-zA-Z0-9]*/INSERT_GITHUB_TOKEN_HERE/g' \
+            -e 's/[a-f0-9]\{32\}\.klnF[A-Z0-9]*/INSERT_ZAI_API_KEY_HERE/g' \
+            {} \; 2>/dev/null || true
     fi
     
     # Backup workspace files
@@ -82,15 +91,29 @@ create_backup() {
     
     # Backup config
     log_info "Backing up configuration..."
-    cp "$BACKUP_DIR/openclaw.json" backup/config/ 2>/dev/null || true
     
-    # Backup agents config but exclude large session transcripts (already in memory)
-    mkdir -p backup/config/agents
-    if [ -d "$BACKUP_DIR/agents" ]; then
-        cp "$BACKUP_DIR/agents/main/agent"/*.json backup/config/agents/ 2>/dev/null || true
-        cp "$BACKUP_DIR/agents/main/sessions/sessions.json" backup/config/agents/ 2>/dev/null || true
-        # Skip .jsonl files - they're already extracted to memory
+    # DO NOT backup openclaw.json - it contains API keys!
+    # DO NOT backup agents/ - contains sensitive auth data!
+    
+    # Only backup safe, non-sensitive config files
+    mkdir -p backup/config
+    
+    # Backup safe agent config (without auth)
+    if [ -d "$BACKUP_DIR/agents/main/agent" ]; then
+        # Only backup safe model preferences, NOT auth keys
+        if [ -f "$BACKUP_DIR/agents/main/agent/models.json" ]; then
+            # Extract just model preferences, remove API keys
+            cat "$BACKUP_DIR/agents/main/agent/models.json" | \
+                grep -v "apiKey\|key\|token\|secret" > backup/config/models-safe.json 2>/dev/null || true
+        fi
     fi
+    
+    # Backup session config (without sensitive data)
+    if [ -f "$BACKUP_DIR/agents/main/sessions/sessions.json" ]; then
+        cp "$BACKUP_DIR/agents/main/sessions/sessions.json" backup/config/ 2>/dev/null || true
+    fi
+    
+    log_warn "Skipping openclaw.json and auth files (contain API keys)"
     
     # Backup cron jobs
     log_info "Backing up cron job definitions..."

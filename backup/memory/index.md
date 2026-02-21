@@ -29,6 +29,7 @@ tags: [index, reference, memory-system]
 - TTS Voice: Jenny Dioco (British English) via Piper
 - Full Comprehension: Expects careful reading, no skimming
 - Consultation First: Ask before taking action if problems foreseen
+- Silent Monitoring: Prefers background tasks without notifications (added Feb 20)
 
 ### Workflow Preferences
 **File:** `memory/preferences/workflow.md`
@@ -39,6 +40,8 @@ tags: [index, reference, memory-system]
 - Proactive Suggestions: Wants improvements suggested when they improve UX
 - Silent Automation: Prefers background tasks to run without notifications
 - Build History: Wants to keep records of what we've built
+- Documentation Appreciation: Values thorough documentation (Feb 20)
+- Security-First: Wants control over sensitive files, prefers local backup for credentials (Feb 20)
 
 ---
 
@@ -57,6 +60,13 @@ tags: [index, reference, memory-system]
 - Phase 2: "I liked that but..." (evaluation)
 - Phase 3: "For now" or "Do it" (decision)
 - Occurrences: 3+ times (inline buttons, voice button, model config)
+
+### Technical Patterns
+**File:** `memory/patterns/technical-patterns.md`
+**Contents:** System and implementation patterns
+- Three-tier Fallback: Primary → Same-provider → Different-provider (Feb 20)
+- Phased Implementation: Large projects broken into testable phases (Feb 20)
+- Silent by Default: Monitoring quiet unless problems detected (Feb 20)
 
 ---
 
@@ -86,13 +96,28 @@ tags: [index, reference, memory-system]
 - Session config: `~/.openclaw/agents/main/sessions/sessions.json`
 - API keys location: `~/.openclaw/credentials/*.json` (NEVER in config files)
 - Both configs must be correct for fallbacks to work
+- Changed from glm-4.7 to glm-5 on Feb 20 (timeout issues)
+
+### Memory Search
+**File:** `memory/system-config/memory-search.md`
+**Contents:** Semantic search configuration
+- Provider: OpenRouter (cloud-based)
+- Model: qwen/qwen3-embedding-4b
+- Cost: ~$0.001-0.005 per query
+- Hybrid search: 70% semantic + 30% keyword
+- Temporal decay: 30-day half-life
+- Enabled: February 20, 2026
 
 ### Cron Jobs
 **File:** `memory/system-config/cron-jobs.md`
 **Contents:** Automated task configurations
 - Daily Weather Report: 9:05 AM PST (Revelstoke BC, text + voice)
-- Dreammode Night Phase: 2:00 AM PST (processes memory, extracts items)
+- Dreammode Night Phase: 2:00 AM PST (processes memory, extracts items, merges emergency snapshots)
 - Dreammode Morning Debrief: 9:10 AM PST (sends debrief for review)
+- Daily Backup: 9:30 AM PST (GitHub push with auto-redaction)
+- Memory Creation: 11:00 PM PST (daily log creation)
+- Weekly Summary: Sunday 6:00 PM PST
+- Heartbeat: Every 30 min (silent unless problems)
 
 ---
 
@@ -101,10 +126,21 @@ tags: [index, reference, memory-system]
 ### Dreammode Enhancement
 **File:** `memory/projects/dreammode.md`
 **Contents:** Ongoing Dreammode system improvements
-- Phase 1: Categorized memory with index.md + organized files (Feb 19, 2026)
-- Phase 2: Auto-tagging + pattern detection (planned)
-- Phase 3: Proactive suggestions based on learned behavior (planned)
-- Status: Phase 1 implemented, Phase 2-3 designed
+- Phase 1: Compression Detection & Auto-Snapshots (Feb 20, 2026) - ✅ Complete
+- Phase 2: Semantic Search with embeddings (Feb 20, 2026) - ✅ Complete
+- Phase 3: Index Optimization with tagging schema (Feb 20, 2026) - ✅ Complete
+- Phase 4: Pattern Detection (Feb 24 review) - On hold
+- Status: Phases 1-3 complete and operational, Phase 4 deferred
+
+### Backup System
+**File:** `memory/system-config/backup-system.md`
+**Contents:** Automated backup to GitHub repository
+- Daily backups at 9:30 AM PST to costgorunner-dot/Sol-Backup
+- Automatic API key redaction
+- 14-day retention + permanent backups
+- Working model backup (Feb 20, 2026) marked permanent
+- Weekly summary (Sundays 6:00 PM)
+- Status: ✅ Operational
 
 ### Voice Button
 **File:** `memory/projects/voice-button.md`
@@ -203,9 +239,9 @@ memory_search: "model configuration"
 
 ---
 
-**Last Updated:** February 19, 2026 (9:45 AM PST)
-**Memory System Version:** 2.0 (Categorized structure with index.md) - Phase 1 Complete
-**Previous Version:** 1.0 (Single MEMORY.md file) - Backed up as MEMORY-old.md
+**Last Updated:** February 21, 2026 (2:00 AM PST) - Auto-updated by Dreammode Night Phase
+**Memory System Version:** 2.1 (Phases 1-3 complete: Compression detection, Semantic search, Index optimization)
+**Previous Version:** 2.0 (Categorized structure with index.md) - Phase 1 only
 
 ---
 

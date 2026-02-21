@@ -8,7 +8,7 @@
       "name": "Daily Weather - Revelstoke BC",
       "enabled": true,
       "createdAtMs": 1771442836117,
-      "updatedAtMs": 1771607172123,
+      "updatedAtMs": 1771693500050,
       "schedule": {
         "kind": "cron",
         "expr": "05 09 * * *"
@@ -25,11 +25,12 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1771693500000,
-        "lastRunAtMs": 1771607100005,
-        "lastStatus": "ok",
-        "lastDurationMs": 72118,
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1771779900000,
+        "lastRunAtMs": 1771693500007,
+        "lastStatus": "error",
+        "lastDurationMs": 43,
+        "consecutiveErrors": 1,
+        "lastError": "FailoverError: No API key found for provider \"ollama\". Auth store: /home/ubuntu/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/ubuntu/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir."
       }
     },
     {
@@ -71,7 +72,7 @@
       "name": "Dreammode Night Phase",
       "enabled": true,
       "createdAtMs": 1771457217097,
-      "updatedAtMs": 1771616707584,
+      "updatedAtMs": 1771668285898,
       "schedule": {
         "kind": "cron",
         "expr": "00 02 * * *"
@@ -86,11 +87,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771668000000,
-        "lastRunAtMs": 1771581600003,
+        "nextRunAtMs": 1771754400000,
+        "lastRunAtMs": 1771668000004,
         "lastStatus": "error",
-        "lastDurationMs": 50849,
-        "consecutiveErrors": 2,
+        "lastDurationMs": 285894,
+        "consecutiveErrors": 3,
         "lastError": "cron announce delivery failed"
       }
     },
@@ -101,7 +102,7 @@
       "name": "Dreammode Morning Debrief",
       "enabled": true,
       "createdAtMs": 1771457235161,
-      "updatedAtMs": 1771607455191,
+      "updatedAtMs": 1771693800113,
       "schedule": {
         "expr": "10 09 * * *",
         "kind": "cron"
@@ -118,12 +119,12 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1771693800000,
-        "lastRunAtMs": 1771607400010,
+        "nextRunAtMs": 1771780200000,
+        "lastRunAtMs": 1771693800006,
         "lastStatus": "error",
-        "lastDurationMs": 55181,
-        "consecutiveErrors": 2,
-        "lastError": "cron announce delivery failed"
+        "lastDurationMs": 107,
+        "consecutiveErrors": 3,
+        "lastError": "FailoverError: No API key found for provider \"ollama\". Auth store: /home/ubuntu/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/ubuntu/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir."
       }
     },
     {
@@ -148,7 +149,8 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771695000000
+        "nextRunAtMs": 1771695000000,
+        "runningAtMs": 1771695000005
       }
     },
     {

@@ -1,6 +1,13 @@
-# Ignore sensitive credentials
-.backup-credentials
+# API Keys - NEVER backup these!
+*.json
+credentials/
+backup/config/openclaw.json
+backup/config/agents/
 
-# Ignore temporary files
+# Session transcripts - already in memory system
+*.jsonl
+
+# Temporary files
 *.tmp
 *.log
+backup/config/models-safe.json

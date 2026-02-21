@@ -49,10 +49,11 @@
 
 ## 🔔 When to Alert vs Stay Quiet
 
-**SEND MESSAGE when:**
+**SEND MESSAGE to Telegram when:**
 - ✅ System errors detected
 - ✅ Disk space WARNING (<500MB free)
 - ✅ Disk space CRITICAL (<500MB free) - URGENT, OpenClaw can fail!
+- ✅ Context compression emergency (>75% context usage)
 - ✅ Pattern detected: "You usually do X now"
 - ✅ Calendar event coming up (30 min warning)
 - ✅ User explicitly asked to be reminded of something
@@ -64,6 +65,10 @@
 - ❌ User busy (active conversation ongoing)
 - ❌ Late night (11pm-7am) unless urgent
 - ❌ Disk space above 500MB free
+- ❌ Context below 75% threshold
+- ❌ Everything running smoothly
+
+**IMPORTANT:** Only message Telegram if something needs attention. Otherwise, just reply HEARTBEAT_OK to stay silent.
 
 ---
 
