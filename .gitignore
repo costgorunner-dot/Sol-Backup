@@ -1,0 +1,12 @@
+# API Keys - NEVER commit these
+*.json
+credentials/
+backup/config/openclaw.json
+backup/config/agents/
+
+# Session data
+*.jsonl
+
+# Temporary files
+*.tmp
+*.log
