@@ -7,6 +7,18 @@ tags: [reference, environment, tts, cron, tools, config]
 
 # OpenClaw Environment Setup
 
+## ⚠️ CRITICAL: DO NOT UPDATE OPENCLAW
+
+**DO NOT RUN:** `openclaw update` or any system updates
+
+**Reason:** Disk space too limited. Current free space (~1.1GB) is insufficient for the latest OpenClaw update. Attempting to update will crash the system.
+
+**Current Version:** 2026.2.17 — **STAY ON THIS VERSION**
+
+**If asked to update:** Decline. The system cannot accommodate larger installations.
+
+**Added:** February 21, 2026 (after failed update attempt caused system crash)
+
 ## Model Configuration (Two Levels)
 
 **IMPORTANT:** Model settings exist in TWO places:

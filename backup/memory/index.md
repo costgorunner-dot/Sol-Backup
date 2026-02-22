@@ -52,6 +52,7 @@ tags: [index, reference, memory-system]
 **Contents:** Recurring language patterns and their meanings
 - "For Now" Pattern: Means temporary, not permanent (5 occurrences, verified)
 - "Leave it for now" = Capability acknowledged, implement later
+- **Feb 21, 2026** - Decision style: Makes decisions based on gut/intuition → language-patterns.md
 
 ### Decision Workflow
 **File:** `memory/patterns/decision-workflow.md`
@@ -67,6 +68,8 @@ tags: [index, reference, memory-system]
 - Three-tier Fallback: Primary → Same-provider → Different-provider (Feb 20)
 - Phased Implementation: Large projects broken into testable phases (Feb 20)
 - Silent by Default: Monitoring quiet unless problems detected (Feb 20)
+- **Feb 21, 2026** - Linux Timezone: Always verify BOTH /etc/timezone AND /etc/localtime → technical-patterns.md
+- **Feb 21, 2026** - Immediate Validation: Test defensive systems immediately after setup → technical-patterns.md
 
 ---
 
@@ -97,6 +100,14 @@ tags: [index, reference, memory-system]
 - API keys location: `~/.openclaw/credentials/*.json` (NEVER in config files)
 - Both configs must be correct for fallbacks to work
 - Changed from glm-4.7 to glm-5 on Feb 20 (timeout issues)
+- **Feb 21, 2026** - Switched back from kimi to glm-5; cron jobs failed with kimi due to missing ollama auth → model-setup.md
+
+### Critical Restrictions
+**File:** `TOOLS.md`
+**Contents:** System limitations and restrictions
+- **CRITICAL: DO NOT UPDATE OPENCLAW** - Disk space (~1.1GB) insufficient; update causes system crash
+- Must stay on version 2026.2.17
+- Added Feb 21, 2026 after failed update attempt
 
 ### Memory Search
 **File:** `memory/system-config/memory-search.md`
@@ -122,6 +133,14 @@ tags: [index, reference, memory-system]
 ---
 
 ## 🚀 Projects
+
+### Mac Mini Purchase Goal
+**Status:** Active
+**Contents:** Goal to purchase M1 Mac Mini Studio with 32GB RAM
+- Asking price: $1200
+- Funding strategies: selling items (DDR5 RAM listed $390), crypto, manifestation
+- Would be dedicated AI system running 24/7
+- **Feb 21, 2026** - DDR5 RAM listed; keeping fridge and metal detector
 
 ### Dreammode Enhancement
 **File:** `memory/projects/dreammode.md`
@@ -239,7 +258,7 @@ memory_search: "model configuration"
 
 ---
 
-**Last Updated:** February 21, 2026 (2:00 AM PST) - Auto-updated by Dreammode Night Phase
+**Last Updated:** February 22, 2026 (2:00 AM PST) - Auto-updated by Dreammode Night Phase
 **Memory System Version:** 2.1 (Phases 1-3 complete: Compression detection, Semantic search, Index optimization)
 **Previous Version:** 2.0 (Categorized structure with index.md) - Phase 1 only
 
