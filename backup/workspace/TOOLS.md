@@ -17,6 +17,8 @@ tags: [reference, environment, tts, cron, tools, config]
 
 **If asked to update:** Decline. The system cannot accommodate larger installations.
 
+**Auto-update DISABLED:** Config has `"checkOnStart": false` set to prevent automatic update checks on restart.
+
 **Added:** February 21, 2026 (after failed update attempt caused system crash)
 
 ## Model Configuration (Two Levels)
@@ -103,3 +105,9 @@ tags: [reference, environment, tts, cron, tools, config]
 **Active Enhancements:**
 - Pattern Learning: Tracks keep/delete decisions to improve extraction accuracy
 - Task Continuity: Monitors incomplete tasks and follow-up items
+
+### LLM Timeout Settings
+- **Current timeout:** 90 seconds
+- **Config location:** `agents.defaults.timeoutSeconds`
+- **Why increased:** To handle SSH tunnel latency when using local Ollama (Kimi) through reverse tunnel
+- **Added:** February 22, 2026
