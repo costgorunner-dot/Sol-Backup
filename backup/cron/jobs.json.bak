@@ -8,7 +8,7 @@
       "name": "Daily Weather - Revelstoke BC",
       "enabled": true,
       "createdAtMs": 1771442836117,
-      "updatedAtMs": 1771866390119,
+      "updatedAtMs": 1771970914625,
       "schedule": {
         "kind": "cron",
         "expr": "05 09 * * *"
@@ -25,11 +25,14 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1771952700000,
-        "lastRunAtMs": 1771866300006,
+        "nextRunAtMs": 1772039100000,
+        "lastRunAtMs": 1771970793468,
         "lastStatus": "ok",
-        "lastDurationMs": 90113,
-        "consecutiveErrors": 0
+        "lastDurationMs": 121157,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered"
       }
     },
     {
@@ -71,7 +74,7 @@
       "name": "Dreammode Night Phase",
       "enabled": true,
       "createdAtMs": 1771457217097,
-      "updatedAtMs": 1771840905097,
+      "updatedAtMs": 1771971010154,
       "schedule": {
         "kind": "cron",
         "expr": "00 02 * * *"
@@ -86,12 +89,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771927200000,
-        "lastRunAtMs": 1771840800006,
-        "lastStatus": "error",
-        "lastDurationMs": 105091,
-        "consecutiveErrors": 1,
-        "lastError": "cron announce delivery failed"
+        "nextRunAtMs": 1772013600000,
+        "lastRunAtMs": 1771970914625,
+        "lastStatus": "ok",
+        "lastDurationMs": 95529,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered"
       }
     },
     {
@@ -101,7 +106,7 @@
       "name": "Dreammode Morning Debrief",
       "enabled": true,
       "createdAtMs": 1771457235161,
-      "updatedAtMs": 1771866700532,
+      "updatedAtMs": 1771971060497,
       "schedule": {
         "expr": "10 09 * * *",
         "kind": "cron"
@@ -118,12 +123,14 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1771953000000,
-        "lastRunAtMs": 1771866600005,
-        "lastStatus": "error",
-        "lastDurationMs": 100527,
-        "consecutiveErrors": 1,
-        "lastError": "cron announce delivery failed"
+        "nextRunAtMs": 1772039400000,
+        "lastRunAtMs": 1771971010154,
+        "lastStatus": "ok",
+        "lastDurationMs": 50343,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered"
       }
     },
     {
@@ -133,7 +140,7 @@
       "name": "OpenClaw Backup (daily after debrief)",
       "enabled": true,
       "createdAtMs": 1771629134551,
-      "updatedAtMs": 1771867843749,
+      "updatedAtMs": 1771971123471,
       "schedule": {
         "expr": "30 9 * * *",
         "kind": "cron"
@@ -148,12 +155,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771954200000,
-        "lastRunAtMs": 1771867800009,
-        "lastStatus": "error",
-        "lastDurationMs": 43740,
-        "consecutiveErrors": 2,
-        "lastError": "cron announce delivery failed"
+        "nextRunAtMs": 1772040600000,
+        "lastRunAtMs": 1771971060497,
+        "lastStatus": "ok",
+        "lastDurationMs": 62974,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered"
       }
     },
     {

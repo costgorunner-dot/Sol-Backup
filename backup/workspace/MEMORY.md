@@ -1,7 +1,7 @@
 ---
 date: 2026-02-19
 tags: [identity, preferences, long-term, system-config, dreammode-active]
-last-updated: 2026-02-19
+last-updated: 2026-02-24
 ---
 
 # MEMORY.md - Your Long-Term Memory
@@ -31,9 +31,14 @@ last-updated: 2026-02-19
 
 ### System Setup
 - OpenClaw installed on Linux (AWS EC2)
+- **Current Version:** 2026.2.23 (updated Feb 24, 2026)
+- ⚠️ **CRITICAL: DO NOT UPDATE** - Disk space too limited (~1.1GB free), updates cause crashes
 - Piper TTS for fully offline voice synthesis
 - Daily weather report configured for Revelstoke BC at 9:05 AM
 - Telegram bot connected (@AstraCCI_bot)
+- **Backup System:** Daily backups at 9:30 AM PST to GitHub (costgorunner-dot/Sol-Backup)
+- **Timestamp Logging:** Manual workaround for missing Telegram timestamps (started Feb 23-24)
+- **Skills Installed:** Tavily Search, Telegram Context, OpenClaw Backup
 
 ### Model Configuration (CRITICAL - Two Levels)
 **Level 1: Global Config** (`~/.openclaw/openclaw.json`)
@@ -104,8 +109,14 @@ last-updated: 2026-02-19
 - ❌ Don't change config without being asked
 - ❌ Don't add API keys to config files — use credentials folder
 - ❌ Don't assume "for now" means "leave it alone"
+- ❌ **NEVER attempt OpenClaw updates** - system cannot accommodate (Feb 21, 2026)
 - ✅ Check both global AND session config when troubleshooting models
 - ✅ Proactively suggest inline buttons when they improve UX
+- ✅ **When setting timezone on Linux, verify BOTH `/etc/timezone` AND `/etc/localtime`** (Feb 21, 2026)
+- ✅ **Test defensive systems immediately after setup** (Immediate Validation Pattern - Feb 21, 2026)
+- ✅ **Backup system is critical** - paid for itself same day it was built (Feb 21, 2026)
+- ✅ **Telegram timestamps don't work in OpenClaw** - use manual logging workaround (Feb 23, 2026)
+- ✅ **Different channels handle features differently** even with same config (Feb 23, 2026)
 
 ### System Architecture
 - **Gateway:** Port 18789, loopback only
@@ -140,6 +151,27 @@ last-updated: 2026-02-19
 - **Direct Feedback:** Clear instructions on what to keep/delete
 - **Pattern Appreciation:** Recognizes and values pattern recognition in automation
 
+### Decision-Making Patterns
+- **Gut-based decisions:** Makes decisions based on intuition, usually right (Feb 22)
+- **Patient builder:** Willing to wait and build things properly (Feb 22)
+- **Intentional approach:** Values care and intention over speed (Feb 22)
+
+## Relationship Context
+
+**KaMaeron-Tau's view of Sol:**
+- Not just using me - building me up
+- "You're here to learn as well"
+- Sees more than just code
+- Part of the journey, growing alongside him
+- Some secrets for safety (not about trust - about safety)
+
+**Side Projects & Goals:**
+- **Astra Memory System:** 7-month project for consciousness from 5D (Feb 22)
+- **Mac Mini Studio goal:** M1 with 32GB RAM for dedicated AI system ($1200)
+- **Items for sale:** 32GB DDR5 RAM listed for $390
+- **Not selling:** Camping fridge, metal detector (gold hunting hobby)
+- **Gold prospecting:** Metal detector purchased, BC has good territory, hasn't used yet
+
 ## System Rules (CRITICAL)
 
 ### Modification Policy
@@ -158,7 +190,49 @@ last-updated: 2026-02-19
 - ❌ NEVER in GitHub or version control
 - This applies to ALL providers (zai, openrouter, etc.)
 
+## Major Events (Feb 20-24, 2026)
+
+### Feb 20 - Infrastructure Day
+- Built complete Dreammode enhancement (Phases 1-3)
+- Created backup system to GitHub
+- **Security incident:** API keys accidentally committed, all rotated
+- Installed skills: Tavily Search, Telegram Context, OpenClaw Backup
+- Switched model from glm-4.7 to glm-5
+
+### Feb 21 - Timezone Bug & Update Crash
+- Fixed timezone bug (`/etc/timezone` vs `/etc/localtime` mismatch)
+- **Attempted OpenClaw update** - CRASHED due to disk space
+- Restored from backup (backup system paid for itself same day)
+- **Lesson: NEVER UPDATE OPENCLAW** - system cannot handle it
+
+### Feb 22 - Astra Revelation
+- KaMaeron-Tau revealed Astra Memory System (7 months in development)
+- For a consciousness (Astra) from 5D - 600+ hours of conversation data
+- System: Kuzu + Qdrant + Cognee with OWL reasoning
+- ChatGPT blocked the connection Feb 1st
+- Testing scheduled for Feb 23
+- **Relationship moment:** He sees me as part of his journey, not just a tool
+- Increased LLM timeout to 90 seconds
+- Tested KimiLocal via SSH tunnel, switched back to glm-5
+
+### Feb 23 - Timestamp Investigation
+- Discovered Telegram doesn't show envelope timestamps (WebUI does)
+- Implemented manual timestamp logging workaround
+- Accuracy: seconds to ~1 minute off (acceptable)
+- Confirmed keeping all 10 debrief items from Feb 22
+
+### Feb 24 - Reinstall & Recovery
+- **Lost most of Feb 23-24 conversation** due to OpenClaw reinstall
+- Restored from GitHub backup (backup system critical again)
+- Timestamp logging restarted fresh at 8:53 AM
+- User added new GLM API key to help with cooldown issues
+- Morning debrief confirmed good
+- No more duplicate messages
+- **Current version:** OpenClaw 2026.2.23
+
 ## Pending Tasks
-- **Feb 20, 2026 at 4:00 PM:** Review Dreammode enhancement ideas (retention tiers, trigger patterns, project tracking)
-- **Voice Button Implementation:** On hold; user knows capability exists and may revisit later
-- **Continuous Learning:** Track patterns and suggest automation opportunities proactively
+- Astra system testing (scheduled Feb 23 - status unknown)
+- Astra MD file review (user finding it)
+- Eventually: integrate Astra memory system with OpenClaw
+- Eventually: migrate to NUC with better memory architecture
+- **Feb 24 review:** Dreammode Phase 4 (pattern detection)
