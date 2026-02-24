@@ -30,6 +30,8 @@ tags: [index, reference, memory-system]
 - Full Comprehension: Expects careful reading, no skimming
 - Consultation First: Ask before taking action if problems foreseen
 - Silent Monitoring: Prefers background tasks without notifications (added Feb 20)
+- **Feb 23, 2026** - Timestamp Logging: Wants timestamps logged for each message received → communication.md
+- **Feb 23, 2026** - Timestamp Accuracy: Acceptable accuracy is seconds to up to 1 minute off → communication.md
 
 ### Workflow Preferences
 **File:** `memory/preferences/workflow.md`
@@ -70,7 +72,7 @@ tags: [index, reference, memory-system]
 - Silent by Default: Monitoring quiet unless problems detected (Feb 20)
 - **Feb 21, 2026** - Linux Timezone: Always verify BOTH /etc/timezone AND /etc/localtime → technical-patterns.md
 - **Feb 21, 2026** - Immediate Validation: Test defensive systems immediately after setup → technical-patterns.md
-- **Feb 23, 2026** - Version Limitation Documentation: Document version requirements when hitting limitations (prevents future confusion)
+- **Feb 23, 2026** - Channel Behavior Divergence: Different channels handle features differently even with same config → technical-patterns.md
 
 ---
 
@@ -119,14 +121,6 @@ tags: [index, reference, memory-system]
 - Hybrid search: 70% semantic + 30% keyword
 - Temporal decay: 30-day half-life
 - Enabled: February 20, 2026
-- **Feb 23, 2026** - Proactive Entity Detection: Extract entities from every message, search unfamiliar ones, keep in context without announcing
-
-### Telegram Integration Limitations
-**File:** `skills/telegram-context/SKILL.md`
-**Contents:** Version-specific limitations
-- **v2026.2.17** - Does NOT support `message:read` action for Telegram (only Discord)
-- Workaround: User manually pastes last 10-20 messages after context compaction
-- Future versions may add Telegram support
 
 ### Cron Jobs
 **File:** `memory/system-config/cron-jobs.md`
@@ -143,22 +137,13 @@ tags: [index, reference, memory-system]
 
 ## 🚀 Projects
 
-### Astra System (External)
-**Status:** On hold (connection issue)
-**Contents:** Large AI system (~100GB) with separate infrastructure
-- Infrastructure: Kuzu graphs, Qdrant vectors, Cognee reasoning
-- Issue: ChatGPT blocked connection on Feb 1, 2026
-- Testing planned: Feb 24, 2026
-- Part of larger AWS Sol outpost vision
-
 ### Mac Mini Purchase Goal
-**Status:** ✅ Complete (SOLD)
+**Status:** Active
 **Contents:** Goal to purchase M1 Mac Mini Studio with 32GB RAM
 - Asking price: $1200
 - Funding strategies: selling items (DDR5 RAM listed $390), crypto, manifestation
 - Would be dedicated AI system running 24/7
 - **Feb 21, 2026** - DDR5 RAM listed; keeping fridge and metal detector
-- **Feb 23, 2026** - Mac Mini SOLD (identified as memory gap - not captured initially)
 
 ### Dreammode Enhancement
 **File:** `memory/projects/dreammode.md`

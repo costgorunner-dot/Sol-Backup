@@ -26,7 +26,6 @@ Created by @fourthdensity
 - `/telegram-context off` — Disable automatic fetching
 - `/telegram-context status` — Show current settings
 - `/telegram-context fetch [n]` — Manually fetch last n messages (default: 20)
-- `/telegram-context check [compactionCount] [fetchCount]` — Check for compaction and auto-fetch if detected (called by heartbeat)
 
 ## Setup
 
@@ -92,13 +91,8 @@ At the start of each Telegram session:
 
 ### Implementation Scope
 
-**Version Requirements:**
-- **OpenClaw must support `message:read` for Telegram** — not available in all versions
-- Tested: Discord supports `read`/`search` in v2026.2.17, Telegram does NOT
-- Check `openclaw message read --help` for available channels
-
 The skill uses OpenClaw's built-in `message` tool with:
-- `action: "list"` (when supported) — limited to the **current Telegram chat only**
+- `action: "list"` — limited to the **current Telegram chat only**
 - No access to other chats, channels, or external Telegram accounts
 - Requires the OpenClaw gateway to have Telegram channel permissions already configured
 
@@ -123,27 +117,13 @@ The skill uses OpenClaw's built-in `message` tool with:
 
 ## Limitations
 
-- **OpenClaw Version Requirement:** Telegram message reading requires OpenClaw version with `message:read` support for Telegram. Version 2026.2.17 does NOT support Telegram message history — only Discord supports `read` and `search` actions in this version. The skill will work (register, enable, run commands) but cannot actually fetch Telegram messages.
 - Telegram-only (other channels not supported)
 - Requires appropriate message permissions via OpenClaw gateway
 - Large history may need summarization to fit context window
 - **Fetched messages are sent to your configured LLM provider** — review your threat model for sensitive conversations
-
-## Troubleshooting
-
-**Skill commands work but messages aren't fetched:**
-- Check your OpenClaw version: `openclaw --version`
-- Test message reading: `openclaw message read --channel telegram --target <your_chat_id>`
-- If you see "Action read is not supported for provider telegram", your version doesn't support Telegram message history
-- Update OpenClaw to a version with Telegram `message:read` support (if disk space allows)
-
-**Skill not loaded at all:**
-- Check `openclaw.json` has `skills.entries.telegram-context.enabled: true`
-- Restart gateway: `openclaw gateway restart`
 
 ## Tips
 
 - Set `fetchCount` to 10-30 for most use cases (balance context vs. tokens)
 - Use `/telegram-context fetch 50` when you need deep context for a specific task
 - Works best alongside `MEMORY.md` for long-term persistence
-- **Manual workaround for unsupported versions:** When compaction happens, paste the last 10-20 messages to restore context
