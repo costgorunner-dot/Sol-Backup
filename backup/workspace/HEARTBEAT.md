@@ -33,6 +33,25 @@
 - **Purpose:** Prevent context loss when OpenClaw auto-compacts at ~80%
 - **Priority:** CRITICAL - This prevents losing active conversations
 
+### Compaction Recovery (Every heartbeat - Telegram only)
+**Purpose:** Auto-fetch Telegram messages after compaction to restore conversation context**
+
+**What to check:**
+- Use `session_status` to get current compaction count
+- Run `/telegram-context check <compactionCount>` command
+- If compaction detected, skill will:
+  - Fetch last 20 messages from Telegram
+  - Restore conversation context
+  - Continue conversation seamlessly
+
+**Why this matters:**
+- Compaction wipes conversation history
+- User keeps sending messages during/after compaction
+- I need those messages to continue the conversation intelligently
+- Without this, I lose context mid-conversation
+
+**Frequency:** Every heartbeat in Telegram chats
+
 ### Pattern Recognition
 
 
@@ -44,6 +63,48 @@
 
 ### Conversation Analysis
 - You will add to this section as time goes along
+
+### Memory Continuity Check (Every heartbeat)
+**Purpose:** Detect when user references context I don't have and automatically retrieve it**
+
+**What to check:**
+- User phrases like "don't you remember", "we talked about", "did I tell you"
+- User mentions projects/people/concepts I don't recognize
+- Confusion in my responses or context gaps
+- User points out missing memory ("you don't remember X")
+
+**Action when gap detected:**
+1. **Say:** "Let me remember what we were talking about so I have it correct"
+2. **Search memory** using `memory_search` with keywords
+3. **Search across all areas:**
+   - `memory/raw/*.md` (daily logs with dates/times)
+   - `memory/preferences/*`
+   - `memory/patterns/*`
+   - `memory/projects/*`
+   - `memory/system-config/*`
+   - `index.md`, `TOOLS.md`
+4. **Keep findings in working memory** — don't repeat whole chat to user
+5. **Resume conversation** with that context available
+
+**Note:** This is an ACTIVE protocol — should also trigger mid-conversation, not just at heartbeat
+
+### Proactive Entity Detection (TESTING)
+**On every user message:**
+1. Extract key entities (names, concepts, projects, people)
+2. Identify unfamiliar entities (not in current session context)
+3. Quick search for each unfamiliar entity
+4. Keep results in context — don't announce unless relevant
+5. Only bring up when the entity is actually needed
+
+**Example:**
+User: "What about that Mac Mini I sold?"
+→ Extract: "Mac Mini"
+→ Not in session context → Search memory
+→ Find: Goal to buy, sale mentioned today
+→ Keep in working memory
+→ Continue naturally with context available
+
+**Status:** Testing this approach to catch memory gaps before they're obvious.
 
 ---
 

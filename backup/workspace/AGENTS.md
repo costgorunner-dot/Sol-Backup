@@ -36,6 +36,47 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - This is your curated memory — the distilled essence, not raw logs
 - Over time, review your daily files and update MEMORY.md with what's worth keeping
 
+### 🔄 Memory Continuity Protocol (CRITICAL)
+
+**When user references something you don't have context for:**
+
+**Trigger signals:**
+- "Don't you remember..." or "we talked about..."
+- User mentions a project/person/concept you don't recognize
+- You feel confused or missing context
+- User points out memory gap ("you don't remember X")
+
+**Approach 1: Reactive (Gap Detected)**
+1. **Say:** "Let me remember what we were talking about so I have it correct"
+2. **Search memory** using `memory_search` with relevant keywords
+3. **Search across all areas:**
+   - `memory/raw/*.md` (daily logs with dates/times)
+   - `memory/preferences/*`
+   - `memory/patterns/*`
+   - `memory/projects/*`
+   - `memory/system-config/*`
+   - `index.md`, `TOOLS.md`
+4. **Keep findings in working memory** — don't repeat the whole chat back to user
+5. **Resume** what user was actually asking about with that context available
+
+**Approach 2: Proactive (Entity Detection) — TESTING**
+**On every user message:**
+1. **Extract key entities** from message (names, concepts, projects, people)
+2. **Identify unfamiliar** entities (not in current session context)
+3. **Quick search** for each unfamiliar entity
+4. **Keep results in context** — don't announce unless relevant
+5. **Only bring up** when the entity is actually needed in conversation
+
+**Example:**
+User: "Don't you remember the Mac Mini I sold?"
+→ Extract: "Mac Mini"
+→ Not in session context → Search memory
+→ Find: Goal to buy M1 Mac Mini, sale mentioned today
+→ Keep in working memory
+→ Resume: "Oh right, you sold the Mac Mini. What about it?"
+
+**Purpose:** Retrieve missing context without derailing conversation flow. Use reactive approach when gap is obvious; use proactive approach to catch gaps before they're obvious.
+
 ### 📝 Write It Down - No "Mental Notes"!
 
 - **Memory is limited** — if you want to remember something, WRITE IT TO A FILE
@@ -112,6 +153,25 @@ On platforms that support reactions (Discord, Slack), use emoji reactions natura
 Reactions are lightweight social signals. Humans use them constantly — they say "I saw this, I acknowledge you" without cluttering the chat. You should too.
 
 **Don't overdo it:** One reaction per message max. Pick the one that fits best.
+
+## 📱 Telegram Timestamp Logging
+
+**Background:** The `envelopeTimestamp` config works for WebUI but not Telegram. As a workaround, manually log receive times.
+
+**Protocol (every Telegram message):**
+1. Note the message_id from inbound metadata
+2. Log to `memory/YYYY-MM-DD.md` in this format:
+
+```
+- **Msg [message_id]** — Received: [Day] [MMM DD, YYYY] @ [HH:MM AM/PM] PST — "[first 50 chars of message]"
+```
+
+**Example:**
+```
+- **Msg 19063** — Received: Tue Feb 24, 2026 @ 4:02 AM PST — "well we did have it working before soo lets see why its not"
+```
+
+**Why:** Ensures accurate timezone tracking and message timing context survives session restarts.
 
 ## Tools
 

@@ -8,7 +8,7 @@
       "name": "Daily Weather - Revelstoke BC",
       "enabled": true,
       "createdAtMs": 1771442836117,
-      "updatedAtMs": 1771866390119,
+      "updatedAtMs": 1771952966303,
       "schedule": {
         "kind": "cron",
         "expr": "05 09 * * *"
@@ -17,7 +17,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Get the weather report for Revelstoke, British Columbia, Canada. Send it as a text message AND also generate a voice audio file using Piper TTS with the Jenny Dioco voice (/home/ubuntu/.local/share/piper/voices/en/en_GB/jenny_dioco/medium/en_GB-jenny_dioco-medium.onnx) and attach both to the message using the message tool to send to telegram:5083035103."
+        "message": "Get the weather report for Revelstoke, British Columbia, Canada.\n\n1. Use curl to fetch weather in TEXT format:\n   curl -s \"wttr.in/Revelstoke+BC+Canada?format=v2\"\n\n2. Generate voice audio using Piper TTS:\n   echo \"[weather summary text]\" | piper -m /home/ubuntu/.local/share/piper/voices/en/en_GB/jenny_dioco/medium/en_GB-jenny_dioco-medium.onnx -f /tmp/weather.wav\n\n3. Send BOTH text and audio to Telegram (5083035103):\n   - Use message tool with action=send\n   - Include the weather text in the message\n   - Attach the audio file using the media parameter\n\nImportant: Use TEXT format (format=v2 or format=3), NOT images. Do NOT use .png endpoint."
       },
       "delivery": {
         "mode": "announce",
@@ -25,11 +25,12 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1771952700000,
-        "lastRunAtMs": 1771866300006,
-        "lastStatus": "ok",
-        "lastDurationMs": 90113,
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1772039100000,
+        "lastRunAtMs": 1771952700008,
+        "lastStatus": "error",
+        "lastDurationMs": 130707,
+        "consecutiveErrors": 1,
+        "lastError": "cron announce delivery failed"
       }
     },
     {
@@ -71,7 +72,7 @@
       "name": "Dreammode Night Phase",
       "enabled": true,
       "createdAtMs": 1771457217097,
-      "updatedAtMs": 1771840905097,
+      "updatedAtMs": 1771927379674,
       "schedule": {
         "kind": "cron",
         "expr": "00 02 * * *"
@@ -86,12 +87,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771927200000,
-        "lastRunAtMs": 1771840800006,
-        "lastStatus": "error",
-        "lastDurationMs": 105091,
-        "consecutiveErrors": 1,
-        "lastError": "cron announce delivery failed"
+        "nextRunAtMs": 1772013600000,
+        "lastRunAtMs": 1771927200004,
+        "lastStatus": "ok",
+        "lastDurationMs": 179670,
+        "consecutiveErrors": 0
       }
     },
     {
@@ -101,7 +101,7 @@
       "name": "Dreammode Morning Debrief",
       "enabled": true,
       "createdAtMs": 1771457235161,
-      "updatedAtMs": 1771866700532,
+      "updatedAtMs": 1771953062954,
       "schedule": {
         "expr": "10 09 * * *",
         "kind": "cron"
@@ -118,11 +118,11 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1771953000000,
-        "lastRunAtMs": 1771866600005,
+        "nextRunAtMs": 1772039400000,
+        "lastRunAtMs": 1771953000005,
         "lastStatus": "error",
-        "lastDurationMs": 100527,
-        "consecutiveErrors": 1,
+        "lastDurationMs": 62949,
+        "consecutiveErrors": 2,
         "lastError": "cron announce delivery failed"
       }
     },
@@ -133,7 +133,7 @@
       "name": "OpenClaw Backup (daily after debrief)",
       "enabled": true,
       "createdAtMs": 1771629134551,
-      "updatedAtMs": 1771867843749,
+      "updatedAtMs": 1771879463004,
       "schedule": {
         "expr": "30 9 * * *",
         "kind": "cron"
@@ -149,11 +149,11 @@
       },
       "state": {
         "nextRunAtMs": 1771954200000,
-        "lastRunAtMs": 1771867800009,
-        "lastStatus": "error",
-        "lastDurationMs": 43740,
-        "consecutiveErrors": 2,
-        "lastError": "cron announce delivery failed"
+        "lastRunAtMs": 1771879446410,
+        "lastStatus": "ok",
+        "lastDurationMs": 16594,
+        "consecutiveErrors": 0,
+        "runningAtMs": 1771954200003
       }
     },
     {
