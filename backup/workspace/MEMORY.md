@@ -38,7 +38,11 @@ last-updated: 2026-02-24
 - Telegram bot connected (@AstraCCI_bot)
 - **Backup System:** Daily backups at 9:30 AM PST to GitHub (costgorunner-dot/Sol-Backup)
 - **Timestamp Logging:** Manual workaround for missing Telegram timestamps (started Feb 23-24)
-- **Skills Installed:** Tavily Search, Telegram Context, OpenClaw Backup
+- **Skills Installed:** 
+  - Tavily Search (AI web search)
+  - Telegram Context (replaced with Telegram History - Feb 24)
+  - OpenClaw Backup (daily automated backups)
+  - **Telegram History** (NEW - Feb 24, 2026) - Persistent message logger
 
 ### Model Configuration (CRITICAL - Two Levels)
 **Level 1: Global Config** (`~/.openclaw/openclaw.json`)
@@ -58,6 +62,14 @@ last-updated: 2026-02-24
 - Use for: Quick actions, menus, toggles
 - Pattern: Buttons + callback_data → Agent handles click
 - **Voice Button Pattern** — "Read with voice" button works but only on messages USER sends to ME
+- **Telegram History Skill** (NEW - Feb 24, 2026)
+  - Logs every incoming message to `memory/telegram-history.json`
+  - Provides last 20 messages at session start for continuity
+  - Complements daily memory files
+  - Solves timestamp issue (all messages have full timestamps)
+  - Location: `skills/telegram-history/`
+  - Scripts: `log-message.js` (logger), `read-history.js` (reader)
+  - Manual commands: `/telegram-history [n]`, `/telegram-history search [query]`
 
 ### Dreammode (NOW ACTIVE)
 **Purpose:** Self-manage memory files to function better
