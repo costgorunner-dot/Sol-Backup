@@ -39,9 +39,22 @@ for (let i = 1; i < args.length; i++) {
   usage();
 }
 
-const apiKey = (process.env.TAVILY_API_KEY ?? "").trim();
+let apiKey = (process.env.TAVILY_API_KEY ?? "").trim();
+
+// Auto-load from credentials file if not in environment
 if (!apiKey) {
-  console.error("Missing TAVILY_API_KEY");
+  try {
+    const credPath = process.env.HOME + "/.openclaw/credentials/tavily-default.json";
+    const credData = await import("fs").then(fs => fs.readFileSync(credPath, "utf8"));
+    const cred = JSON.parse(credData);
+    apiKey = (cred.apiKey ?? "").trim();
+  } catch {
+    // Ignore - will fail below
+  }
+}
+
+if (!apiKey) {
+  console.error("Missing TAVILY_API_KEY (set env or add to ~/.openclaw/credentials/tavily-default.json)");
   process.exit(1);
 }
 

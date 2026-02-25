@@ -242,6 +242,23 @@ last-updated: 2026-02-24
 - No more duplicate messages
 - **Current version:** OpenClaw 2026.2.23
 
+### Feb 25 - Topic Tracking System Built
+- **Tavily Search:** Fixed auto-loading API key from credentials file
+- **Edge TTS:** Replaced Piper (better quality, built-in, free)
+- **Faster-Whisper:** Tested, model deleted after use (saves 464MB)
+- **Timeout:** Increased to 120s (GLM having slow responses)
+- **Astra:** Short-term memory revamp using 200k-1M context windows
+- **Dreammode Enhancement:** Built topic tracking + next steps system
+  - Tracks ongoing topics (Astra, RAM sale, hardware fund)
+  - Detects orphaned topics
+  - Tracks next steps and reminds when overdue
+  - Asks clarifying questions to learn relationships
+- **Cron Schedule Updates:**
+  - Weather: 9:05 AM (recreated with Edge TTS)
+  - Dreammode Night: 11:45 PM (was 2 AM)
+  - Dreammode Morning: 9:10 AM (unchanged)
+  - Backup: 9:30 AM (still active)
+
 ## Pending Tasks
 - Astra system testing (scheduled Feb 23 - status unknown)
 - Astra MD file review (user finding it)
