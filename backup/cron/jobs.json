@@ -106,7 +106,7 @@
       "name": "OpenClaw Backup (daily after debrief)",
       "enabled": true,
       "createdAtMs": 1771629134551,
-      "updatedAtMs": 1771971123471,
+      "updatedAtMs": 1772040223407,
       "schedule": {
         "expr": "30 9 * * *",
         "kind": "cron"
@@ -122,14 +122,14 @@
       },
       "state": {
         "nextRunAtMs": 1772040600000,
-        "lastRunAtMs": 1771971060497,
+        "lastRunAtMs": 1772040204098,
         "lastStatus": "ok",
-        "lastDurationMs": 62974,
+        "lastDurationMs": 19309,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "runningAtMs": 1772040204098
+        "runningAtMs": 1772040600004
       }
     },
     {
@@ -167,7 +167,7 @@
       "name": "Daily Weather - Revelstoke BC",
       "enabled": true,
       "createdAtMs": 1772039398454,
-      "updatedAtMs": 1772039812105,
+      "updatedAtMs": 1772040558561,
       "schedule": {
         "kind": "cron",
         "expr": "05 09 * * *"
@@ -176,7 +176,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Quick weather report for Revelstoke, BC.\n\n1. Run: curl -s --max-time 10 'wttr.in/Revelstoke+BC?format=%l:+%c+%t+(feels+like+%f),+%w+wind'\n2. If that fails, use backup: curl -s --max-time 10 'wttr.in/Revelstoke?format=3'\n3. Create a brief 1-2 sentence summary\n4. Use tts tool to generate voice audio\n5. Send BOTH text and voice to telegram:5083035103 using message tool\n\nKeep it under 90 seconds total. Skip voice if needed to stay fast."
+        "message": "Morning weather report for Revelstoke, BC with 3-day forecast.\n\n1. Get current weather using curl (try wttr.in first, fallback to Open-Meteo if slow):\n   - Current temp, feels like, conditions, wind\n   - Use --max-time 10 to avoid timeouts\n\n2. Get 3-day forecast:\n   - High/low temps\n   - Conditions for each day\n   - Any precipitation expected\n\n3. Format a friendly summary like:\n   ☀️ Good morning! Current: [temp], [conditions]\n   📅 Today: [forecast]\n   📅 Tomorrow: [forecast]\n   📅 Day after: [forecast]\n\n4. Generate voice audio using tts tool (Edge TTS built-in)\n\n5. Send BOTH text summary AND voice audio to telegram:5083035103\n\nKeep total runtime under 90 seconds. Skip voice if needed to stay fast."
       },
       "delivery": {
         "mode": "announce",
@@ -192,6 +192,56 @@
         "lastError": "cron announce delivery failed",
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 1
+      }
+    },
+    {
+      "id": "32f32fc0-f0ca-461b-a7fa-ca62b4d030b6",
+      "name": "OpenClaw Backup (afternoon)",
+      "enabled": true,
+      "createdAtMs": 1772040344494,
+      "updatedAtMs": 1772040344494,
+      "schedule": {
+        "kind": "cron",
+        "expr": "15 15 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run OpenClaw backup to GitHub.\n\n1. Run the backup skill to commit and push to GitHub\n2. Report what was backed up\n\nKeep it quick - this is a safety net backup mid-day."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5083035103"
+      },
+      "state": {
+        "nextRunAtMs": 1772061300000
+      }
+    },
+    {
+      "id": "1317ab19-f440-45d7-afcf-02cad349e28d",
+      "name": "OpenClaw Backup (evening)",
+      "enabled": true,
+      "createdAtMs": 1772040346146,
+      "updatedAtMs": 1772040346146,
+      "schedule": {
+        "kind": "cron",
+        "expr": "45 21 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run OpenClaw backup to GitHub.\n\n1. Run the backup skill to commit and push to GitHub\n2. Report what was backed up\n\nKeep it quick - this is an end-of-day safety backup."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5083035103"
+      },
+      "state": {
+        "nextRunAtMs": 1772084700000
       }
     }
   ]
