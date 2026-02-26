@@ -40,7 +40,7 @@
       "name": "Dreammode Night Phase",
       "enabled": true,
       "createdAtMs": 1771457217097,
-      "updatedAtMs": 1772038881808,
+      "updatedAtMs": 1772092140193,
       "schedule": {
         "kind": "cron",
         "expr": "45 23 * * *"
@@ -55,14 +55,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772091900000,
-        "lastRunAtMs": 1772013600004,
-        "lastStatus": "ok",
-        "lastDurationMs": 79598,
-        "consecutiveErrors": 0,
-        "lastRunStatus": "ok",
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered"
+        "nextRunAtMs": 1772178300000,
+        "lastRunAtMs": 1772091900007,
+        "lastStatus": "error",
+        "lastDurationMs": 240186,
+        "consecutiveErrors": 1,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "unknown",
+        "lastError": "Error: All models failed (2): zai/glm-5: LLM request timed out. (unknown) | zai/glm-4.7: Request was aborted (unknown)"
       }
     },
     {
@@ -72,7 +72,7 @@
       "name": "Dreammode Morning Debrief",
       "enabled": true,
       "createdAtMs": 1771457235161,
-      "updatedAtMs": 1772039445718,
+      "updatedAtMs": 1772125867550,
       "schedule": {
         "kind": "cron",
         "expr": "10 09 * * *"
@@ -89,10 +89,10 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1772125800000,
-        "lastRunAtMs": 1772039400029,
+        "nextRunAtMs": 1772212200000,
+        "lastRunAtMs": 1772125800009,
         "lastStatus": "ok",
-        "lastDurationMs": 45689,
+        "lastDurationMs": 67541,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -128,7 +128,8 @@
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
-        "lastDeliveryStatus": "delivered"
+        "lastDeliveryStatus": "delivered",
+        "runningAtMs": 1772127000004
       }
     },
     {
@@ -166,7 +167,7 @@
       "name": "Daily Weather - Revelstoke BC",
       "enabled": true,
       "createdAtMs": 1772039398454,
-      "updatedAtMs": 1772040558561,
+      "updatedAtMs": 1772125653000,
       "schedule": {
         "kind": "cron",
         "expr": "05 09 * * *"
@@ -183,14 +184,14 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1772125500000,
-        "lastRunAtMs": 1772039424605,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 201160,
-        "lastError": "cron announce delivery failed",
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1
+        "nextRunAtMs": 1772211900000,
+        "lastRunAtMs": 1772125500004,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 152996,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
@@ -230,7 +231,7 @@
       "name": "OpenClaw Backup (evening)",
       "enabled": true,
       "createdAtMs": 1772040346146,
-      "updatedAtMs": 1772040346146,
+      "updatedAtMs": 1772084821119,
       "schedule": {
         "kind": "cron",
         "expr": "45 21 * * *"
@@ -247,8 +248,14 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1772084700000,
-        "runningAtMs": 1772084700008
+        "nextRunAtMs": 1772171100000,
+        "lastRunAtMs": 1772084700016,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 121103,
+        "lastError": "cron announce delivery failed",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
       }
     }
   ]
