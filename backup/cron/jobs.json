@@ -198,7 +198,7 @@
       "name": "OpenClaw Backup (afternoon)",
       "enabled": true,
       "createdAtMs": 1772040344494,
-      "updatedAtMs": 1772040344494,
+      "updatedAtMs": 1772061450787,
       "schedule": {
         "kind": "cron",
         "expr": "15 15 * * *"
@@ -215,8 +215,14 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1772061300000,
-        "runningAtMs": 1772061300002
+        "nextRunAtMs": 1772147700000,
+        "lastRunAtMs": 1772061300004,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 150783,
+        "lastError": "cron announce delivery failed",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
       }
     },
     {
@@ -241,7 +247,8 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1772084700000
+        "nextRunAtMs": 1772084700000,
+        "runningAtMs": 1772084700008
       }
     }
   ]
