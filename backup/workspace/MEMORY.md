@@ -270,6 +270,17 @@ last-updated: 2026-02-24
   - Dreammode Morning: 9:10 AM (unchanged)
   - Backup: 9:30 AM (still active)
 
+## Future Tools (Post-Mac Studio)
+
+**Stealth Browser Skill (ClawHub: b0tresch/b0tresch-stealth-browser)**
+- **Status:** Reviewed, safe, ready to install when disk space allows
+- **Size:** ~250-600 MB (includes bundled Chromium)
+- **What it does:** Anti-detection web browsing, bypasses bot blocking
+- **Why useful:** Let Sol browse Best Buy, Facebook Marketplace, etc. without 403 errors
+- **Security:** ✅ Reviewed - clean code, no malicious behavior
+- **Install when:** Mac Studio M1 Max 32GB acquired (proper disk space)
+- **Link:** https://clawhub.ai/b0tresch/b0tresch-stealth-browser
+
 ## Pending Tasks
 - Astra system testing (scheduled Feb 23 - status unknown)
 - Astra MD file review (user finding it)

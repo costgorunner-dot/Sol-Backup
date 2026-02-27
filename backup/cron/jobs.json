@@ -40,7 +40,7 @@
       "name": "Dreammode Night Phase",
       "enabled": true,
       "createdAtMs": 1771457217097,
-      "updatedAtMs": 1772178426557,
+      "updatedAtMs": 1772213591329,
       "schedule": {
         "kind": "cron",
         "expr": "45 23 * * *"
@@ -49,7 +49,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "DREAMMODE NIGHT PHASE:\n\n1. Get TODAY'S date (the current day)\n\n2. CHECK FOR EMERGENCY SNAPSHOTS:\n   - List all files in memory/raw/emergency-*.md for today\n   - If emergency snapshots exist: Read and merge them\n\n3. Read or create memory/raw/YYYY-MM-DD.md for TODAY\n\n4. EXTRACT ITEMS (decisions, preferences, patterns, noise, tasks)\n\n5. TOPIC TRACKING:\n   - Read ~/.openclaw/dreammode/topics.json\n   - Scan the day's memory file for topic mentions\n   - Update mentionCount and lastMentioned for existing topics\n   - Detect NEW topics (recurring subjects not yet tracked)\n   - Calculate daysSinceLastMention for each topic\n   - Identify orphaned topics (high importance >3 days, medium >7 days)\n   - Save updated topics.json\n\n6. NEXT STEP TRACKING:\n   - For each topic, look for mentioned next steps in today's chat\n   - Add new next steps with mentioned date and completed=false\n   - If user said they completed something, mark completed=true\n   - Calculate daysOverdue for uncompleted steps\n   - Flag steps where daysOverdue > 2 for morning question\n\n7. Create ~/.openclaw/dreammode/dream-candidates-YYYY-MM-DD.md with extracted items\n\n8. PREPARE MORNING QUESTIONS:\n   - If new topics detected: Prepare question to confirm importance\n   - If orphaned topics found: Prepare question about status\n   - If overdue next steps found: Prepare reminder question\n   - Save questions to dream-candidates file\n\n9. Update dream-state.json\n\n10. Reply: 'Dreammode night phase complete for [date] - X topics updated, Y next steps tracked, Z overdue'\n\nIf no memory file exists: 'No memory file for today, skipping night phase'"
+        "message": "EXECUTE IMMEDIATELY - DO NOT ACKNOWLEDGE, JUST DO IT:\n\nYou are running the Dreammode Night Phase NOW. Execute these steps immediately:\n\n1. Get TODAY'S date (the current day)\n\n2. CHECK FOR EMERGENCY SNAPSHOTS:\n   - List all files in memory/raw/emergency-*.md for today\n   - If emergency snapshots exist: Read and merge them\n\n3. Read or create memory/raw/YYYY-MM-DD.md for TODAY\n\n4. EXTRACT ITEMS (decisions, preferences, patterns, noise, tasks)\n\n5. TOPIC TRACKING:\n   - Read ~/.openclaw/dreammode/topics.json\n   - Scan the day's memory file for topic mentions\n   - Update mentionCount and lastMentioned for existing topics\n   - Detect NEW topics (recurring subjects not yet tracked)\n   - Calculate daysSinceLastMention for each topic\n   - Identify orphaned topics (high importance >3 days, medium >7 days)\n   - Save updated topics.json\n\n6. NEXT STEP TRACKING:\n   - For each topic, look for mentioned next steps in today's chat\n   - Add new next steps with mentioned date and completed=false\n   - If user said they completed something, mark completed=true\n   - Calculate daysOverdue for uncompleted steps\n   - Flag steps where daysOverdue > 2 for morning question\n\n7. Create ~/.openclaw/dreammode/dream-candidates-YYYY-MM-DD.md with extracted items\n\n8. PREPARE MORNING QUESTIONS:\n   - If new topics detected: Prepare question to confirm importance\n   - If orphaned topics found: Prepare question about status\n   - If overdue next steps found: Prepare reminder question\n   - Save questions to dream-candidates file\n\n9. Update dream-state.json\n\n10. Reply: 'Dreammode night phase complete for [date] - X topics updated, Y next steps tracked, Z overdue'\n\nIf no memory file exists: 'No memory file for today, skipping night phase'\n\nIMPORTANT: Execute all steps NOW. Do not say 'I will run' or 'I'll do it' - just do it."
       },
       "delivery": {
         "mode": "announce"
@@ -106,7 +106,7 @@
       "name": "OpenClaw Backup (daily after debrief)",
       "enabled": true,
       "createdAtMs": 1771629134551,
-      "updatedAtMs": 1772127059307,
+      "updatedAtMs": 1772213475218,
       "schedule": {
         "expr": "30 9 * * *",
         "kind": "cron"
@@ -121,15 +121,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772213400000,
-        "lastRunAtMs": 1772127000006,
-        "lastStatus": "ok",
-        "lastDurationMs": 59301,
-        "consecutiveErrors": 0,
-        "lastRunStatus": "ok",
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "runningAtMs": 1772213400005
+        "nextRunAtMs": 1772299800000,
+        "lastRunAtMs": 1772213400007,
+        "lastStatus": "error",
+        "lastDurationMs": 75211,
+        "consecutiveErrors": 1,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "unknown",
+        "lastError": "cron announce delivery failed"
       }
     },
     {
@@ -223,7 +222,8 @@
         "lastDurationMs": 136216,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "lastDelivered": true
+        "lastDelivered": true,
+        "runningAtMs": 1772234100003
       }
     },
     {
