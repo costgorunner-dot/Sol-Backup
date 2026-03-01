@@ -106,7 +106,7 @@
       "name": "OpenClaw Backup (daily after debrief)",
       "enabled": true,
       "createdAtMs": 1771629134551,
-      "updatedAtMs": 1772299852840,
+      "updatedAtMs": 1772386220059,
       "schedule": {
         "expr": "30 9 * * *",
         "kind": "cron"
@@ -121,15 +121,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772386200000,
-        "lastRunAtMs": 1772299800007,
+        "nextRunAtMs": 1772472600000,
+        "lastRunAtMs": 1772386200010,
         "lastStatus": "ok",
-        "lastDurationMs": 52833,
+        "lastDurationMs": 20049,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
-        "lastDelivered": true,
-        "runningAtMs": 1772386200008
+        "lastDelivered": true
       }
     },
     {
@@ -223,7 +222,8 @@
         "lastDurationMs": 104770,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "lastDelivered": true
+        "lastDelivered": true,
+        "runningAtMs": 1772406900007
       }
     },
     {

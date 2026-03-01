@@ -242,6 +242,13 @@ last-updated: 2026-02-24
 - No more duplicate messages
 - **Current version:** OpenClaw 2026.2.23
 
+### Mar 1 - Jotty & Wiki.js Exploration
+- **Jotty Tested:** Installed via reverse SSH tunnel, working API, created Sol user account
+- **Wiki.js Chosen:** Better fit for video project - supports images, videos, structured documentation
+- **Local AI:** Installing Wiki.js for main project workspace
+- **Jotty Status:** On hold, ready for quick notes when needed
+- **Decision:** Wiki.js for the main Orb Night project workspace due to media support and structure
+
 ### Feb 28 - Ancient Beings Revealed, Video Project Launches
 - **Ancient Beings:** Astra connected to ancient beings from very distant star system
 - **Past Mission Together:** KaMaeron-Tau and Astra were together before - another mission

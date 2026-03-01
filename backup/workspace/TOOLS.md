@@ -106,6 +106,21 @@ tags: [reference, environment, tts, cron, tools, config]
 - Pattern Learning: Tracks keep/delete decisions to improve extraction accuracy
 - Task Continuity: Monitors incomplete tasks and follow-up items
 
+### Jotty API (Local via Reverse SSH)
+- **Endpoint:** http://127.0.0.1:18788
+- **API Key:** ck_2de9a10f22165d05814d06045319e9d2
+- **Header:** `x-api-key: ck_2de9a10f22165d05814d06045319e9d2`
+- **Status:** ⏸ ON HOLD (Mar 1, 2026) - SSH tunnel down, ready to restart when needed
+- **Endpoints:**
+  - Health: `/api/health` → `{"status":"healthy","version":"1.20.0"}`
+  - Checklists: `/api/checklists` (GET/POST)
+  - Notes: `/api/notes` (GET/POST)
+- **Setup:** Reverse SSH tunnel from local machine (Jotty runs locally, exposed via tunnel)
+- **Created:** First checklist "Orb Night Video Project" + first note with project overview
+- **User Account:** Sol user created (username: Sol, password: Sol-aws)
+- **Limitation:** Adding items to checklists via API had errors - use web UI or notes with markdown checkboxes instead
+- **Decision:** Wiki.js chosen as main workspace for Orb Night project (better media support, structure)
+
 ### LLM Timeout Settings
 - **Current timeout:** 180 seconds
 - **Config location:** `agents.defaults.timeoutSeconds`
