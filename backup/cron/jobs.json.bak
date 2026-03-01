@@ -199,7 +199,7 @@
       "name": "OpenClaw Backup (afternoon)",
       "enabled": true,
       "createdAtMs": 1772040344494,
-      "updatedAtMs": 1772234170398,
+      "updatedAtMs": 1772320604777,
       "schedule": {
         "kind": "cron",
         "expr": "15 15 * * *"
@@ -216,15 +216,14 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1772320500000,
-        "lastRunAtMs": 1772234100007,
+        "nextRunAtMs": 1772406900000,
+        "lastRunAtMs": 1772320500007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 70391,
+        "lastDurationMs": 104770,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "lastDelivered": true,
-        "runningAtMs": 1772320500006
+        "lastDelivered": true
       }
     },
     {
