@@ -40,7 +40,7 @@
       "name": "Dreammode Night Phase",
       "enabled": true,
       "createdAtMs": 1771457217097,
-      "updatedAtMs": 1772264844584,
+      "updatedAtMs": 1772351205958,
       "schedule": {
         "kind": "cron",
         "expr": "45 23 * * *"
@@ -55,15 +55,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772351100000,
-        "lastRunAtMs": 1772264700005,
-        "lastStatus": "error",
-        "lastDurationMs": 144579,
-        "consecutiveErrors": 1,
-        "lastRunStatus": "error",
+        "nextRunAtMs": 1772437500000,
+        "lastRunAtMs": 1772351100008,
+        "lastStatus": "ok",
+        "lastDurationMs": 105950,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
-        "lastDelivered": true,
-        "lastError": "Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config."
+        "lastDelivered": true
       }
     },
     {
@@ -73,7 +72,7 @@
       "name": "Dreammode Morning Debrief",
       "enabled": true,
       "createdAtMs": 1771457235161,
-      "updatedAtMs": 1772298690127,
+      "updatedAtMs": 1772385051893,
       "schedule": {
         "kind": "cron",
         "expr": "10 09 * * *"
@@ -90,10 +89,10 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1772385000000,
-        "lastRunAtMs": 1772298600008,
+        "nextRunAtMs": 1772471400000,
+        "lastRunAtMs": 1772385000007,
         "lastStatus": "ok",
-        "lastDurationMs": 90119,
+        "lastDurationMs": 51886,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -129,7 +128,8 @@
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
-        "lastDelivered": true
+        "lastDelivered": true,
+        "runningAtMs": 1772386200008
       }
     },
     {
@@ -167,7 +167,7 @@
       "name": "Daily Weather - Revelstoke BC",
       "enabled": true,
       "createdAtMs": 1772039398454,
-      "updatedAtMs": 1772298410931,
+      "updatedAtMs": 1772384801646,
       "schedule": {
         "kind": "cron",
         "expr": "05 09 * * *"
@@ -184,11 +184,11 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1772384700000,
-        "lastRunAtMs": 1772298300004,
+        "nextRunAtMs": 1772471100000,
+        "lastRunAtMs": 1772384700007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 110927,
+        "lastDurationMs": 101639,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -231,7 +231,7 @@
       "name": "OpenClaw Backup (evening)",
       "enabled": true,
       "createdAtMs": 1772040346146,
-      "updatedAtMs": 1772257609818,
+      "updatedAtMs": 1772344003660,
       "schedule": {
         "kind": "cron",
         "expr": "45 21 * * *"
@@ -248,14 +248,14 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1772343900000,
-        "lastRunAtMs": 1772257500009,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 109809,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 3,
-        "lastError": "cron announce delivery failed"
+        "nextRunAtMs": 1772430300000,
+        "lastRunAtMs": 1772343900007,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 103653,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     }
   ]

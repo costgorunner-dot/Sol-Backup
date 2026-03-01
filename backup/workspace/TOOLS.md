@@ -107,7 +107,9 @@ tags: [reference, environment, tts, cron, tools, config]
 - Task Continuity: Monitors incomplete tasks and follow-up items
 
 ### LLM Timeout Settings
-- **Current timeout:** 90 seconds
+- **Current timeout:** 180 seconds
 - **Config location:** `agents.defaults.timeoutSeconds`
-- **Why increased:** To handle SSH tunnel latency when using local Ollama (Kimi) through reverse tunnel
-- **Added:** February 22, 2026
+- **Why increased:** To handle SSH tunnel latency when using local Ollama (Kimi) through reverse tunnel, and to handle longer operations
+- **History:** 
+  - February 22, 2026: Increased to 90 seconds
+  - March 1, 2026: Increased to 180 seconds (timeout errors occurring)
