@@ -138,7 +138,7 @@
       "name": "Weekly Summary (Sunday evening)",
       "enabled": true,
       "createdAtMs": 1771629898820,
-      "updatedAtMs": 1771812105152,
+      "updatedAtMs": 1772416899207,
       "schedule": {
         "expr": "0 18 * * 0",
         "kind": "cron"
@@ -153,12 +153,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772416800000,
-        "lastRunAtMs": 1771812000007,
-        "lastStatus": "error",
-        "lastDurationMs": 105145,
-        "lastError": "cron announce delivery failed",
-        "consecutiveErrors": 1
+        "nextRunAtMs": 1773018000000,
+        "lastRunAtMs": 1772416800006,
+        "lastStatus": "ok",
+        "lastDurationMs": 99201,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered"
       }
     },
     {
@@ -198,7 +200,7 @@
       "name": "OpenClaw Backup (afternoon)",
       "enabled": true,
       "createdAtMs": 1772040344494,
-      "updatedAtMs": 1772320604777,
+      "updatedAtMs": 1772406946808,
       "schedule": {
         "kind": "cron",
         "expr": "15 15 * * *"
@@ -215,15 +217,14 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1772406900000,
-        "lastRunAtMs": 1772320500007,
+        "nextRunAtMs": 1772493300000,
+        "lastRunAtMs": 1772406900009,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 104770,
+        "lastDurationMs": 46799,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "lastDelivered": true,
-        "runningAtMs": 1772406900007
+        "lastDelivered": true
       }
     },
     {
@@ -255,7 +256,8 @@
         "lastDurationMs": 103653,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "lastDelivered": true
+        "lastDelivered": true,
+        "runningAtMs": 1772430300007
       }
     }
   ]
