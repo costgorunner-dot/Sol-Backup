@@ -73,21 +73,26 @@ create_backup() {
     log_info "Backing up memory..."
     if [ -d "$WORKSPACE_DIR/memory" ]; then
         cp -r "$WORKSPACE_DIR/memory"/* backup/memory/ 2>/dev/null || true
-        
-        # REDACT all API keys in memory files
-        log_info "Redacting sensitive data from memory files..."
-        find backup/memory -type f -name "*.md" -exec sed -i \
-            -e 's/sk-or-v1-[a-zA-Z0-9]*/INSERT_OPENROUTER_API_KEY_HERE/g' \
-            -e 's/tvly-dev-[a-zA-Z0-9]*/INSERT_TAVILY_API_KEY_HERE/g' \
-            -e 's/ghp_[a-zA-Z0-9]*/INSERT_GITHUB_TOKEN_HERE/g' \
-            -e 's/[a-f0-9]\{32\}\.klnF[A-Z0-9]*/INSERT_ZAI_API_KEY_HERE/g' \
-            {} \; 2>/dev/null || true
     fi
     
     # Backup workspace files
     log_info "Backing up workspace files..."
     cp "$WORKSPACE_DIR"/*.md backup/workspace/ 2>/dev/null || true
     cp "$WORKSPACE_DIR"/HEARTBEAT.md backup/workspace/ 2>/dev/null || true
+    
+    # REDACT all API keys in ALL markdown files (memory + workspace)
+    log_info "Redacting sensitive data from ALL files..."
+    find backup -type f \( -name "*.md" -o -name "*.json" \) -exec sed -i \
+        -e 's/sk-or-v1-[a-zA-Z0-9]*/[REDACTED_OPENROUTER_KEY]/g' \
+        -e 's/tvly-dev-[a-zA-Z0-9]*/[REDACTED_TAVILY_KEY]/g' \
+        -e 's/ghp_[a-zA-Z0-9]*/[REDACTED_GITHUB_TOKEN]/g' \
+        -e 's/[a-f0-9]\{32\}\.klnF[A-Z0-9]*/[REDACTED_ZAI_KEY]/g' \
+        -e 's/ck_[a-f0-9]\{32\}/[REDACTED_JOTTY_KEY]/g' \
+        -e 's/INSERT_OPENROUTER_API_KEY_HERE/[REDACTED_OPENROUTER_KEY]/g' \
+        -e 's/INSERT_TAVILY_API_KEY_HERE/[REDACTED_TAVILY_KEY]/g' \
+        -e 's/INSERT_GITHUB_TOKEN_HERE/[REDACTED_GITHUB_TOKEN]/g' \
+        -e 's/INSERT_ZAI_API_KEY_HERE/[REDACTED_ZAI_KEY]/g' \
+        {} \; 2>/dev/null || true
     
     # Backup config
     log_info "Backing up configuration..."

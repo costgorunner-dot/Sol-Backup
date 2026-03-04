@@ -108,8 +108,8 @@ tags: [reference, environment, tts, cron, tools, config]
 
 ### Jotty API (Local via Reverse SSH)
 - **Endpoint:** http://127.0.0.1:18788
-- **API Key:** ck_2de9a10f22165d05814d06045319e9d2
-- **Header:** `x-api-key: ck_2de9a10f22165d05814d06045319e9d2`
+- **API Key:** REDACTED
+- **Header:** `x-api-key: REDACTED`
 - **Status:** ⏸ ON HOLD (Mar 1, 2026) - SSH tunnel down, ready to restart when needed
 - **Endpoints:**
   - Health: `/api/health` → `{"status":"healthy","version":"1.20.0"}`
