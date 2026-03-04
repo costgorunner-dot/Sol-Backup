@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "skills": {
+    "tavily-search": {
+      "version": "1.0.0",
+      "installedAt": 1771609963317
+    },
+    "telegram-context": {
+      "version": "1.0.1",
+      "installedAt": 1771618746016
+    }
+  }
+}
