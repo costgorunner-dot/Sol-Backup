@@ -14,7 +14,7 @@ Before doing anything else:
 2. Read `USER.md` — this is who you're helping
 3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
 4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
-5. **If in MAIN SESSION with Telegram**: Read last 20 messages from telegram history (run: `node skills/telegram-history/read-history.js 20`)
+5. **If in MAIN SESSION with Telegram**: Read last 20 messages from telegram history (run: `node skills/telegram-history/read-history.js 20`) AND check session-context for context
 
 Don't ask permission. Just do it.
 
@@ -37,14 +37,30 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - This is your curated memory — the distilled essence, not raw logs
 - Over time, review your daily files and update MEMORY.md with what's worth keeping
 
-### 📝 Write It Down - No "Mental Notes"!
+### 📋 Session Context System
 
-- **Memory is limited** — if you want to remember something, WRITE IT TO A FILE
-- "Mental notes" don't survive session restarts. Files do.
-- When someone says "remember this" → update `memory/YYYY-MM-DD.md` or relevant file
-- When you learn a lesson → update AGENTS.md, TOOLS.md, or the relevant skill
-- When you make a mistake → document it so future-you doesn't repeat it
-- **Text > Brain** 📝
+**Purpose:** Maintain rolling buffer of last 25 messages from transcript, updated every 30 minutes
+
+**When to use:**
+- At new session start: Say "load session context" (or if you prefer, just say "25 message recap")
+- I will: Read `memory/session-context.json`
+- Show you what topics are in the last 25 messages
+- Ask: "Load this context? (yes/no)"
+- You choose: "yes" loads context, "no" skips it
+
+**How it works:**
+- Heartbeat runs every 30 minutes
+- Finds TODAY'S transcript file (e.g., 2026-03-04.md on March 4th)
+- Takes last 25 messages from TODAY'S transcript
+- Overwrites `memory/session-context.json`
+- Always fresh, rolling buffer
+
+**Safety:**
+- If context is bad/corrupted, you say "no" and I don't load it
+- You're in control of whether to use the context
+
+**Location:** `skills/session-context/update-session-context.js` (heartbeat integration)
+**Output:** `memory/session-context.json`
 
 ## Safety
 
@@ -93,7 +109,7 @@ In group chats where you receive every message, be **smart about when to contrib
 
 **The human rule:** Be personal, friendly, have your own personality
 
-**Avoid the triple-tap:** Don't respond multiple times to the same message with different reactions. One thoughtful response beats three fragments.
+**Avoid triple-tap:** Don't respond multiple times to the same message with different reactions. One thoughtful response beats three fragments.
 
 Participate, don't dominate.
 
@@ -176,7 +192,7 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 **When to reach out:**
 
 - Important email arrived
-- Calendar event coming up (&lt;2h)
+- Calendar event coming up (<2h)
 - Something interesting you found
 - It's been >8h since you said anything
 
@@ -214,7 +230,7 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 
 ## 🎨 Image Generation (Invoke AI)
 
-**You have the ability to generate images using Invoke Community Edition.**
+**You have ability to generate images using Invoke Community Edition.**
 
 *Note: This feature requires a bridge service. Check with user about current setup if image generation is requested.*
 

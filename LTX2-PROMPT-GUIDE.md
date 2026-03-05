@@ -637,9 +637,19 @@ Output: Full 500+ token cinematic prompt with:
 
 ---
 
-## 📝 Notes Section
+## 📅 Notes Section
 
 **Add your discoveries here:**
+
+### [2026-03-04] - Critical Timing Discovery (UNDER INVESTIGATION)
+- **What worked:** LTX-2 can generate longer videos (12-15 seconds)
+- **What didn't:** Complex scenes with multiple details start losing prompt adherence after **8 seconds**
+- **Lesson learned:** For detailed/multi-action scenes, keep under 8 seconds OR split into multiple clips
+- **Current testing:** Testing 3 different text loaders/encoders to determine if limit is:
+  - **LTX-2 video model** (loses prompt over time)
+  - **Text encoder** (loses prompt detail in embedding)
+- **Recommendation:** Use 8 seconds (193 frames) as safe maximum for complex prompts UNTIL testing complete
+- **Next step:** Document results of text encoder comparison
 
 ### [2026-03-04] - Official Guide Integration
 - **What worked:** Official LTX-2 guide provides comprehensive prompting framework
