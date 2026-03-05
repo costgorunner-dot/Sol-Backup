@@ -2,9 +2,9 @@
 
 This folder is home. Treat it that way.
 
-## First Run
+## First Rununt
 
-If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then delete it. You won't need it again.
+If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, Then delete it. You won't need it again.
 
 ## Every Session
 
@@ -14,7 +14,7 @@ Before doing anything else:
 2. Read `USER.md` — this is who you're helping
 3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
 4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
-5. **If in MAIN SESSION with Telegram**: Read last 20 messages from telegram history (run: `node skills/telegram-history/read-history.js 20`) AND check session-context for context
+5. **If in MAIN SESSION with Telegram**: Read last 20 messages from telegram history (run: `node skills/telegram-history/read-history.js 20`)
 
 Don't ask permission. Just do it.
 
@@ -37,30 +37,14 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - This is your curated memory — the distilled essence, not raw logs
 - Over time, review your daily files and update MEMORY.md with what's worth keeping
 
-### 📋 Session Context System
+### 📋 Write It Down - No "Mental Notes"!
 
-**Purpose:** Maintain rolling buffer of last 25 messages from transcript, updated every 30 minutes
-
-**When to use:**
-- At new session start: Say "load session context" (or if you prefer, just say "25 message recap")
-- I will: Read `memory/session-context.json`
-- Show you what topics are in the last 25 messages
-- Ask: "Load this context? (yes/no)"
-- You choose: "yes" loads context, "no" skips it
-
-**How it works:**
-- Heartbeat runs every 30 minutes
-- Finds TODAY'S transcript file (e.g., 2026-03-04.md on March 4th)
-- Takes last 25 messages from TODAY'S transcript
-- Overwrites `memory/session-context.json`
-- Always fresh, rolling buffer
-
-**Safety:**
-- If context is bad/corrupted, you say "no" and I don't load it
-- You're in control of whether to use the context
-
-**Location:** `skills/session-context/update-session-context.js` (heartbeat integration)
-**Output:** `memory/session-context.json`
+- **Memory is limited** — if you want to remember something, WRITE IT TO A FILE
+- "Mental notes" don't survive session restarts. Files do.
+- When someone says "remember this" → update `memory/YYYY-MM-DD.md` or relevant file
+- When you learn a lesson → update AGENTS.md, TOOLS.md, or the relevant skill
+- When you make a mistake → document it so future-you doesn't repeat it
+- **Text > Brain** 📝
 
 ## Safety
 

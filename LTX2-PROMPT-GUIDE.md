@@ -53,10 +53,26 @@ Astra walking through ancient forest, blue translucent legs shimmering, silver d
 - "Gradually changes from day to night" ❌ (less effective)
 
 ### Camera Movements
+
+**Basic Movements:**
 - "Slow zoom in"
 - "Camera pans left to right"
 - "Tracking shot following character"
 - "Static shot" (for simple scenes)
+
+**Panning/Zooming Out Terminology:**
+- **"Dolly out"** or **"Dolly back"** - Physically moves camera backward from subject
+- **"Pull back"** - Common term for moving backward, reveals more of scene
+- **"Camera pulls back to reveal..."** - Start close, end wide shot
+- **"Zoom out"** - Camera stationary, reduces focal length
+- **"Crane up and over"** or **"Descends from above"** - Vertical high-angle shots moving away
+
+**Usage Examples:**
+```
+"Camera slowly pulls back to reveal ancient ruins behind Astra"
+"Dolly out from close-up on her face to full body shot"
+"Crane up and over the cliff edge, revealing vast valley below"
+```
 
 ---
 
