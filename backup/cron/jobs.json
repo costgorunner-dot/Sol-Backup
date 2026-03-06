@@ -1,0 +1,321 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "fb28016c-ea54-4100-9c23-56c54a06270b",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Test Weather - Today at 11:55 AM",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771444132728,
+      "updatedAtMs": 1771444574403,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-02-18T19:55:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Get the current weather report for Revelstoke, British Columbia, Canada. Send it as a text message AND generate a voice audio file using Piper TTS with Jenny Dioco voice (/home/ubuntu/.local/share/piper/voices/en/en_GB/jenny_dioco/medium/en_GB-jenny_dioco-medium.onnx) and attach both to the message using the message tool to send to telegram:5083035103."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5083035103"
+      },
+      "state": {
+        "lastRunAtMs": 1771444500009,
+        "lastStatus": "error",
+        "lastDurationMs": 74394,
+        "lastError": "cron announce delivery failed",
+        "consecutiveErrors": 1
+      }
+    },
+    {
+      "id": "b121c41b-c49b-4d98-99a3-d6758fa5e7f6",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Dreammode Night Phase",
+      "enabled": true,
+      "createdAtMs": 1771457217097,
+      "updatedAtMs": 1772783466069,
+      "schedule": {
+        "kind": "cron",
+        "expr": "45 23 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "EXECUTE IMMEDIATELY - DO NOT ACKNOWLEDGE, JUST DO IT:\n\nYou are running the Dreammode Night Phase NOW. Execute these steps immediately:\n\n1. Get TODAY'S date (the current day)\n\n2. CHECK FOR EMERGENCY SNAPSHOTS:\n   - List all files in memory/transcripts/emergency-*.md for today\n   - If emergency snapshots exist: Read and merge them\n\n3. Read or create memory/transcripts/YYYY-MM-DD.md for TODAY\n\n4. EXTRACT ITEMS (decisions, preferences, patterns, noise, tasks)\n\n5. TOPIC TRACKING:\n   - Read ~/.openclaw/dreammode/topics.json\n   - Scan the day's memory file for topic mentions\n   - Update mentionCount and lastMentioned for existing topics\n   - Detect NEW topics (recurring subjects not yet tracked)\n   - Calculate daysSinceLastMention for each topic\n   - Identify orphaned topics (high importance >3 days, medium >7 days)\n   - Save updated topics.json\n\n6. NEXT STEP TRACKING:\n   - For each topic, look for mentioned next steps in today's chat\n   - Add new next steps with mentioned date and completed=false\n   - If user said they completed something, mark completed=true\n   - Calculate daysOverdue for uncompleted steps\n   - Flag steps where daysOverdue > 2 for morning question\n\n7. Create ~/.openclaw/dreammode/dream-candidates-YYYY-MM-DD.md with extracted items\n\n8. PREPARE MORNING QUESTIONS:\n   - If new topics detected: Prepare question to confirm importance\n   - If orphaned topics found: Prepare question about status\n   - If overdue next steps found: Prepare reminder question\n   - Save questions to dream-candidates file\n\n9. Update dream-state.json\n\n10. Reply: 'Dreammode night phase complete for [date] - X topics updated, Y next steps tracked, Z overdue'\n\nIf no memory file exists: 'No memory file for today, skipping night phase'\n\nIMPORTANT: Execute all steps NOW. Do not say 'I will run' or 'I'll do it' - just do it.",
+        "timeoutSeconds": 600
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1772869500000,
+        "lastRunAtMs": 1772783100008,
+        "lastStatus": "ok",
+        "lastDurationMs": 366061,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDeliveryStatus": "delivered",
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "394a77ab-7d52-4cbe-b142-06bd9b8bab53",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Dreammode Morning Debrief",
+      "enabled": true,
+      "createdAtMs": 1771457235161,
+      "updatedAtMs": 1772817072028,
+      "schedule": {
+        "kind": "cron",
+        "expr": "10 09 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "DREAMMODE MORNING DEBRIEF:\n\n1. Read ~/.openclaw/dreammode/dream-state.json\n2. Get yesterday's date\n3. Read dream-candidates-YYYY-MM-DD.md\n4. Read topics.json to get next steps status\n\n5. FORMAT AND SEND DEBRIEF to telegram:5083035103:\n\n🌙 Dreammode Debrief - [Date]\n\n📝 Extracted Items:\n1. [Item] - [Brief description]\n2. [Item] - [Brief description]\n\n📂 Topics Updated:\n• [Topic name] - [Status] (X mentions)\n\n⚠️ Next Steps to Check On:\n• [Topic]: [Next step action] - mentioned X days ago\n  → Did this happen?\n\n🤔 Questions for You:\n[Question about new topics, relationships, or status]\n\nReply with:\n• 'Keep #1, #2' - Move to MEMORY.md\n• 'Delete #1' - Remove permanently  \n• 'Topic answer: [your answer]' - Update topic tracking\n• 'Done: [step]' - Mark a next step complete\n\n6. Update dream-state.json\n\nIf no candidates file: 'No dreammode candidates for yesterday'"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5083035103"
+      },
+      "state": {
+        "nextRunAtMs": 1772903400000,
+        "lastRunAtMs": 1772817000007,
+        "lastStatus": "ok",
+        "lastDurationMs": 72021,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered"
+      }
+    },
+    {
+      "id": "a6b57952-55cc-4138-a3a7-655dfc133935",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "OpenClaw Backup (daily after debrief)",
+      "enabled": true,
+      "createdAtMs": 1771629134551,
+      "updatedAtMs": 1772731843132,
+      "schedule": {
+        "expr": "30 9 * * *",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run the OpenClaw backup script:\n\n1. Execute: bash /home/ubuntu/.openclaw/workspace/skills/openclaw-backup/scripts/backup.sh\n2. Report if backup succeeded or failed\n3. Include link to GitHub repository\n\nIf backup fails, explain what went wrong."
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1772818200000,
+        "lastRunAtMs": 1772731800009,
+        "lastStatus": "ok",
+        "lastDurationMs": 43123,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDeliveryStatus": "delivered",
+        "lastDelivered": true,
+        "runningAtMs": 1772818200006
+      }
+    },
+    {
+      "id": "b51bcfc7-a312-44e9-ae61-5e0c1e5349db",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Weekly Summary (Sunday evening)",
+      "enabled": true,
+      "createdAtMs": 1771629898820,
+      "updatedAtMs": 1772416899207,
+      "schedule": {
+        "expr": "0 18 * * 0",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "WEEKLY SUMMARY - Sunday Review:\n\n1. Review the past week's accomplishments:\n   - Read memory/transcripts/ files for the last 7 days\n   - Identify key decisions made\n   - Note patterns and improvements\n   - List completed projects/tasks\n\n2. Create weekly summary file:\n   - File: memory/weekly/2026-WXX.md\n   - Include: Key accomplishments, decisions, patterns, next week focus\n\n3. Provide summary to user:\n   - Brief overview of the week\n   - Highlights and achievements\n   - Any recommendations for next week\n\nKeep it concise and actionable. Focus on what matters."
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1773018000000,
+        "lastRunAtMs": 1772416800006,
+        "lastStatus": "ok",
+        "lastDurationMs": 99201,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered"
+      }
+    },
+    {
+      "id": "0e2c6272-96ff-47f4-90d6-beb4cc0a47ce",
+      "name": "Daily Weather - Revelstoke BC",
+      "enabled": true,
+      "createdAtMs": 1772039398454,
+      "updatedAtMs": 1772816770341,
+      "schedule": {
+        "kind": "cron",
+        "expr": "05 09 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Morning weather report for Revelstoke, BC with 3-day forecast.\n\n1. Get current weather using curl (try wttr.in first, fallback to Open-Meteo if slow):\n   - Current temp, feels like, conditions, wind\n   - Use --max-time 10 to avoid timeouts\n\n2. Get 3-day forecast:\n   - High/low temps\n   - Conditions for each day\n   - Any precipitation expected\n\n3. Format a friendly summary like:\n   ☀️ Good morning! Current: [temp], [conditions]\n   📅 Today: [forecast]\n   📅 Tomorrow: [forecast]\n   📅 Day after: [forecast]\n\n4. Generate voice audio using tts tool (Edge TTS built-in)\n\n5. Send BOTH text summary AND voice audio to telegram:5083035103\n\nKeep total runtime under 90 seconds. Skip voice if needed to stay fast."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5083035103"
+      },
+      "state": {
+        "nextRunAtMs": 1772903100000,
+        "lastRunAtMs": 1772816700009,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 70332,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "32f32fc0-f0ca-461b-a7fa-ca62b4d030b6",
+      "name": "OpenClaw Backup (afternoon)",
+      "enabled": true,
+      "createdAtMs": 1772040344494,
+      "updatedAtMs": 1772752551491,
+      "schedule": {
+        "kind": "cron",
+        "expr": "15 15 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run OpenClaw backup to GitHub.\n\n1. Run the backup skill to commit and push to GitHub\n2. Report what was backed up\n\nKeep it quick - this is a safety net backup mid-day."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5083035103"
+      },
+      "state": {
+        "nextRunAtMs": 1772838900000,
+        "lastRunAtMs": 1772752500006,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 51485,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "1317ab19-f440-45d7-afcf-02cad349e28d",
+      "name": "OpenClaw Backup (evening)",
+      "enabled": true,
+      "createdAtMs": 1772040346146,
+      "updatedAtMs": 1772775971329,
+      "schedule": {
+        "kind": "cron",
+        "expr": "45 21 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run OpenClaw backup to GitHub.\n\n1. Run the backup skill to commit and push to GitHub\n2. Report what was backed up\n\nKeep it quick - this is an end-of-day safety backup."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5083035103"
+      },
+      "state": {
+        "nextRunAtMs": 1772862300000,
+        "lastRunAtMs": 1772775900006,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 71323,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "b544f0ee-c104-4cf4-bd36-7f9dacc136f3",
+      "name": "Pre-Redaction (morning)",
+      "description": "Redact API keys 10 minutes before morning backup",
+      "enabled": true,
+      "createdAtMs": 1772605887744,
+      "updatedAtMs": 1772817618708,
+      "schedule": {
+        "kind": "cron",
+        "expr": "20 9 * * *",
+        "tz": "America/Vancouver"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "bash /home/ubuntu/.openclaw/workspace/skills/openclaw-backup/scripts/pre-redact.sh"
+      },
+      "state": {
+        "nextRunAtMs": 1772904000000,
+        "lastRunAtMs": 1772817600012,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 18696,
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "231f018f-4d69-4662-b5c7-5458cec550d3",
+      "name": "Dreammode Pre-Check",
+      "description": "Checks context at 8PM - runs Dreammode early if >75% to prevent compaction loss",
+      "enabled": true,
+      "createdAtMs": 1772646828894,
+      "updatedAtMs": 1772769622955,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 20 * * *",
+        "staggerMs": 0
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "node /home/ubuntu/.openclaw/workspace/skills/dreammode/smart-dreammode.js"
+      },
+      "state": {
+        "nextRunAtMs": 1772856000000,
+        "lastRunAtMs": 1772769600005,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 22950,
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 0
+      }
+    }
+  ]
+}

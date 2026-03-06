@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "tavily": {
-      "baseUrl": "https://api.tavily.com"
-    }
-  },
-  "imports": []
-}

@@ -60,6 +60,81 @@ tags: [comfyui, ltx-2, video-generation, prompts, reference]
 
 ---
 
+## 🎨 IP-Adapter for Character Consistency
+
+**What it is:** Image Prompt Adapter - uses reference images to maintain character consistency across shots
+
+### **Why You Need It:**
+- ✅ Keep Astra looking the same in every scene
+- ✅ Character consistency across multiple videos
+- ✅ Less re-rolling to match previous shots
+- ✅ Professional quality continuity
+
+### **Installation:**
+
+**Method 1: ComfyUI Manager (Recommended)**
+1. Open ComfyUI Manager
+2. Search for "IPAdapter"
+3. Install "ComfyUI_IPAdapter_plus"
+
+**Method 2: Manual Install**
+```bash
+cd ComfyUI/custom_nodes/
+git clone https://github.com/cubiq/ComfyUI_IPAdapter_plus
+```
+
+### **Required Models:**
+
+**1. CLIP Vision Encoder** (Download to `ComfyUI/models/clip_vision/`):
+- **CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors** (Standard)
+- **CLIP-ViT-bigG-14-laion2B-39B-b160k.safetensors** (Better quality)
+
+**Download:** https://huggingface.co/h94/IP-Adapter/tree/main/models/image_encoder
+
+**2. IPAdapter Models** (Download to `ComfyUI/models/ipadapter/`):
+
+**For Character Consistency:**
+- **ip-adapter-plus_sd15.safetensors** - Very strong, best for characters
+- **ip-adapter-plus-face_sd15.safetensors** - For faces/portraits
+
+**For Style Transfer:**
+- **ip-adapter_sd15.safetensors** - Basic, average strength
+- **ip-adapter_sd15_light_v11.bin** - Light impact
+
+**Download:** https://huggingface.co/h94/IP-Adapter/tree/main/models
+
+### **How to Use:**
+
+**Basic Workflow:**
+1. Load **IPAdapter Model** node
+2. Load **CLIP Vision** node
+3. Load your **Astra reference image**
+4. Connect to **IPAdapter Apply** node
+5. Set **weight: 0.8-1.0** (start at 0.8, increase if needed)
+6. Generate video with your prompt
+
+**Tips:**
+- Lower weight (0.8) = more prompt adherence
+- Higher weight (1.0) = more reference image adherence
+- Use multiple reference images for better consistency
+- Works best with 20+ steps
+
+### **For Astra Videos:**
+
+**Setup:**
+1. Prepare 3-5 best Astra images (same style/lighting)
+2. Use **ip-adapter-plus_sd15** model
+3. Weight: 0.85-0.95
+4. Steps: 25-30
+
+**Expected Results:**
+- ✅ Consistent blue translucent legs
+- ✅ Same silver dress appearance
+- ✅ Matching character across all scenes
+- ✅ Less variation between shots
+
+---
+
 ## ✅ What Works
 
 ### Positive Prompt Structure
