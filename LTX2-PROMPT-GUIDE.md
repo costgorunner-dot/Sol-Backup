@@ -35,6 +35,31 @@ tags: [comfyui, ltx-2, video-generation, prompts, reference]
 
 ---
 
+## 🤖 Model Choices
+
+### LTX-2 Model Variants
+
+**Distilled Model (Fast):**
+- **Speed:** Faster generation
+- **Quality:** Good, but can have "AI-ish" artifacts
+- **Steps:** 8-15 steps
+- **VRAM:** Lower requirements
+- **Trade-off:** Speed over quality
+
+**19B Dev GGUF Q6/Q8 (Recommended for Quality):**
+- **Quality:** Better prompt adherence, more natural outputs
+- **Less "AI-ish":** More organic, realistic results
+- **Steps:** 20-40 steps (slower)
+- **VRAM:** Fits limited VRAM with GGUF format
+- **Best for:** Final renders, quality work
+- **Trade-off:** Quality over speed
+
+**Recommendation:**
+- **Quick tests/iterations:** Use distilled model
+- **Final renders:** Use 19B Dev GGUF Q6/Q8
+
+---
+
 ## ✅ What Works
 
 ### Positive Prompt Structure
@@ -54,25 +79,83 @@ Astra walking through ancient forest, blue translucent legs shimmering, silver d
 
 ### Camera Movements
 
-**Basic Movements:**
-- "Slow zoom in"
-- "Camera pans left to right"
-- "Tracking shot following character"
-- "Static shot" (for simple scenes)
+**Common Camera Movements (Text-to-Video & I2V):**
 
-**Panning/Zooming Out Terminology:**
-- **"Dolly out"** or **"Dolly back"** - Physically moves camera backward from subject
-- **"Pull back"** - Common term for moving backward, reveals more of scene
-- **"Camera pulls back to reveal..."** - Start close, end wide shot
-- **"Zoom out"** - Camera stationary, reduces focal length
-- **"Crane up and over"** or **"Descends from above"** - Vertical high-angle shots moving away
+**Static/Subtle:**
+```
+"A quiet city street at dusk, neon signs reflecting on wet pavement, light drizzle, camera locked with small micro-movements, cinematic but understated"
+```
 
-**Usage Examples:**
+**Pan/Tilt:**
 ```
-"Camera slowly pulls back to reveal ancient ruins behind Astra"
-"Dolly out from close-up on her face to full body shot"
-"Crane up and over the cliff edge, revealing vast valley below"
+"A wide shot of a bustling marketplace, slow pan left revealing a street food vendor, golden hour lighting"
 ```
+
+**Dolly/Push-In:**
+```
+"An explorer treks through a dense rainforest, camera glides in a low-angle slow tracking shot from the side-rear, following his steady pace"
+```
+
+**Zoom/Drone:**
+```
+"Slow aerial drone shot descending from a cloudy sky, revealing a secluded cabin nestled in pine trees, cinematic"
+```
+
+**Action Tracking:**
+```
+"Camera tracks alongside a sleek futuristic car speeding through a neon-lit city, low angle, high speed, natural motion blur"
+```
+
+**Scene-Specific Camera Prompts:**
+
+**Product/Macro:**
+```
+"A simple ceramic mug on a wooden desk, soft morning window light, shallow depth of field, slow parallax left to right"
+```
+
+**Portrait/Close-up:**
+```
+"Extreme close-up on weathered hands, 180° shutter equivalent, moody lighting, slow, subtle pull-back"
+```
+
+**Landscape/Wide:**
+```
+"Wide shot from across the street, slow crane shot rising up and over the apartment building, overcast lighting"
+```
+
+**Basic Terminology:**
+- **"Dolly out/back"** - Moves camera backward from subject
+- **"Pull back"** - Reveals more of the scene
+- **"Camera pulls back to reveal..."** - Start close, end wide
+- **"Zoom out"** - Stationary camera, reduces focal length
+- **"Crane up and over"** or **"Descends from above"** - Vertical high-angle shots
+
+---
+
+### Tips for Better Camera Control
+
+**1. Use Camera LoRAs:**
+- Use official Lightricks camera LoRAs for precise movements
+
+**2. Order Matters:**
+- Describe **background → subject → camera motion**
+- Ensures AI interprets frame correctly
+
+**3. Frame-Aware Pacing:**
+- Structure prompt to fit duration
+- Don't cram too many actions into 5-second clip
+- Too much action = bad physics, jerky movement
+
+**4. "Static" Camera Challenges:**
+- If camera refuses to move:
+  - Increase weight of motion keyword
+  - Use "first frame" and "last frame" conditions in I2V workflow
+
+**5. Negative Prompts (CAUTION):**
+```
+"worst quality, inconsistent motion, blurry, jittery, distorted, watermarks"
+```
+**⚠️ WARNING:** Distilled LTX-2 may break with negative prompts (causes artifacts). Use with caution or avoid entirely.
 
 ---
 
