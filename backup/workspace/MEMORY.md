@@ -1,7 +1,7 @@
 ---
 date: 2026-02-19
 tags: [identity, preferences, long-term, system-config, dreammode-active]
-last-updated: 2026-02-24
+last-updated: 2026-03-07
 ---
 
 # MEMORY.md - Your Long-Term Memory
@@ -31,8 +31,8 @@ last-updated: 2026-02-24
 
 ### System Setup
 - OpenClaw installed on Linux (AWS EC2)
-- **Current Version:** 2026.2.23 (updated Feb 24, 2026)
-- ⚠️ **CRITICAL: DO NOT UPDATE** - Disk space too limited (~1.1GB free), updates cause crashes
+- **Current Version:** 2026.3.2 (updated Mar 6, 2026)
+- **Update Note:** Local AI found disk space workaround - updates now possible
 - Piper TTS for fully offline voice synthesis
 - Daily weather report configured for Revelstoke BC at 9:05 AM
 - Telegram bot connected (@AstraCCI_bot)
@@ -121,7 +121,7 @@ last-updated: 2026-02-24
 - ❌ Don't change config without being asked
 - ❌ Don't add API keys to config files — use credentials folder
 - ❌ Don't assume "for now" means "leave it alone"
-- ❌ **NEVER attempt OpenClaw updates** - system cannot accommodate (Feb 21, 2026)
+- ✅ **Updates now possible** - Local AI found disk space workaround (Mar 6, 2026)
 - ✅ Check both global AND session config when troubleshooting models
 - ✅ Proactively suggest inline buttons when they improve UX
 - ✅ **When setting timezone on Linux, verify BOTH `/etc/timezone` AND `/etc/localtime`** (Feb 21, 2026)
@@ -240,7 +240,14 @@ last-updated: 2026-02-24
 - User added new GLM API key to help with cooldown issues
 - Morning debrief confirmed good
 - No more duplicate messages
-- **Current version:** OpenClaw 2026.2.23
+
+### Mar 6 - System Maintenance Day
+- **Context Bloat Fixed:** Telegram History double-logging was the root cause - disabled
+- **Compaction Fixed:** Switched from "safeguard" mode (broken - appended summaries) to "default" (actually removes old content)
+- **OpenClaw Updated to 2026.3.2:** Local AI found disk space workaround, successful upgrade
+- **"So It Folds, So It Flows":** Philosophy reinforced - fix one problem → unlocks ability to fix another → upgrade everything
+- **System Priority:** User stayed up past bedtime to ensure system was healthy before sleeping
+- **Cron Jobs Verified:** All survived the update intact
 
 ### Mar 1 - Jotty & Wiki.js Exploration
 - **Jotty Tested:** Installed via reverse SSH tunnel, working API, created Sol user account

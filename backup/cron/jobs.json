@@ -40,7 +40,7 @@
       "name": "Dreammode Night Phase",
       "enabled": true,
       "createdAtMs": 1771457217097,
-      "updatedAtMs": 1772783466069,
+      "updatedAtMs": 1772869607864,
       "schedule": {
         "kind": "cron",
         "expr": "45 23 * * *"
@@ -56,14 +56,16 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772869500000,
-        "lastRunAtMs": 1772783100008,
+        "nextRunAtMs": 1772955900000,
+        "lastRunAtMs": 1772869500006,
         "lastStatus": "ok",
-        "lastDurationMs": 366061,
+        "lastDurationMs": 107858,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
-        "lastDeliveryStatus": "delivered",
-        "lastDelivered": true
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "lastError": "cron announce delivery failed",
+        "lastDeliveryError": "cron announce delivery failed"
       }
     },
     {
@@ -73,7 +75,7 @@
       "name": "Dreammode Morning Debrief",
       "enabled": true,
       "createdAtMs": 1771457235161,
-      "updatedAtMs": 1772817072028,
+      "updatedAtMs": 1772903448683,
       "schedule": {
         "kind": "cron",
         "expr": "10 09 * * *"
@@ -90,10 +92,10 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1772903400000,
-        "lastRunAtMs": 1772817000007,
+        "nextRunAtMs": 1772986200000,
+        "lastRunAtMs": 1772903400006,
         "lastStatus": "ok",
-        "lastDurationMs": 72021,
+        "lastDurationMs": 48677,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -129,7 +131,8 @@
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
-        "lastDelivered": true
+        "lastDelivered": true,
+        "runningAtMs": 1772904600005
       }
     },
     {
@@ -169,7 +172,7 @@
       "name": "Daily Weather - Revelstoke BC",
       "enabled": true,
       "createdAtMs": 1772039398454,
-      "updatedAtMs": 1772816770341,
+      "updatedAtMs": 1772903157879,
       "schedule": {
         "kind": "cron",
         "expr": "05 09 * * *"
@@ -186,11 +189,11 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1772903100000,
-        "lastRunAtMs": 1772816700009,
+        "nextRunAtMs": 1772985900000,
+        "lastRunAtMs": 1772903100006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 70332,
+        "lastDurationMs": 57873,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -233,7 +236,7 @@
       "name": "OpenClaw Backup (evening)",
       "enabled": true,
       "createdAtMs": 1772040346146,
-      "updatedAtMs": 1772775971329,
+      "updatedAtMs": 1772862335901,
       "schedule": {
         "kind": "cron",
         "expr": "45 21 * * *"
@@ -250,15 +253,14 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1772862300000,
-        "lastRunAtMs": 1772775900006,
+        "nextRunAtMs": 1772948700000,
+        "lastRunAtMs": 1772862300008,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 71323,
+        "lastDurationMs": 35893,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "lastDelivered": true,
-        "runningAtMs": 1772862300006
+        "lastDelivered": true
       }
     },
     {
@@ -267,7 +269,7 @@
       "description": "Redact API keys 10 minutes before morning backup",
       "enabled": true,
       "createdAtMs": 1772605887744,
-      "updatedAtMs": 1772817618708,
+      "updatedAtMs": 1772904010311,
       "schedule": {
         "kind": "cron",
         "expr": "20 9 * * *",
@@ -280,11 +282,11 @@
         "text": "bash /home/ubuntu/.openclaw/workspace/skills/openclaw-backup/scripts/pre-redact.sh"
       },
       "state": {
-        "nextRunAtMs": 1772904000000,
-        "lastRunAtMs": 1772817600012,
+        "nextRunAtMs": 1772986800000,
+        "lastRunAtMs": 1772904000007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 18696,
+        "lastDurationMs": 10304,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }
