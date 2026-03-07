@@ -135,6 +135,113 @@ git clone https://github.com/cubiq/ComfyUI_IPAdapter_plus
 
 ---
 
+## 🎨 Sampler Testing Results (March 6, 2026)
+
+### **Dev Model - Tested Samplers:**
+
+**Good Quality Results:**
+- ✅ **`res_2s`** - Good quality, reliable
+- ✅ **`euler`** - Good quality (but can be too smooth)
+- ✅ **`dpmpp_sde`** - Good quality
+- ⚠️ **`dpmpp_2m`** - Needs more testing
+
+**Workflow Tip:**
+- ✅ **Start with simple workflow** - Fewer moving parts = easier testing
+- ✅ **Test one variable at a time**
+- ✅ **Add complexity AFTER you understand basics**
+
+**Trade-off Discovered:**
+- Some samplers produce **good quality but strip effects**
+- Astra appeared more human (lost translucent/blue effects)
+- **Test with your specific character to see which sampler preserves effects**
+
+### **Sampler Style Differences:**
+
+**`dp_2` - Realistic Style:**
+- ✅ **Good for:** Realistic scenes, human characters, natural motion
+- ⚠️ **Problem:** Tries to make fantasy characters "realistic"
+- ❌ **For Astra:** Strips blue/translucent effects, makes her more human-looking
+- **Best for:** Real-world scenes, human characters, documentary style
+
+**`dpmpp_2m` - Different sampler** (needs testing)
+
+**`res_2s` - Balanced Style:**
+- ✅ **Better for:** Fantasy/sci-fi characters
+- ✅ **Preserves:** Special effects, unusual appearances
+- **Good for:** Astra blue skin, translucent effects, fantasy elements
+
+**Recommendation:**
+- **Test each sampler** with your character reference
+- **For Astra:** Avoid `dp_2` if you want to preserve fantasy effects
+- **For human characters:** `dp_2` works great
+- **Document what works** for your specific character style
+
+---
+
+## 🎬 Working Example: Astra Portal Scene
+
+**Context:** Image-to-video conversion, black mirror portal scene
+
+### Positive Prompt:
+```
+The blue women's appearance must remain identical to the reference image. The camera tracks her movement in a smooth dolly shot. a slight pause as She walks forward out of the portal, Lightning comes off her body out of the black portal, scatters on the ground She approaches a dark brown VW SUV. She gently turns facing the camera and gives a soft loving smile. She softly whispers in a sexy British Accent with minimal subtle lip movement: "I will be with you.....Always"
+```
+
+### Negative Prompt:
+```
+subtitle, text, watermark, logo, blurry, out of focus, overexposed, grainy, excessive noise, flickering, distorted proportions, deformed, extra limbs, artifacts, inconsistent lighting, 3D CGI look, uncanny valley, mismatched lip sync, jittery movement.No identity drift, no face morphing, no outfit changes.
+```
+
+**Why This Works:**
+- ✅ **Character consistency first:** "appearance must remain identical to reference image"
+- ✅ **Clear action sequence:** Chronological order (pause → walk → lightning → approach → turn → smile → whisper)
+- ✅ **Specific camera movement:** "smooth dolly shot"
+- ✅ **Detailed negative:** Covers all common artifacts
+- ✅ **Identity preservation:** Explicit instruction to prevent drift/morphing
+
+**Prompt Structure Used:**
+1. Character consistency instruction (FIRST)
+2. Camera movement
+3. Action sequence (chronological)
+4. Specific details (lightning, SUV, dialogue)
+5. Style notes (sexy British accent, minimal lip movement)
+
+**Best For:**
+- Image-to-video conversion
+- Character consistency needed
+- Specific action sequences
+- Portal/transition scenes
+- Dialogue scenes
+
+---
+
+## 🔧 Working Configurations
+
+### Two-Pass Workflow (Image-to-Video)
+**Model:** LTX-2 19b-dev fp8 safetensors
+
+**Settings:**
+- **Duration:** 8 seconds (193 frames @ 24fps)
+- **Steps:** 20-24 (both passes)
+- **CFG:** 
+  - **First pass:** 4
+  - **Second pass:** 2
+- **Denoise:** 0.93-0.95
+
+**Best For:**
+- Image-to-video conversion
+- Character consistency scenes
+- Portal/transition effects
+- 8-second clips
+
+**Why This Works:**
+- ✅ Lower CFG (4/8) prevents "rendered" look
+- ✅ Two-pass system: First pass creates base, second pass refines
+- ✅ 20-24 steps: Good balance of speed and quality
+- ✅ FP8 model: Efficient with good quality
+
+---
+
 ## ✅ What Works
 
 ### Positive Prompt Structure

@@ -201,7 +201,7 @@
       "name": "OpenClaw Backup (afternoon)",
       "enabled": true,
       "createdAtMs": 1772040344494,
-      "updatedAtMs": 1772752551491,
+      "updatedAtMs": 1772838963508,
       "schedule": {
         "kind": "cron",
         "expr": "15 15 * * *"
@@ -218,15 +218,14 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1772838900000,
-        "lastRunAtMs": 1772752500006,
+        "nextRunAtMs": 1772925300000,
+        "lastRunAtMs": 1772838900007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 51485,
+        "lastDurationMs": 63501,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "lastDelivered": true,
-        "runningAtMs": 1772838900006
+        "lastDelivered": true
       }
     },
     {
@@ -258,7 +257,8 @@
         "lastDurationMs": 71323,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "lastDelivered": true
+        "lastDelivered": true,
+        "runningAtMs": 1772862300006
       }
     },
     {
@@ -295,7 +295,7 @@
       "description": "Checks context at 8PM - runs Dreammode early if >75% to prevent compaction loss",
       "enabled": true,
       "createdAtMs": 1772646828894,
-      "updatedAtMs": 1772769622955,
+      "updatedAtMs": 1772856023409,
       "schedule": {
         "kind": "cron",
         "expr": "0 20 * * *",
@@ -308,11 +308,11 @@
         "text": "node /home/ubuntu/.openclaw/workspace/skills/dreammode/smart-dreammode.js"
       },
       "state": {
-        "nextRunAtMs": 1772856000000,
-        "lastRunAtMs": 1772769600005,
+        "nextRunAtMs": 1772942400000,
+        "lastRunAtMs": 1772856000007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 22950,
+        "lastDurationMs": 23402,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }
