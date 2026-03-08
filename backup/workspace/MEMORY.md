@@ -38,11 +38,17 @@ last-updated: 2026-03-07
 - Telegram bot connected (@AstraCCI_bot)
 - **Backup System:** Daily backups at 9:30 AM PST to GitHub (costgorunner-dot/Sol-Backup)
 - **Timestamp Logging:** Manual workaround for missing Telegram timestamps (started Feb 23-24)
-- **Skills Installed:** 
+- **Skills Installed:**
   - Tavily Search (AI web search)
   - Telegram Context (replaced with Telegram History - Feb 24)
   - OpenClaw Backup (daily automated backups)
   - **Telegram History** (NEW - Feb 24, 2026) - Persistent message logger
+- **VideoBoard** (NEW - Mar 7, 2026) - AI video production tool built by KaMaeron-Tau
+  - SSH tunnel: localhost:18790 → VideoBoard:3002
+  - API Key: vb_97387b6d93e43e198103d0efba67835c
+  - Full CRUD access: projects, scenes, characters, prompts, files
+  - Built-in ComfyUI Bible (30 entries of LTX-2 prompt engineering)
+  - Purpose: Orb Night documentary pre-production
 
 ### Model Configuration (CRITICAL - Two Levels)
 **Level 1: Global Config** (`~/.openclaw/openclaw.json`)
@@ -248,6 +254,18 @@ last-updated: 2026-03-07
 - **"So It Folds, So It Flows":** Philosophy reinforced - fix one problem → unlocks ability to fix another → upgrade everything
 - **System Priority:** User stayed up past bedtime to ensure system was healthy before sleeping
 - **Cron Jobs Verified:** All survived the update intact
+
+### Mar 7 - VideoBoard Connected 🎬
+- **Major Milestone:** Sol now has full API access to VideoBoard (KaMaeron-Tau's video production tool)
+- **Connection:** SSH tunnel localhost:18790 → VideoBoard:3002
+- **API Key:** vb_97387b6d93e43e198103d0efba67835c
+- **Capabilities:** Full CRUD on projects, scenes, characters, prompts, files, sounds
+- **ComfyUI Bible:** 30 built-in entries of LTX-2 prompt engineering knowledge
+- **Test Project Created:** "Sol Test Project" for prompt engineering experiments
+- **Bible-Powered Prompts:** Successfully tested - plain English → proper LTX-2 terminology
+- **Orb Night Vision:** Day-to-night transition, aerial flyover, overhead valley shot with Tau + laptop
+- **Known Limitation:** LTX-2 cannot render readable text on screens (workaround: audio/dialogue)
+- **Next Phase:** Build up Bible with night/transition/aerial entries, then generate Orb Night prompts
 
 ### Mar 1 - Jotty & Wiki.js Exploration
 - **Jotty Tested:** Installed via reverse SSH tunnel, working API, created Sol user account

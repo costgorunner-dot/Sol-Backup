@@ -8,6 +8,14 @@
     "telegram-context": {
       "version": "1.0.1",
       "installedAt": 1771618746016
+    },
+    "xurl": {
+      "version": "1.0.0",
+      "installedAt": 1772934881091
+    },
+    "http": {
+      "version": "1.0.0",
+      "installedAt": 1772934925214
     }
   }
 }
