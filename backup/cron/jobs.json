@@ -40,7 +40,7 @@
       "name": "Dreammode Night Phase",
       "enabled": true,
       "createdAtMs": 1771457217097,
-      "updatedAtMs": 1772956071615,
+      "updatedAtMs": 1773038982191,
       "schedule": {
         "kind": "cron",
         "expr": "45 23 * * *"
@@ -56,10 +56,10 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1773038700000,
-        "lastRunAtMs": 1772955900006,
+        "nextRunAtMs": 1773125100000,
+        "lastRunAtMs": 1773038700005,
         "lastStatus": "ok",
-        "lastDurationMs": 171609,
+        "lastDurationMs": 282186,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
@@ -73,7 +73,7 @@
       "name": "Dreammode Morning Debrief",
       "enabled": true,
       "createdAtMs": 1771457235161,
-      "updatedAtMs": 1772986239211,
+      "updatedAtMs": 1773072657434,
       "schedule": {
         "kind": "cron",
         "expr": "10 09 * * *"
@@ -90,10 +90,10 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1773072600000,
-        "lastRunAtMs": 1772986200006,
+        "nextRunAtMs": 1773159000000,
+        "lastRunAtMs": 1773072600006,
         "lastStatus": "ok",
-        "lastDurationMs": 39205,
+        "lastDurationMs": 57428,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -107,7 +107,7 @@
       "name": "OpenClaw Backup (daily after debrief)",
       "enabled": true,
       "createdAtMs": 1771629134551,
-      "updatedAtMs": 1772904611715,
+      "updatedAtMs": 1773073845967,
       "schedule": {
         "expr": "30 9 * * *",
         "kind": "cron"
@@ -116,20 +116,20 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Run the OpenClaw backup script:\n\n1. Execute: bash /home/ubuntu/.openclaw/workspace/skills/openclaw-backup/scripts/backup.sh\n2. Report if backup succeeded or failed\n3. Include link to GitHub repository\n\nIf backup fails, explain what went wrong."
+        "message": "Run the OpenClaw backup script:\n\n1. Execute: bash /home/ubuntu/.openclaw/workspace/backup/skills/openclaw-backup/scripts/backup.sh\n2. Report if backup succeeded or failed\n3. Include link to GitHub repository\n\nIf backup fails, explain what went wrong."
       },
       "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772987400000,
-        "lastRunAtMs": 1772904600006,
-        "lastStatus": "error",
-        "lastDurationMs": 11709,
-        "consecutiveErrors": 1,
-        "lastRunStatus": "error",
-        "lastDeliveryStatus": "unknown",
-        "runningAtMs": 1772987400004
+        "nextRunAtMs": 1773160200000,
+        "lastRunAtMs": 1773073800005,
+        "lastStatus": "ok",
+        "lastDurationMs": 45962,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDeliveryStatus": "delivered",
+        "lastDelivered": true
       }
     },
     {
@@ -139,7 +139,7 @@
       "name": "Weekly Summary (Sunday evening)",
       "enabled": true,
       "createdAtMs": 1771629898820,
-      "updatedAtMs": 1772416899207,
+      "updatedAtMs": 1773018087067,
       "schedule": {
         "expr": "0 18 * * 0",
         "kind": "cron"
@@ -154,10 +154,10 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1773018000000,
-        "lastRunAtMs": 1772416800006,
+        "nextRunAtMs": 1773622800000,
+        "lastRunAtMs": 1773018000004,
         "lastStatus": "ok",
-        "lastDurationMs": 99201,
+        "lastDurationMs": 87063,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -169,7 +169,7 @@
       "name": "Daily Weather - Revelstoke BC",
       "enabled": true,
       "createdAtMs": 1772039398454,
-      "updatedAtMs": 1772985943143,
+      "updatedAtMs": 1773072361422,
       "schedule": {
         "kind": "cron",
         "expr": "05 09 * * *"
@@ -186,11 +186,11 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1773072300000,
-        "lastRunAtMs": 1772985900007,
+        "nextRunAtMs": 1773158700000,
+        "lastRunAtMs": 1773072300006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 43136,
+        "lastDurationMs": 61416,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -201,7 +201,7 @@
       "name": "OpenClaw Backup (afternoon)",
       "enabled": true,
       "createdAtMs": 1772040344494,
-      "updatedAtMs": 1772925332044,
+      "updatedAtMs": 1773008140925,
       "schedule": {
         "kind": "cron",
         "expr": "15 15 * * *"
@@ -218,15 +218,14 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1773008100000,
-        "lastRunAtMs": 1772925300006,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 32038,
+        "nextRunAtMs": 1773094500000,
+        "lastRunAtMs": 1773008100006,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 40919,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1,
-        "lastDelivered": true,
-        "lastError": "LLM request timed out."
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
@@ -234,7 +233,7 @@
       "name": "OpenClaw Backup (evening)",
       "enabled": true,
       "createdAtMs": 1772040346146,
-      "updatedAtMs": 1772948781144,
+      "updatedAtMs": 1773031521430,
       "schedule": {
         "kind": "cron",
         "expr": "45 21 * * *"
@@ -251,11 +250,11 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1773031500000,
-        "lastRunAtMs": 1772948700005,
+        "nextRunAtMs": 1773117900000,
+        "lastRunAtMs": 1773031500006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 81139,
+        "lastDurationMs": 21424,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -267,7 +266,7 @@
       "description": "Redact API keys 10 minutes before morning backup",
       "enabled": true,
       "createdAtMs": 1772605887744,
-      "updatedAtMs": 1772986826477,
+      "updatedAtMs": 1773073220293,
       "schedule": {
         "kind": "cron",
         "expr": "20 9 * * *",
@@ -280,11 +279,11 @@
         "text": "bash /home/ubuntu/.openclaw/workspace/skills/openclaw-backup/scripts/pre-redact.sh"
       },
       "state": {
-        "nextRunAtMs": 1773073200000,
-        "lastRunAtMs": 1772986800006,
+        "nextRunAtMs": 1773159600000,
+        "lastRunAtMs": 1773073200006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 26471,
+        "lastDurationMs": 20287,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }
@@ -295,7 +294,7 @@
       "description": "Checks context at 8PM - runs Dreammode early if >75% to prevent compaction loss",
       "enabled": true,
       "createdAtMs": 1772646828894,
-      "updatedAtMs": 1772942418533,
+      "updatedAtMs": 1773025211235,
       "schedule": {
         "kind": "cron",
         "expr": "0 20 * * *",
@@ -308,11 +307,11 @@
         "text": "node /home/ubuntu/.openclaw/workspace/skills/dreammode/smart-dreammode.js"
       },
       "state": {
-        "nextRunAtMs": 1773025200000,
-        "lastRunAtMs": 1772942400007,
+        "nextRunAtMs": 1773111600000,
+        "lastRunAtMs": 1773025200006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 18526,
+        "lastDurationMs": 11229,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }

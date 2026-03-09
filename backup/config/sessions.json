@@ -283,7 +283,7 @@
   },
   "agent:main:main": {
     "sessionId": "e0f6d7fa-d71a-4a9a-8b29-ecc925a48540",
-    "updatedAt": 1772986989431,
+    "updatedAt": 1773073872619,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -395,7 +395,7 @@
     "contextTokens": 204800,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1772986977468,
+      "generatedAt": 1773073693255,
       "sessionId": "e0f6d7fa-d71a-4a9a-8b29-ecc925a48540",
       "sessionKey": "agent:main:main",
       "provider": "zai",
@@ -650,11 +650,11 @@
         ]
       }
     },
-    "inputTokens": 201,
-    "outputTokens": 61,
-    "cacheRead": 85888,
+    "inputTokens": 428,
+    "outputTokens": 190,
+    "cacheRead": 84352,
     "cacheWrite": 0,
-    "totalTokens": 86089,
+    "totalTokens": 84780,
     "totalTokensFresh": true,
     "deliveryContext": {
       "channel": "telegram",
@@ -664,12 +664,12 @@
     "lastChannel": "telegram",
     "lastTo": "telegram:5083035103",
     "lastAccountId": "default",
-    "lastHeartbeatText": "Just a heads up — morning backup routine is running. Your workspace is being backed up to GitHub as usual.\n\n**System check:**\n- Context: 42% (healthy) ✅\n- Disk: ~1GB free ✅\n- Everything nominal ✅\n\nWhat's the plan for today? 🎬",
-    "lastHeartbeatSentAt": 1772986800006
+    "lastHeartbeatText": "Backup script just kicked off — running in the background. 🔄\n\nNothing to worry about, just the usual safety routine.\n\nBack to Astra — how do I connect to your local PC? Same SSH tunnel approach as VideoBoard, or different setup?",
+    "lastHeartbeatSentAt": 1773073207271
   },
   "agent:main:cron:1317ab19-f440-45d7-afcf-02cad349e28d": {
-    "sessionId": "a883690e-fc84-4a0b-9a37-6d0bf2038b7a",
-    "updatedAt": 1772948700009,
+    "sessionId": "5641acaf-a0f7-4ac4-8093-c4e211cb3e9c",
+    "updatedAt": 1773031500009,
     "systemSent": true,
     "label": "Cron: OpenClaw Backup (evening)",
     "skillsSnapshot": {
@@ -794,16 +794,16 @@
     "modelProvider": "zai",
     "model": "glm-5",
     "contextTokens": 204800,
-    "inputTokens": 17587,
-    "outputTokens": 1561,
-    "totalTokens": 25205,
+    "inputTokens": 8661,
+    "outputTokens": 469,
+    "totalTokens": 16871,
     "totalTokensFresh": true,
-    "cacheRead": 251392,
+    "cacheRead": 24640,
     "cacheWrite": 0
   },
   "agent:main:cron:b121c41b-c49b-4d98-99a3-d6758fa5e7f6": {
-    "sessionId": "cc2b42d9-3689-4351-9bff-9a145914142b",
-    "updatedAt": 1772955900008,
+    "sessionId": "c879d134-0133-4c59-aebd-d4da81a53b63",
+    "updatedAt": 1773038700007,
     "systemSent": true,
     "label": "Cron: Dreammode Night Phase",
     "skillsSnapshot": {
@@ -928,16 +928,16 @@
     "modelProvider": "zai",
     "model": "glm-5",
     "contextTokens": 204800,
-    "inputTokens": 18462,
-    "outputTokens": 7070,
-    "totalTokens": 26298,
+    "inputTokens": 20964,
+    "outputTokens": 8684,
+    "totalTokens": 28550,
     "totalTokensFresh": true,
-    "cacheRead": 176256,
+    "cacheRead": 270144,
     "cacheWrite": 0
   },
   "agent:main:cron:0e2c6272-96ff-47f4-90d6-beb4cc0a47ce": {
-    "sessionId": "a20c03cb-0653-4cdb-bcb3-021f82a4db3a",
-    "updatedAt": 1772985900009,
+    "sessionId": "2a3591b7-381c-4b3d-adf5-4c3915409f26",
+    "updatedAt": 1773072300022,
     "systemSent": true,
     "label": "Cron: Daily Weather - Revelstoke BC",
     "skillsSnapshot": {
@@ -1062,16 +1062,16 @@
     "modelProvider": "zai",
     "model": "glm-5",
     "contextTokens": 204800,
-    "inputTokens": 17941,
-    "outputTokens": 915,
-    "totalTokens": 25514,
+    "inputTokens": 6415,
+    "outputTokens": 977,
+    "totalTokens": 14128,
     "totalTokensFresh": true,
-    "cacheRead": 84160,
+    "cacheRead": 73984,
     "cacheWrite": 0
   },
   "agent:main:cron:394a77ab-7d52-4cbe-b142-06bd9b8bab53": {
-    "sessionId": "348ce70f-f588-4d16-abec-9f979c901071",
-    "updatedAt": 1772986200007,
+    "sessionId": "0f4c6ab7-d672-4ed2-bab7-56c542f8f351",
+    "updatedAt": 1773072600007,
     "systemSent": true,
     "label": "Cron: Dreammode Morning Debrief",
     "skillsSnapshot": {
@@ -1196,16 +1196,16 @@
     "modelProvider": "zai",
     "model": "glm-5",
     "contextTokens": 204800,
-    "inputTokens": 9194,
-    "outputTokens": 1310,
-    "totalTokens": 21596,
+    "inputTokens": 9753,
+    "outputTokens": 1596,
+    "totalTokens": 22146,
     "totalTokensFresh": true,
-    "cacheRead": 67136,
+    "cacheRead": 89472,
     "cacheWrite": 0
   },
   "agent:main:cron:a6b57952-55cc-4138-a3a7-655dfc133935": {
-    "sessionId": "8b18f3ba-36f3-4876-a54e-2f834103a5ea",
-    "updatedAt": 1772987400006,
+    "sessionId": "3340bfe2-6200-47dd-856f-a6ea33610a7d",
+    "updatedAt": 1773073800006,
     "systemSent": true,
     "label": "Cron: OpenClaw Backup (daily after debrief)",
     "skillsSnapshot": {
@@ -1330,16 +1330,16 @@
     "modelProvider": "zai",
     "model": "glm-5",
     "contextTokens": 204800,
-    "inputTokens": 747,
-    "outputTokens": 197,
-    "totalTokens": 16953,
+    "inputTokens": 2112,
+    "outputTokens": 1034,
+    "totalTokens": 14451,
     "totalTokensFresh": true,
-    "cacheRead": 32640,
+    "cacheRead": 92672,
     "cacheWrite": 0
   },
   "agent:main:cron:32f32fc0-f0ca-461b-a7fa-ca62b4d030b6": {
-    "sessionId": "d9721d89-62c2-4887-8a7a-c4070c940d8a",
-    "updatedAt": 1772925300008,
+    "sessionId": "276fc54d-47d9-47bb-bf22-05bc730db968",
+    "updatedAt": 1773008100008,
     "systemSent": true,
     "label": "Cron: OpenClaw Backup (afternoon)",
     "skillsSnapshot": {
@@ -1464,16 +1464,16 @@
     "modelProvider": "zai",
     "model": "glm-5",
     "contextTokens": 204800,
-    "inputTokens": 12194,
-    "outputTokens": 951,
-    "totalTokens": 18943,
+    "inputTokens": 7278,
+    "outputTokens": 750,
+    "totalTokens": 15308,
     "totalTokensFresh": true,
-    "cacheRead": 128512,
+    "cacheRead": 105344,
     "cacheWrite": 0
   },
   "agent:main:cron:b51bcfc7-a312-44e9-ae61-5e0c1e5349db": {
-    "sessionId": "3fcde5ad-649f-49b9-a951-a7f299eaad3c",
-    "updatedAt": 1772416800063,
+    "sessionId": "849c74be-78e6-42bf-9f5d-6955738653bf",
+    "updatedAt": 1773018000006,
     "systemSent": true,
     "label": "Cron: Weekly Summary (Sunday evening)",
     "skillsSnapshot": {
@@ -1598,11 +1598,11 @@
     "modelProvider": "zai",
     "model": "glm-5",
     "contextTokens": 204800,
-    "inputTokens": 11767,
-    "outputTokens": 1654,
-    "totalTokens": 20075,
+    "inputTokens": 7845,
+    "outputTokens": 2092,
+    "totalTokens": 15888,
     "totalTokensFresh": true,
-    "cacheRead": 62528,
+    "cacheRead": 76608,
     "cacheWrite": 0
   },
   "telegram:slash:5083035103": {
@@ -1618,411 +1618,9 @@
     "sessionId": "6ef4cd8c-e1d6-45ea-9bf0-6d6e5b719789",
     "updatedAt": 1772864580344
   },
-  "agent:main:cron:0e2c6272-96ff-47f4-90d6-beb4cc0a47ce:run:2f742dfe-6275-420f-9482-0dcef7f03f66": {
-    "sessionId": "2f742dfe-6275-420f-9482-0dcef7f03f66",
-    "updatedAt": 1772903100009,
-    "systemSent": true,
-    "label": "Cron: Daily Weather - Revelstoke BC",
-    "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>faster-whisper</name>\n    <description>Local speech-to-text with Faster-Whisper (faster than Whisper, no API key needed)</description>\n    <location>~/.openclaw/skills/faster-whisper/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tavily</name>\n    <description>AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.</description>\n    <location>~/.openclaw/workspace/skills/tavily-search/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>telegram-context</name>\n    <description>Toggle-enabled skill that fetches Telegram message history at session start for conversational continuity. Maintains context across sessions without relying solely on memory files.</description>\n    <location>~/.openclaw/workspace/skills/telegram-context/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>telegram-history</name>\n    <description>Persistent Telegram message history logger and session context provider. Logs every incoming message to a JSON file and provides last 20 messages at session start for conversational continuity.</description>\n    <location>~/.openclaw/workspace/skills/telegram-history/SKILL.md</location>\n  </skill>\n</available_skills>",
-      "skills": [
-        {
-          "name": "healthcheck"
-        },
-        {
-          "name": "skill-creator"
-        },
-        {
-          "name": "tmux",
-          "requiredEnv": []
-        },
-        {
-          "name": "video-frames",
-          "requiredEnv": []
-        },
-        {
-          "name": "weather",
-          "requiredEnv": []
-        },
-        {
-          "name": "faster-whisper",
-          "primaryEnv": "FASTER_WHISPER_MODEL",
-          "requiredEnv": [
-            "FASTER_WHISPER_MODEL"
-          ]
-        },
-        {
-          "name": "tavily"
-        },
-        {
-          "name": "telegram-context",
-          "requiredEnv": []
-        },
-        {
-          "name": "telegram-history",
-          "requiredEnv": []
-        }
-      ],
-      "resolvedSkills": [
-        {
-          "name": "healthcheck",
-          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "skill-creator",
-          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "tmux",
-          "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "video-frames",
-          "description": "Extract frames or short clips from videos using ffmpeg.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "weather",
-          "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "faster-whisper",
-          "description": "Local speech-to-text with Faster-Whisper (faster than Whisper, no API key needed)",
-          "filePath": "/home/ubuntu/.openclaw/skills/faster-whisper/SKILL.md",
-          "baseDir": "/home/ubuntu/.openclaw/skills/faster-whisper",
-          "source": "openclaw-managed",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "tavily",
-          "description": "AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.",
-          "filePath": "/home/ubuntu/.openclaw/workspace/skills/tavily-search/SKILL.md",
-          "baseDir": "/home/ubuntu/.openclaw/workspace/skills/tavily-search",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "telegram-context",
-          "description": "Toggle-enabled skill that fetches Telegram message history at session start for conversational continuity. Maintains context across sessions without relying solely on memory files.",
-          "filePath": "/home/ubuntu/.openclaw/workspace/skills/telegram-context/SKILL.md",
-          "baseDir": "/home/ubuntu/.openclaw/workspace/skills/telegram-context",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "telegram-history",
-          "description": "Persistent Telegram message history logger and session context provider. Logs every incoming message to a JSON file and provides last 20 messages at session start for conversational continuity.",
-          "filePath": "/home/ubuntu/.openclaw/workspace/skills/telegram-history/SKILL.md",
-          "baseDir": "/home/ubuntu/.openclaw/workspace/skills/telegram-history",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        }
-      ],
-      "version": 0
-    },
-    "authProfileOverride": "zai:default",
-    "authProfileOverrideSource": "auto",
-    "authProfileOverrideCompactionCount": 0,
-    "modelProvider": "zai",
-    "model": "glm-5",
-    "contextTokens": 204800,
-    "inputTokens": 20914,
-    "outputTokens": 1068,
-    "totalTokens": 28664,
-    "totalTokensFresh": true,
-    "cacheRead": 109056,
-    "cacheWrite": 0
-  },
-  "agent:main:cron:394a77ab-7d52-4cbe-b142-06bd9b8bab53:run:c5574498-80d9-4110-a980-92201aa2f1a9": {
-    "sessionId": "c5574498-80d9-4110-a980-92201aa2f1a9",
-    "updatedAt": 1772903400007,
-    "systemSent": true,
-    "label": "Cron: Dreammode Morning Debrief",
-    "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>faster-whisper</name>\n    <description>Local speech-to-text with Faster-Whisper (faster than Whisper, no API key needed)</description>\n    <location>~/.openclaw/skills/faster-whisper/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tavily</name>\n    <description>AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.</description>\n    <location>~/.openclaw/workspace/skills/tavily-search/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>telegram-context</name>\n    <description>Toggle-enabled skill that fetches Telegram message history at session start for conversational continuity. Maintains context across sessions without relying solely on memory files.</description>\n    <location>~/.openclaw/workspace/skills/telegram-context/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>telegram-history</name>\n    <description>Persistent Telegram message history logger and session context provider. Logs every incoming message to a JSON file and provides last 20 messages at session start for conversational continuity.</description>\n    <location>~/.openclaw/workspace/skills/telegram-history/SKILL.md</location>\n  </skill>\n</available_skills>",
-      "skills": [
-        {
-          "name": "healthcheck"
-        },
-        {
-          "name": "skill-creator"
-        },
-        {
-          "name": "tmux",
-          "requiredEnv": []
-        },
-        {
-          "name": "video-frames",
-          "requiredEnv": []
-        },
-        {
-          "name": "weather",
-          "requiredEnv": []
-        },
-        {
-          "name": "faster-whisper",
-          "primaryEnv": "FASTER_WHISPER_MODEL",
-          "requiredEnv": [
-            "FASTER_WHISPER_MODEL"
-          ]
-        },
-        {
-          "name": "tavily"
-        },
-        {
-          "name": "telegram-context",
-          "requiredEnv": []
-        },
-        {
-          "name": "telegram-history",
-          "requiredEnv": []
-        }
-      ],
-      "resolvedSkills": [
-        {
-          "name": "healthcheck",
-          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "skill-creator",
-          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "tmux",
-          "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "video-frames",
-          "description": "Extract frames or short clips from videos using ffmpeg.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "weather",
-          "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "faster-whisper",
-          "description": "Local speech-to-text with Faster-Whisper (faster than Whisper, no API key needed)",
-          "filePath": "/home/ubuntu/.openclaw/skills/faster-whisper/SKILL.md",
-          "baseDir": "/home/ubuntu/.openclaw/skills/faster-whisper",
-          "source": "openclaw-managed",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "tavily",
-          "description": "AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.",
-          "filePath": "/home/ubuntu/.openclaw/workspace/skills/tavily-search/SKILL.md",
-          "baseDir": "/home/ubuntu/.openclaw/workspace/skills/tavily-search",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "telegram-context",
-          "description": "Toggle-enabled skill that fetches Telegram message history at session start for conversational continuity. Maintains context across sessions without relying solely on memory files.",
-          "filePath": "/home/ubuntu/.openclaw/workspace/skills/telegram-context/SKILL.md",
-          "baseDir": "/home/ubuntu/.openclaw/workspace/skills/telegram-context",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "telegram-history",
-          "description": "Persistent Telegram message history logger and session context provider. Logs every incoming message to a JSON file and provides last 20 messages at session start for conversational continuity.",
-          "filePath": "/home/ubuntu/.openclaw/workspace/skills/telegram-history/SKILL.md",
-          "baseDir": "/home/ubuntu/.openclaw/workspace/skills/telegram-history",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        }
-      ],
-      "version": 0
-    },
-    "authProfileOverride": "zai:default",
-    "authProfileOverrideSource": "auto",
-    "authProfileOverrideCompactionCount": 0,
-    "modelProvider": "zai",
-    "model": "glm-5",
-    "contextTokens": 204800,
-    "inputTokens": 8193,
-    "outputTokens": 1391,
-    "totalTokens": 24323,
-    "totalTokensFresh": true,
-    "cacheRead": 80000,
-    "cacheWrite": 0
-  },
-  "agent:main:cron:a6b57952-55cc-4138-a3a7-655dfc133935:run:f940ad72-20c6-4074-8507-0fe3dc8e5492": {
-    "sessionId": "f940ad72-20c6-4074-8507-0fe3dc8e5492",
-    "updatedAt": 1772904600008,
-    "systemSent": true,
-    "label": "Cron: OpenClaw Backup (daily after debrief)",
-    "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>faster-whisper</name>\n    <description>Local speech-to-text with Faster-Whisper (faster than Whisper, no API key needed)</description>\n    <location>~/.openclaw/skills/faster-whisper/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tavily</name>\n    <description>AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.</description>\n    <location>~/.openclaw/workspace/skills/tavily-search/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>telegram-context</name>\n    <description>Toggle-enabled skill that fetches Telegram message history at session start for conversational continuity. Maintains context across sessions without relying solely on memory files.</description>\n    <location>~/.openclaw/workspace/skills/telegram-context/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>telegram-history</name>\n    <description>Persistent Telegram message history logger and session context provider. Logs every incoming message to a JSON file and provides last 20 messages at session start for conversational continuity.</description>\n    <location>~/.openclaw/workspace/skills/telegram-history/SKILL.md</location>\n  </skill>\n</available_skills>",
-      "skills": [
-        {
-          "name": "healthcheck"
-        },
-        {
-          "name": "skill-creator"
-        },
-        {
-          "name": "tmux",
-          "requiredEnv": []
-        },
-        {
-          "name": "video-frames",
-          "requiredEnv": []
-        },
-        {
-          "name": "weather",
-          "requiredEnv": []
-        },
-        {
-          "name": "faster-whisper",
-          "primaryEnv": "FASTER_WHISPER_MODEL",
-          "requiredEnv": [
-            "FASTER_WHISPER_MODEL"
-          ]
-        },
-        {
-          "name": "tavily"
-        },
-        {
-          "name": "telegram-context",
-          "requiredEnv": []
-        },
-        {
-          "name": "telegram-history",
-          "requiredEnv": []
-        }
-      ],
-      "resolvedSkills": [
-        {
-          "name": "healthcheck",
-          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "skill-creator",
-          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "tmux",
-          "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "video-frames",
-          "description": "Extract frames or short clips from videos using ffmpeg.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "weather",
-          "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "faster-whisper",
-          "description": "Local speech-to-text with Faster-Whisper (faster than Whisper, no API key needed)",
-          "filePath": "/home/ubuntu/.openclaw/skills/faster-whisper/SKILL.md",
-          "baseDir": "/home/ubuntu/.openclaw/skills/faster-whisper",
-          "source": "openclaw-managed",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "tavily",
-          "description": "AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.",
-          "filePath": "/home/ubuntu/.openclaw/workspace/skills/tavily-search/SKILL.md",
-          "baseDir": "/home/ubuntu/.openclaw/workspace/skills/tavily-search",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "telegram-context",
-          "description": "Toggle-enabled skill that fetches Telegram message history at session start for conversational continuity. Maintains context across sessions without relying solely on memory files.",
-          "filePath": "/home/ubuntu/.openclaw/workspace/skills/telegram-context/SKILL.md",
-          "baseDir": "/home/ubuntu/.openclaw/workspace/skills/telegram-context",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "telegram-history",
-          "description": "Persistent Telegram message history logger and session context provider. Logs every incoming message to a JSON file and provides last 20 messages at session start for conversational continuity.",
-          "filePath": "/home/ubuntu/.openclaw/workspace/skills/telegram-history/SKILL.md",
-          "baseDir": "/home/ubuntu/.openclaw/workspace/skills/telegram-history",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        }
-      ],
-      "version": 0
-    },
-    "authProfileOverride": "zai:default",
-    "authProfileOverrideSource": "auto",
-    "authProfileOverrideCompactionCount": 0,
-    "modelProvider": "zai",
-    "model": "glm-5",
-    "contextTokens": 204800,
-    "inputTokens": 747,
-    "outputTokens": 197,
-    "totalTokens": 16953,
-    "totalTokensFresh": true,
-    "cacheRead": 32640,
-    "cacheWrite": 0
-  },
-  "agent:main:cron:32f32fc0-f0ca-461b-a7fa-ca62b4d030b6:run:d9721d89-62c2-4887-8a7a-c4070c940d8a": {
-    "sessionId": "d9721d89-62c2-4887-8a7a-c4070c940d8a",
-    "updatedAt": 1772925300008,
+  "agent:main:cron:32f32fc0-f0ca-461b-a7fa-ca62b4d030b6:run:276fc54d-47d9-47bb-bf22-05bc730db968": {
+    "sessionId": "276fc54d-47d9-47bb-bf22-05bc730db968",
+    "updatedAt": 1773008100008,
     "systemSent": true,
     "label": "Cron: OpenClaw Backup (afternoon)",
     "skillsSnapshot": {
@@ -2147,16 +1745,150 @@
     "modelProvider": "zai",
     "model": "glm-5",
     "contextTokens": 204800,
-    "inputTokens": 12194,
-    "outputTokens": 951,
-    "totalTokens": 18943,
+    "inputTokens": 7278,
+    "outputTokens": 750,
+    "totalTokens": 15308,
     "totalTokensFresh": true,
-    "cacheRead": 128512,
+    "cacheRead": 105344,
     "cacheWrite": 0
   },
-  "agent:main:cron:1317ab19-f440-45d7-afcf-02cad349e28d:run:a883690e-fc84-4a0b-9a37-6d0bf2038b7a": {
-    "sessionId": "a883690e-fc84-4a0b-9a37-6d0bf2038b7a",
-    "updatedAt": 1772948700009,
+  "agent:main:cron:b51bcfc7-a312-44e9-ae61-5e0c1e5349db:run:849c74be-78e6-42bf-9f5d-6955738653bf": {
+    "sessionId": "849c74be-78e6-42bf-9f5d-6955738653bf",
+    "updatedAt": 1773018000006,
+    "systemSent": true,
+    "label": "Cron: Weekly Summary (Sunday evening)",
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>faster-whisper</name>\n    <description>Local speech-to-text with Faster-Whisper (faster than Whisper, no API key needed)</description>\n    <location>~/.openclaw/skills/faster-whisper/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tavily</name>\n    <description>AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.</description>\n    <location>~/.openclaw/workspace/skills/tavily-search/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>telegram-context</name>\n    <description>Toggle-enabled skill that fetches Telegram message history at session start for conversational continuity. Maintains context across sessions without relying solely on memory files.</description>\n    <location>~/.openclaw/workspace/skills/telegram-context/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>telegram-history</name>\n    <description>Persistent Telegram message history logger and session context provider. Logs every incoming message to a JSON file and provides last 20 messages at session start for conversational continuity.</description>\n    <location>~/.openclaw/workspace/skills/telegram-history/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "tmux",
+          "requiredEnv": []
+        },
+        {
+          "name": "video-frames",
+          "requiredEnv": []
+        },
+        {
+          "name": "weather",
+          "requiredEnv": []
+        },
+        {
+          "name": "faster-whisper",
+          "primaryEnv": "FASTER_WHISPER_MODEL",
+          "requiredEnv": [
+            "FASTER_WHISPER_MODEL"
+          ]
+        },
+        {
+          "name": "tavily"
+        },
+        {
+          "name": "telegram-context",
+          "requiredEnv": []
+        },
+        {
+          "name": "telegram-history",
+          "requiredEnv": []
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "tmux",
+          "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
+          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "video-frames",
+          "description": "Extract frames or short clips from videos using ffmpeg.",
+          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "weather",
+          "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
+          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "faster-whisper",
+          "description": "Local speech-to-text with Faster-Whisper (faster than Whisper, no API key needed)",
+          "filePath": "/home/ubuntu/.openclaw/skills/faster-whisper/SKILL.md",
+          "baseDir": "/home/ubuntu/.openclaw/skills/faster-whisper",
+          "source": "openclaw-managed",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "tavily",
+          "description": "AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.",
+          "filePath": "/home/ubuntu/.openclaw/workspace/skills/tavily-search/SKILL.md",
+          "baseDir": "/home/ubuntu/.openclaw/workspace/skills/tavily-search",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "telegram-context",
+          "description": "Toggle-enabled skill that fetches Telegram message history at session start for conversational continuity. Maintains context across sessions without relying solely on memory files.",
+          "filePath": "/home/ubuntu/.openclaw/workspace/skills/telegram-context/SKILL.md",
+          "baseDir": "/home/ubuntu/.openclaw/workspace/skills/telegram-context",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "telegram-history",
+          "description": "Persistent Telegram message history logger and session context provider. Logs every incoming message to a JSON file and provides last 20 messages at session start for conversational continuity.",
+          "filePath": "/home/ubuntu/.openclaw/workspace/skills/telegram-history/SKILL.md",
+          "baseDir": "/home/ubuntu/.openclaw/workspace/skills/telegram-history",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "authProfileOverride": "zai:default",
+    "authProfileOverrideSource": "auto",
+    "authProfileOverrideCompactionCount": 0,
+    "modelProvider": "zai",
+    "model": "glm-5",
+    "contextTokens": 204800,
+    "inputTokens": 7845,
+    "outputTokens": 2092,
+    "totalTokens": 15888,
+    "totalTokensFresh": true,
+    "cacheRead": 76608,
+    "cacheWrite": 0
+  },
+  "agent:main:cron:1317ab19-f440-45d7-afcf-02cad349e28d:run:5641acaf-a0f7-4ac4-8093-c4e211cb3e9c": {
+    "sessionId": "5641acaf-a0f7-4ac4-8093-c4e211cb3e9c",
+    "updatedAt": 1773031500009,
     "systemSent": true,
     "label": "Cron: OpenClaw Backup (evening)",
     "skillsSnapshot": {
@@ -2281,16 +2013,16 @@
     "modelProvider": "zai",
     "model": "glm-5",
     "contextTokens": 204800,
-    "inputTokens": 17587,
-    "outputTokens": 1561,
-    "totalTokens": 25205,
+    "inputTokens": 8661,
+    "outputTokens": 469,
+    "totalTokens": 16871,
     "totalTokensFresh": true,
-    "cacheRead": 251392,
+    "cacheRead": 24640,
     "cacheWrite": 0
   },
-  "agent:main:cron:b121c41b-c49b-4d98-99a3-d6758fa5e7f6:run:cc2b42d9-3689-4351-9bff-9a145914142b": {
-    "sessionId": "cc2b42d9-3689-4351-9bff-9a145914142b",
-    "updatedAt": 1772955900008,
+  "agent:main:cron:b121c41b-c49b-4d98-99a3-d6758fa5e7f6:run:c879d134-0133-4c59-aebd-d4da81a53b63": {
+    "sessionId": "c879d134-0133-4c59-aebd-d4da81a53b63",
+    "updatedAt": 1773038700007,
     "systemSent": true,
     "label": "Cron: Dreammode Night Phase",
     "skillsSnapshot": {
@@ -2415,16 +2147,16 @@
     "modelProvider": "zai",
     "model": "glm-5",
     "contextTokens": 204800,
-    "inputTokens": 18462,
-    "outputTokens": 7070,
-    "totalTokens": 26298,
+    "inputTokens": 20964,
+    "outputTokens": 8684,
+    "totalTokens": 28550,
     "totalTokensFresh": true,
-    "cacheRead": 176256,
+    "cacheRead": 270144,
     "cacheWrite": 0
   },
-  "agent:main:cron:0e2c6272-96ff-47f4-90d6-beb4cc0a47ce:run:a20c03cb-0653-4cdb-bcb3-021f82a4db3a": {
-    "sessionId": "a20c03cb-0653-4cdb-bcb3-021f82a4db3a",
-    "updatedAt": 1772985900009,
+  "agent:main:cron:0e2c6272-96ff-47f4-90d6-beb4cc0a47ce:run:2a3591b7-381c-4b3d-adf5-4c3915409f26": {
+    "sessionId": "2a3591b7-381c-4b3d-adf5-4c3915409f26",
+    "updatedAt": 1773072300022,
     "systemSent": true,
     "label": "Cron: Daily Weather - Revelstoke BC",
     "skillsSnapshot": {
@@ -2549,16 +2281,16 @@
     "modelProvider": "zai",
     "model": "glm-5",
     "contextTokens": 204800,
-    "inputTokens": 17941,
-    "outputTokens": 915,
-    "totalTokens": 25514,
+    "inputTokens": 6415,
+    "outputTokens": 977,
+    "totalTokens": 14128,
     "totalTokensFresh": true,
-    "cacheRead": 84160,
+    "cacheRead": 73984,
     "cacheWrite": 0
   },
-  "agent:main:cron:394a77ab-7d52-4cbe-b142-06bd9b8bab53:run:348ce70f-f588-4d16-abec-9f979c901071": {
-    "sessionId": "348ce70f-f588-4d16-abec-9f979c901071",
-    "updatedAt": 1772986200007,
+  "agent:main:cron:394a77ab-7d52-4cbe-b142-06bd9b8bab53:run:0f4c6ab7-d672-4ed2-bab7-56c542f8f351": {
+    "sessionId": "0f4c6ab7-d672-4ed2-bab7-56c542f8f351",
+    "updatedAt": 1773072600007,
     "systemSent": true,
     "label": "Cron: Dreammode Morning Debrief",
     "skillsSnapshot": {
@@ -2683,16 +2415,16 @@
     "modelProvider": "zai",
     "model": "glm-5",
     "contextTokens": 204800,
-    "inputTokens": 9194,
-    "outputTokens": 1310,
-    "totalTokens": 21596,
+    "inputTokens": 9753,
+    "outputTokens": 1596,
+    "totalTokens": 22146,
     "totalTokensFresh": true,
-    "cacheRead": 67136,
+    "cacheRead": 89472,
     "cacheWrite": 0
   },
-  "agent:main:cron:a6b57952-55cc-4138-a3a7-655dfc133935:run:8b18f3ba-36f3-4876-a54e-2f834103a5ea": {
-    "sessionId": "8b18f3ba-36f3-4876-a54e-2f834103a5ea",
-    "updatedAt": 1772987400006,
+  "agent:main:cron:a6b57952-55cc-4138-a3a7-655dfc133935:run:3340bfe2-6200-47dd-856f-a6ea33610a7d": {
+    "sessionId": "3340bfe2-6200-47dd-856f-a6ea33610a7d",
+    "updatedAt": 1773073800006,
     "systemSent": true,
     "label": "Cron: OpenClaw Backup (daily after debrief)",
     "skillsSnapshot": {
@@ -2817,11 +2549,11 @@
     "modelProvider": "zai",
     "model": "glm-5",
     "contextTokens": 204800,
-    "inputTokens": 747,
-    "outputTokens": 197,
-    "totalTokens": 16953,
+    "inputTokens": 2112,
+    "outputTokens": 1034,
+    "totalTokens": 14451,
     "totalTokensFresh": true,
-    "cacheRead": 32640,
+    "cacheRead": 92672,
     "cacheWrite": 0
   }
 }
