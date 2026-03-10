@@ -107,7 +107,7 @@
       "name": "OpenClaw Backup (daily after debrief)",
       "enabled": true,
       "createdAtMs": 1771629134551,
-      "updatedAtMs": 1773073845967,
+      "updatedAtMs": 1773160219650,
       "schedule": {
         "expr": "30 9 * * *",
         "kind": "cron"
@@ -122,14 +122,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1773160200000,
-        "lastRunAtMs": 1773073800005,
-        "lastStatus": "ok",
-        "lastDurationMs": 45962,
-        "consecutiveErrors": 0,
-        "lastRunStatus": "ok",
-        "lastDeliveryStatus": "delivered",
-        "lastDelivered": true
+        "nextRunAtMs": 1773246600000,
+        "lastRunAtMs": 1773160200006,
+        "lastStatus": "error",
+        "lastDurationMs": 19644,
+        "consecutiveErrors": 1,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "unknown",
+        "lastError": "Error: Telegram recipient @heartbeat could not be resolved to a numeric chat ID (Call to 'getChat' failed! (400: Bad Request: chat not found))"
       }
     },
     {
