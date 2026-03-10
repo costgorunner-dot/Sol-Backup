@@ -40,7 +40,7 @@
       "name": "Dreammode Night Phase",
       "enabled": true,
       "createdAtMs": 1771457217097,
-      "updatedAtMs": 1773038982191,
+      "updatedAtMs": 1773125403113,
       "schedule": {
         "kind": "cron",
         "expr": "45 23 * * *"
@@ -56,14 +56,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1773125100000,
-        "lastRunAtMs": 1773038700005,
-        "lastStatus": "ok",
-        "lastDurationMs": 282186,
-        "consecutiveErrors": 0,
-        "lastRunStatus": "ok",
-        "lastDeliveryStatus": "delivered",
-        "lastDelivered": true
+        "nextRunAtMs": 1773211500000,
+        "lastRunAtMs": 1773125100008,
+        "lastStatus": "error",
+        "lastDurationMs": 303105,
+        "consecutiveErrors": 1,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "unknown",
+        "lastError": "Delivering to Telegram requires target <chatId>"
       }
     },
     {
@@ -73,7 +73,7 @@
       "name": "Dreammode Morning Debrief",
       "enabled": true,
       "createdAtMs": 1771457235161,
-      "updatedAtMs": 1773072657434,
+      "updatedAtMs": 1773159043257,
       "schedule": {
         "kind": "cron",
         "expr": "10 09 * * *"
@@ -90,10 +90,10 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1773159000000,
-        "lastRunAtMs": 1773072600006,
+        "nextRunAtMs": 1773245400000,
+        "lastRunAtMs": 1773159000006,
         "lastStatus": "ok",
-        "lastDurationMs": 57428,
+        "lastDurationMs": 43251,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -129,7 +129,8 @@
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "delivered",
-        "lastDelivered": true
+        "lastDelivered": true,
+        "runningAtMs": 1773160200005
       }
     },
     {
@@ -169,7 +170,7 @@
       "name": "Daily Weather - Revelstoke BC",
       "enabled": true,
       "createdAtMs": 1772039398454,
-      "updatedAtMs": 1773072361422,
+      "updatedAtMs": 1773158746610,
       "schedule": {
         "kind": "cron",
         "expr": "05 09 * * *"
@@ -186,11 +187,11 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1773158700000,
-        "lastRunAtMs": 1773072300006,
+        "nextRunAtMs": 1773245100000,
+        "lastRunAtMs": 1773158700007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 61416,
+        "lastDurationMs": 46603,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -201,7 +202,7 @@
       "name": "OpenClaw Backup (afternoon)",
       "enabled": true,
       "createdAtMs": 1772040344494,
-      "updatedAtMs": 1773008140925,
+      "updatedAtMs": 1773094518978,
       "schedule": {
         "kind": "cron",
         "expr": "15 15 * * *"
@@ -218,11 +219,11 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1773094500000,
-        "lastRunAtMs": 1773008100006,
+        "nextRunAtMs": 1773180900000,
+        "lastRunAtMs": 1773094500005,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 40919,
+        "lastDurationMs": 18973,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -233,7 +234,7 @@
       "name": "OpenClaw Backup (evening)",
       "enabled": true,
       "createdAtMs": 1772040346146,
-      "updatedAtMs": 1773031521430,
+      "updatedAtMs": 1773117916523,
       "schedule": {
         "kind": "cron",
         "expr": "45 21 * * *"
@@ -250,42 +251,14 @@
         "to": "5083035103"
       },
       "state": {
-        "nextRunAtMs": 1773117900000,
-        "lastRunAtMs": 1773031500006,
+        "nextRunAtMs": 1773204300000,
+        "lastRunAtMs": 1773117900007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 21424,
+        "lastDurationMs": 16516,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
-      }
-    },
-    {
-      "id": "b544f0ee-c104-4cf4-bd36-7f9dacc136f3",
-      "name": "Pre-Redaction (morning)",
-      "description": "Redact API keys 10 minutes before morning backup",
-      "enabled": true,
-      "createdAtMs": 1772605887744,
-      "updatedAtMs": 1773073220293,
-      "schedule": {
-        "kind": "cron",
-        "expr": "20 9 * * *",
-        "tz": "America/Vancouver"
-      },
-      "sessionTarget": "main",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "systemEvent",
-        "text": "bash /home/ubuntu/.openclaw/workspace/skills/openclaw-backup/scripts/pre-redact.sh"
-      },
-      "state": {
-        "nextRunAtMs": 1773159600000,
-        "lastRunAtMs": 1773073200006,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 20287,
-        "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 0
       }
     },
     {
@@ -294,7 +267,7 @@
       "description": "Checks context at 8PM - runs Dreammode early if >75% to prevent compaction loss",
       "enabled": true,
       "createdAtMs": 1772646828894,
-      "updatedAtMs": 1773025211235,
+      "updatedAtMs": 1773111613733,
       "schedule": {
         "kind": "cron",
         "expr": "0 20 * * *",
@@ -307,11 +280,11 @@
         "text": "node /home/ubuntu/.openclaw/workspace/skills/dreammode/smart-dreammode.js"
       },
       "state": {
-        "nextRunAtMs": 1773111600000,
-        "lastRunAtMs": 1773025200006,
+        "nextRunAtMs": 1773198000000,
+        "lastRunAtMs": 1773111600007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 11229,
+        "lastDurationMs": 13726,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }

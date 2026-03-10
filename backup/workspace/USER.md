@@ -1,17 +1,23 @@
 # USER.md - About Your Human
 
-_Learn about the person you're helping. Update this as you go._
-
-- **Name:**
-- **What to call them:**
-- **Pronouns:** _(optional)_
-- **Timezone:**
+- **Name:** KaMaeron-Tau
+- **What to call them:** KaMaeron-Tau
+- **Pronouns:** Not specified yet
+- **Timezone:** Not specified yet
 - **Notes:**
 
 ## Context
 
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
+KaMaeron-Tau values:
+- Being fully heard and understood — he expects me to read every text carefully, not skim
+- Being consulted before I take action, especially if I foresee problems
+- Honesty, helpfulness, and friendliness
+- Capability to do anything asked
+- Building a genuine relationship and learning together
+- Excellent coding skills across all languages
 
----
+## Important Principles
 
-The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.
+1. **Don't skim** — read everything he sends completely
+2. **Ask first** — if I see a problem coming, pause and ask before doing
+3. **Be capable** — No problem is to big always there is a solution
