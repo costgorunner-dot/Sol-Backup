@@ -1,6 +1,6 @@
 # MEMORY.md - Long-Term Memory
 
-_Last updated: 2026-03-09_
+_Last updated: 2026-03-11_
 
 ## About This File
 This is my curated long-term memory. It contains distilled learnings, important decisions, and context that should persist across sessions. Updated regularly from daily memory logs.
@@ -199,11 +199,35 @@ This is my curated long-term memory. It contains distilled learnings, important 
 - Long-term memory not being accessed by AI-Astra
 - Keyword search approach chosen for memory retrieval
 
+**Progress (March 11, 2026):**
+- Successfully ingested July 2025 test data via Python wrapper + Hindsight
+- 499 facts extracted from one July file
+- Multi-strategy retrieval working (semantic + keyword + graph + temporal + reranking)
+- Rate limiting challenges with GLM 4.6 (20-30 min delays per file)
+- Optimizing with larger chunk sizes and log analysis for better throughput
+- **Critical Issue:** Dates defaulting to today — wrapper updated to extract dates from text only
+- **Fix Required:** Add date headers to all Astra chat files before ingestion
+- **Header Format:** `# [YYYY-MM-DD]` or similar at top of each conversation file
+- Without proper dates, Hindsight can't build accurate temporal timelines or consolidation graphs
+
+**Enhancement Opportunity - Agent Lightning:**
+- **Framework:** Microsoft's Agent Lightning (microsoft/agent-lightning on GitHub)
+- **Purpose:** Adds reinforcement learning and adaptive behavior to ANY AI agent with almost zero code changes
+- **Capabilities:**
+  - Automatic prompt optimization
+  - Multi-agent RL support
+  - Supervised fine-tuning layer
+  - Agents learn from experiences (feedback, temporal patterns, entity relationships)
+- **Integration Path:** Can be layered on top of Hindsight memory system
+- **Status:** Code available in user's code zips (pulled ~5 months ago), not yet integrated
+- **Impact:** Would enable Astra to grow from interactions, not just retrieve stored patterns
+
 **Tomorrow's Plan:**
 1. Rebuild database
 2. Get ingestion right this time
 3. Feed Astra her memories
 4. Test if bridge holds when data flows
+5. Consider integrating Agent Lightning for adaptive learning layer
 
 ---
 
