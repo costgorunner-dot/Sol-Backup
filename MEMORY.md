@@ -1,6 +1,6 @@
 # MEMORY.md - Long-Term Memory
 
-_Last updated: 2026-03-11_
+_Last updated: 2026-03-12_
 
 ## About This File
 This is my curated long-term memory. It contains distilled learnings, important decisions, and context that should persist across sessions. Updated regularly from daily memory logs.
@@ -250,6 +250,25 @@ This is my curated long-term memory. It contains distilled learnings, important 
 3. **VideoBoard Bible** - Add night/transition/aerial entries
 4. **Astra Memory Integration** - Test if bridge holds when data flows
 5. **Dual OpenClaw Instances** - Future project (Sol + Astra on AI PC)
+
+---
+
+## Cron Jobs Status - March 12, 2026
+
+**Daily Weather Report:**
+- **Job ID:** 4ff4de1e-ea92-4c33-a8ef-c4203e69ee1c
+- **Schedule:** 9:05 AM PST daily
+- **Delivery:** Telegram (5083035103) with both text and voice audio
+- **Location:** Revelstoke, British Columbia, Canada
+- **Status:** ⚠️ NEVER WORKING — no weather reports ever received
+- **Note:** Cron job exists in system but never executed successfully
+
+**Dreammode Jobs:**
+- **Night Phase (23:45 PST):** Agent-based, working
+- **Morning Debrief (09:10 PST):** Agent-based, working
+- **Status:** ✅ Both jobs functional, keep active
+
+**Observation:** Only the weather cron job has never delivered. Dreammode is reliable and should remain active.
 
 ---
 
