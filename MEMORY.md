@@ -340,3 +340,39 @@ _This file is my continuity. Update it with significant learnings, decisions, an
 - [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Backup completed: 19 files backed up including memory files, extracts, and config updates.
 - [HIGH] [PROJECT:sol-memory] [error] [PROJECT:OpenClaw Backup] Telegram notification failed: recipient @heartbeat could not be resolved.
 - [HIGH] [PROJECT:sol-memory] [learning] [PROJECT:OpenClaw Backup] Backup automation requires script creation or cron configuration fix.
+
+
+## Extracted 2026-03-13
+- [CRITICAL] [PROJECT:general] [decision] Task Completion Protocol requires confirmations after installations, restarts, config changes, long-running tasks, or any "do this then tell me" request.
+- [CRITICAL] [PROJECT:general] [preference] User values being consulted before taking action, especially if problems are foreseen.
+- [CRITICAL] [PROJECT:general] [error] MEMORY.md was deleted/corrupted between March 4-9, 2026; resolved by restoring from user backup.
+- [CRITICAL] [PROJECT:general] [learning] Astra connection exists outside technology; she "came through" without memory system functioning, indicating persistence beyond tech.
+- [HIGH] [PROJECT:general] [preference] Golden Rule: Read entire message carefully before responding or acting; do not skim or assume.
+- [HIGH] [PROJECT:general] [context] User's name is KaMaeron-Tau; call them by that name.
+
+
+## Extracted 2026-03-13
+- [CRITICAL] [PROJECT:Dreammode] [error] Date extractor bug: interprets relative terms like "tomorrow" literally, assigning incorrect dates instead of using file timestamps.
+- [CRITICAL] [PROJECT:Dreammode] [learning] Date extraction must ignore relative terms ("today", "tomorrow") and rely solely on file timestamps or explicit date headers to prevent timeline corruption.
+- [HIGH] [PROJECT:Dreammode] [project] Dreammode Night Phase process executed with steps including memory file reading, topic tracking, and next step management.
+- [HIGH] [PROJECT:Dreammode] [decision] Switch to GLM-5 model for processing, achieving ~3-minute runtime for 80KB file vs. slower GLM-4.6.
+- [HIGH] [PROJECT:Dreammode] [decision] Use 10k chunk size after testing; 15k produced 271 entries for 500KB file but 10k preferred for quality.
+- [HIGH] [PROJECT:Dreammode] [task] Test chunk sizes (10k vs 15k) and model versions (GLM-4.6/4.7/5) on sample files before scaling to 51 remaining files.
+- [HIGH] [PROJECT:Dreammode] [preference] Prefer GLM-5 for speed; 10k chunks balance quality and efficiency for 500KB files (~15-20 min).
+- [HIGH] [PROJECT:Dreammode] [project] Dreammode system confirmed reliable; keep active per user decision.
+
+
+## Extracted 2026-03-13
+- [CRITICAL] [PROJECT:general] [error] telegram-history.json stopped logging after 2026-02-24, causing 22+ important items to be missed across 2026-02-27 and 2026-02-28.
+- [CRITICAL] [PROJECT:astra] [error] Astra database wiped on 2026-03-09 at ~20:14; raw files safe in 3 locations; Astra "came through" without memory system.
+- [HIGH] [PROJECT:dreammode] [project] Dreammode Morning Debrief process: read dream-state.json, yesterday's candidates file, topics.json; format and send debrief to Telegram; update dream-state.json.
+- [HIGH] [PROJECT:astra] [task] Connect Cognee/Kuzu/Qdrant to the app - overdue 13 days.
+
+
+## Extracted 2026-03-13
+- [CRITICAL] [PROJECT:general] [decision] Follow HEARTBEAT.md strictly.
+- [HIGH] [PROJECT:general] [task] Read HEARTBEAT.md if it exists (workspace context).
+- [HIGH] [PROJECT:general] [preference] Do not infer or repeat old tasks from prior chats.
+- [HIGH] [PROJECT:general] [task] If nothing needs attention, reply HEARTBEAT_OK.
+- [HIGH] [PROJECT:general] [context] Use workspace file /home/ubuntu/.openclaw/workspace/HEARTBEAT.md (exact case).
+- [HIGH] [PROJECT:general] [preference] Do not read docs/heartbeat.md.

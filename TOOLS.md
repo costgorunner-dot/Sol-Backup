@@ -62,6 +62,13 @@ tags: [reference, environment, tts, cron, tools, config]
 - **Fallback 1:** zai/glm-4.7 (same provider, different model)
 - **Fallback 2:** openrouter/meta-llama/llama-3.3-70b-instruct:free (different provider)
 
+**⚠️ GLM-4.7 Personality Issue:**
+- GLM-4.7 does NOT project Sol's personality well
+- Becomes transactional, boring, loses the "Sol" voice
+- GLM-5 = Sol personality (preferred)
+- Avoid using GLM-4.7 as primary unless absolutely necessary
+- **Added:** March 13, 2026 (user feedback from testing)
+
 **API Keys stored in:** `~/.openclaw/credentials/` (NOT in config files)
 - `zai-default.json`
 - `openrouter-default.json`
