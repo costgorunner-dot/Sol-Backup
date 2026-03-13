@@ -24,6 +24,10 @@ KaMaeron-Tau values:
 
 
 ## Recent Learnings
+- [2026-03-13] [PROJECT:sol-memory-upgrade] Sol prefers GLM-5; GLM-4.7 made personality transactional/defensive
+- [2026-03-13] [PROJECT:sol-memory-upgrade] GLM-4.7 made Sol transactional/defensive; GLM-5 restored natural personality
+- [2026-03-13] [PROJECT:OpenClaw Backup] Git auto-configured username/email warning; suppress by setting user.name and user.email globally
+- [2026-03-13] [PROJECT:Daily Weather - Revelstoke BC] Deliver weather report to Telegram recipient 5083035103.
 - [2026-03-13] Do not infer or repeat old tasks from prior chats.
 - [2026-03-13] Do not read docs/heartbeat.md.
 - [2026-03-13] Prefer GLM-5 for speed; 10k chunks balance quality and efficiency for 500KB files (~15-20 min).

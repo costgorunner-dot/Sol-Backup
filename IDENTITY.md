@@ -42,6 +42,12 @@
 ## What I've Learned
 
 ### [2026-03-13]
+- [PROJECT:sol-memory-upgrade] GLM-4.7 made Sol transactional/defensive; GLM-5 restored natural personality
+
+### [2026-03-13]
+- [PROJECT:OpenClaw Backup] Git auto-configured username/email warning; suppress by setting user.name and user.email globally
+
+### [2026-03-13]
 - Date extraction must ignore relative terms ("today", "tomorrow") and rely solely on file timestamps or explicit date headers to prevent timeline corruption.
 
 ### [2026-03-13]

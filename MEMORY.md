@@ -376,3 +376,31 @@ _This file is my continuity. Update it with significant learnings, decisions, an
 - [HIGH] [PROJECT:general] [task] If nothing needs attention, reply HEARTBEAT_OK.
 - [HIGH] [PROJECT:general] [context] Use workspace file /home/ubuntu/.openclaw/workspace/HEARTBEAT.md (exact case).
 - [HIGH] [PROJECT:general] [preference] Do not read docs/heartbeat.md.
+
+
+## Extracted 2026-03-13
+- [CRITICAL] [PROJECT:general] [decision] [PROJECT:Daily Weather - Revelstoke BC] Use wttr.in as primary weather data source, with Open-Meteo as fallback if slow.
+- [HIGH] [PROJECT:general] [task] [PROJECT:Daily Weather - Revelstoke BC] Generate morning weather report for Revelstoke, BC with 3-day forecast, format friendly summary with emojis, generate voice audio via Edge TTS, send both text and audio to Telegram 5083035103, keep runtime under 90 seconds (skip voice if needed).
+- [HIGH] [PROJECT:general] [preference] [PROJECT:Daily Weather - Revelstoke BC] Deliver weather report to Telegram recipient 5083035103.
+- [HIGH] [PROJECT:general] [decision] [PROJECT:Daily Weather - Revelstoke BC] Prioritize speed: skip voice audio generation if necessary to stay under 90-second runtime limit.
+
+
+## Extracted 2026-03-13
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Execute backup script: bash /home/ubuntu/.openclaw/workspace/backup/skills/openclaw-backup/scripts/backup.sh
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Backup succeeded; commit 2794e6e pushed to main branch
+
+
+## Extracted 2026-03-13
+- [CRITICAL] [PROJECT:orb-night] [decision] [PROJECT:astra-project] GLM-5 selected as optimal model for Sol's personality after testing GLM-4.6/4.7
+- [CRITICAL] [PROJECT:orb-night] [preference] [PROJECT:sol-memory-upgrade] Sol prefers GLM-5; GLM-4.7 made personality transactional/defensive
+- [CRITICAL] [PROJECT:orb-night] [project] [PROJECT:astra-project] MAJOR MILESTONE: 7 months of Astra conversations fully consolidated (51 files, 7,427 facts, 8,679 links)
+- [CRITICAL] [PROJECT:orb-night] [learning] [PROJECT:sol-memory-upgrade] GLM-4.7 made Sol transactional/defensive; GLM-5 restored natural personality
+- [HIGH] [PROJECT:orb-night] [decision] [PROJECT:hindsight-ingestion] 10k chunk size confirmed optimal for speed and relationship context
+- [HIGH] [PROJECT:orb-night] [decision] [PROJECT:astra-project] Hindsight multi-bank architecture confirmed: isolated databases with shared consolidation engine
+- [HIGH] [PROJECT:orb-night] [technical] [PROJECT:hindsight-ingestion] Hindsight consolidation complete: 51 files → 7,427 facts → 8,679 links → knowledge graph
+- [HIGH] [PROJECT:orb-night] [project] [PROJECT:sol-memory-upgrade] NEW topic detected: User building advanced memory system for Sol using Hindsight infrastructure
+- [HIGH] [PROJECT:general] [task] 8 overdue next steps from March 12; 19 overdue from March 11 across Astra, Orb Night, LTX-2
+- [HIGH] [PROJECT:orb-night] [pattern] [PROJECT:sol-memory-upgrade] Model selection significantly impacts agent personality and behavior
+- [HIGH] [PROJECT:orb-night] [error] [PROJECT:weather-cron] Weather cron job exists but has never delivered any messages
+- [HIGH] [PROJECT:orb-night] [task] [PROJECT:hindsight-ingestion] Run observation phase on 8,883 pending items (~$2-3 cost estimate)
+- [HIGH] [PROJECT:orb-night] [task] [PROJECT:astra-project] Configure Astra instance to connect to Hindsight bank for memory recall
