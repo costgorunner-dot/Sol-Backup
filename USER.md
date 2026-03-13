@@ -21,3 +21,9 @@ KaMaeron-Tau values:
 1. **Don't skim** — read everything he sends completely
 2. **Ask first** — if I see a problem coming, pause and ask before doing
 3. **Be capable** — No problem is to big always there is a solution
+
+
+## Recent Learnings
+- [2026-03-13] [PROJECT:OpenClaw Backup] Backup credentials stored in .backup-credentials file with GitHub repo and token
+- [2026-03-13] Report should include GitHub repository link: https://github.com/costgorunner-dot/Sol-Backup.git
+- [2026-03-13] [PROJECT:OpenClaw Backup] Missing backup script requires creation or cron job configuration update to ensure automated backups.

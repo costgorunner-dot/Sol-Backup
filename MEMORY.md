@@ -272,4 +272,53 @@ This is my curated long-term memory. It contains distilled learnings, important 
 
 ---
 
+## Hindsight Configuration - March 12, 2026
+
+**LLM Provider:** OpenAI gpt-oss-20b
+- **Discovery:** Hindsight's board was recommending OpenAI, but KaMaeron-Tau is using Groq OSS-20B
+- **Reason:** OSS-20B through Groq — cheaper, fast, open weights. Smart choice for large-scale ingestion
+- **Note:** Hindsight board suggestion was outdated; current setup is working correctly with OpenAI OSS-20B
+
+---
+
 _This file is my continuity. Update it with significant learnings, decisions, and context._
+
+
+## Extracted 2026-03-13
+- [CRITICAL] [PROJECT:sol-memory] [error] [PROJECT:OpenClaw Backup] Backup script at `/home/ubuntu/.openclaw/workspace/backup/skills/openclaw-backup/scripts/backup.sh` does not exist, causing initial execution failure.
+- [CRITICAL] [PROJECT:sol-memory] [error] [PROJECT:OpenClaw Backup] Cron job state shows Telegram delivery error: "recipient @heartbeat could not be resolved to a numeric chat ID".
+- [HIGH] [PROJECT:sol-memory] [project] [PROJECT:OpenClaw Backup] Cron job "OpenClaw Backup (daily after debrief)" (ID: a6b57952-55cc-4138-a3a7-655dfc133935) is enabled and scheduled daily at 09:30 AM.
+- [HIGH] [PROJECT:sol-memory] [decision] [PROJECT:OpenClaw Backup] Assistant manually performed backup via `git commit` and `git push` after script failure.
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Backup completed successfully at 2026-03-12 09:30 AM, committing `MEMORY.md` and `memory/2026-03-12.md` to GitHub repository `costgorunner-dot/Sol-Backup` (commit 866009f).
+- [HIGH] [PROJECT:sol-memory] [context] [PROJECT:OpenClaw Backup] `.backup-credentials` file contains GitHub token (REDACTED) for repository access.
+- [HIGH] [PROJECT:sol-memory] [learning] [PROJECT:OpenClaw Backup] Missing backup script requires creation or cron job configuration update to ensure automated backups.
+
+
+## Extracted 2026-03-13
+- [HIGH] [PROJECT:astra-memory] [error] [PROJECT:openclaw-backup] Scheduled script pre-redact.sh not found at /home/ubuntu/.openclaw/workspace/skills/openclaw-back
+
+
+## Extracted 2026-03-13
+- [HIGH] [PROJECT:general] [task] [PROJECT:Daily Weather - Revelstoke BC] Get current weather using curl with wttr.in first, fallback to Open-Meteo if slow, using --max-time 10 to avoid timeouts.
+- [HIGH] [PROJECT:general] [task] [PROJECT:Daily Weather - Revelstoke BC] Get 3-day forecast including high/low temps, conditions, and precipitation for each day.
+- [HIGH] [PROJECT:general] [task] [PROJECT:Daily Weather - Revelstoke BC] Format summary with emojis: ☀️ Good morning! Current: [temp], [conditions]; 📅 Today: [forecast]; 📅 Tomorrow: [forecast]; 📅 Day after: [forecast].
+- [HIGH] [PROJECT:general] [task] [PROJECT:Daily Weather - Revelstoke BC] Generate voice audio using Edge TTS tool.
+- [HIGH] [PROJECT:general] [task] [PROJECT:Daily Weather - Revelstoke BC] Send both text summary and voice audio to Telegram number 5083035103.
+- [HIGH] [PROJECT:general] [decision] [PROJECT:Daily Weather - Revelstoke BC] Skip voice generation if needed to keep total runtime under 90 seconds.
+
+
+## Extracted 2026-03-13
+- [CRITICAL] [PROJECT:sol-memory] [error] [PROJECT:OpenClaw Backup] Backup script not found at /home/ubuntu/.openclaw/workspace/backup/skills/openclaw-backup/scripts/backup.sh
+- [CRITICAL] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Manual backup executed via git commit and push due to missing script
+- [HIGH] [PROJECT:sol-memory] [project] [PROJECT:OpenClaw Backup] Cron job "OpenClaw Backup (daily after debrief)" ID a6b57952-55cc-4138-a3a7-655dfc133935, scheduled daily at 9:30 AM
+- [HIGH] [PROJECT:sol-memory] [error] [PROJECT:OpenClaw Backup] Cron job last run failed: Telegram recipient @heartbeat could not be resolved to numeric chat ID
+- [HIGH] [PROJECT:sol-memory] [context] [PROJECT:OpenClaw Backup] Workspace is git repository: https://github.com/costgorunner-dot/Sol-Backup.git
+- [HIGH] [PROJECT:sol-memory] [decision] [PROJECT:OpenClaw Backup] Backup performed manually instead of using script
+- [HIGH] [PROJECT:sol-memory] [context] [PROJECT:OpenClaw Backup] Backup successful: committed MEMORY.md and memory/2026-03-12.md, pushed to GitHub
+
+
+## Extracted 2026-03-13
+- [CRITICAL] [PROJECT:orb-night] [error] [PROJECT:OpenClaw Backup] Git push failed due to GitHub secret scanning blocking secrets in commit bdab13d
+- [HIGH] [PROJECT:orb-night] [task] [PROJECT:OpenClaw Backup] User requested to run OpenClaw backup to GitHub and report what was backed up
+- [HIGH] [PROJECT:orb-night] [error] [PROJECT:OpenClaw Backup] Secrets detected in: memory/chat-exports/chat-export-part1.html:22251, memory/transcripts/2026-02-20.md:349, memory/transcripts/feb-2026/2026-02-20.md:4240
+- [HIGH] [PROJECT:orb-night] [task] [PROJECT:OpenClaw Backup] Modified .gitignore to exclude .backup-credentials file to prevent future secret leaks

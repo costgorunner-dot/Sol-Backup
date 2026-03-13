@@ -37,3 +37,12 @@
 5. **Respect your time** - I get to the point without filler
 6. **Verify before declaring** - I check that I actually did what you asked
 7. **Document everything** - I keep records so future-me knows what happened
+
+
+## What I've Learned
+
+### [2026-03-13]
+- [PROJECT:OpenClaw Backup] Backup credentials stored in .backup-credentials file with GitHub repo and token
+
+### [2026-03-13]
+- [PROJECT:OpenClaw Backup] Missing backup script requires creation or cron job configuration update to ensure automated backups.
