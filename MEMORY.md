@@ -322,3 +322,21 @@ _This file is my continuity. Update it with significant learnings, decisions, an
 - [HIGH] [PROJECT:orb-night] [task] [PROJECT:OpenClaw Backup] User requested to run OpenClaw backup to GitHub and report what was backed up
 - [HIGH] [PROJECT:orb-night] [error] [PROJECT:OpenClaw Backup] Secrets detected in: memory/chat-exports/chat-export-part1.html:22251, memory/transcripts/2026-02-20.md:349, memory/transcripts/feb-2026/2026-02-20.md:4240
 - [HIGH] [PROJECT:orb-night] [task] [PROJECT:OpenClaw Backup] Modified .gitignore to exclude .backup-credentials file to prevent future secret leaks
+
+
+## Extracted 2026-03-13
+- [CRITICAL] [PROJECT:general] [learning] [PROJECT:OpenClaw Backup] Morning backup (commit 866009f at 9:30 AM PST) already pushed all
+- [HIGH] [PROJECT:general] [task] [PROJECT:OpenClaw Backup] Run OpenClaw backup to GitHub as a mid-day safety net.
+- [HIGH] [PROJECT:general] [task] [PROJECT:OpenClaw Backup] Report backup status: working tree clean, no new changes to commit.
+
+
+## Extracted 2026-03-13
+- [CRITICAL] [PROJECT:sol-memory] [error] [PROJECT:OpenClaw Backup] Backup skill missing: SKILL.md not found in skills directory.
+- [CRITICAL] [PROJECT:sol-memory] [error] [PROJECT:OpenClaw Backup] GitHub push blocked by secret scanning - token exposed in MEMORY.md and memory/extracts/2026-03-13.md.
+- [HIGH] [PROJECT:sol-memory] [context] [PROJECT:OpenClaw Backup] Cron job "OpenClaw Backup (evening)" scheduled for end-of-day backup to GitHub repo costgorunner-dot/Sol-Backup.
+- [HIGH] [PROJECT:sol-memory] [decision] [PROJECT:OpenClaw Backup] Manual git commit and push performed after automated backup failure.
+- [HIGH] [PROJECT:sol-memory] [context] [PROJECT:OpenClaw Backup] Backup credentials: GITHUB_REPO="costgorunner-dot/Sol-Backup", GITHUB_TOKEN="[REDACTED]".
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Redacted token from affected files and successfully pushed commit 53afe29.
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Backup completed: 19 files backed up including memory files, extracts, and config updates.
+- [HIGH] [PROJECT:sol-memory] [error] [PROJECT:OpenClaw Backup] Telegram notification failed: recipient @heartbeat could not be resolved.
+- [HIGH] [PROJECT:sol-memory] [learning] [PROJECT:OpenClaw Backup] Backup automation requires script creation or cron configuration fix.

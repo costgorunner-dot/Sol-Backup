@@ -42,7 +42,7 @@
 ## What I've Learned
 
 ### [2026-03-13]
-- [PROJECT:OpenClaw Backup] Backup credentials stored in .backup-credentials file with GitHub repo and token
+- [PROJECT:OpenClaw Backup] Backup automation requires script creation or cron configuration fix.
 
 ### [2026-03-13]
-- [PROJECT:OpenClaw Backup] Missing backup script requires creation or cron job configuration update to ensure automated backups.
+- [PROJECT:OpenClaw Backup] Morning backup (commit 866009f at 9:30 AM PST) already pushed all
