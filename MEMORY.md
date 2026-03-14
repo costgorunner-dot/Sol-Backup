@@ -413,3 +413,15 @@ _This file is my continuity. Update it with significant learnings, decisions, an
 - [HIGH] [PROJECT:sol-memory] [error] [PROJECT:OpenClaw Backup] Git identity warning: user.name and user.email need configuration for accurate commit attribution.
 - [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Backup pushed to GitHub repository https://github.com/costgorunner-dot/Sol-Backup.git.
 - [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Afternoon backup completed successfully with commit d0686bd.
+
+
+## Extracted 2026-03-14
+- [HIGH] [PROJECT:sol-memory] [task] HIGH [PROJECT:OpenClaw Backup] Run OpenClaw backup to GitHub, commit and push, and report backed-up items.
+- [HIGH] [PROJECT:sol-memory] [preference] HIGH [PROJECT:OpenClaw Backup] End-of-day safety backup timing.
+- [HIGH] [PROJECT:sol-memory] [error] MEDIUM [PROJECT:OpenClaw Backup] Git identity not explicitly set; auto-configured from username/hostname.
+- [HIGH] [PROJECT:sol-memory] [task] HIGH [PROJECT:OpenClaw Backup] Backup completed: commit c746786, 3 files changed (MEMORY.md, USER.md, memory/extracts/2026-03-14.md), 24 insertions, pushed to GitHub.
+
+
+## Extracted 2026-03-14
+- [HIGH] [PROJECT:HEARTBEAT] [decision] User commands to strictly follow HEARTBEAT.md without inferring tasks from prior chats.
+- [HIGH] [PROJECT:HEARTBEAT] [task] Heartbeat runs every 30 minutes but only reports significant findings.
