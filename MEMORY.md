@@ -425,3 +425,30 @@ _This file is my continuity. Update it with significant learnings, decisions, an
 ## Extracted 2026-03-14
 - [HIGH] [PROJECT:HEARTBEAT] [decision] User commands to strictly follow HEARTBEAT.md without inferring tasks from prior chats.
 - [HIGH] [PROJECT:HEARTBEAT] [task] Heartbeat runs every 30 minutes but only reports significant findings.
+
+
+## Extracted 2026-03-14
+- [CRITICAL] [PROJECT:orb-night] [decision] [PROJECT:Sol Memory] GLM-5 confirmed optimal for Sol's personality, restoring natural behavior vs GLM-4.7's transactional/defensive output.
+- [CRITICAL] [PROJECT:orb-night] [error] [PROJECT:OpenClaw Backup] Backup
+- [HIGH] [PROJECT:Hindsight] [decision] 10k chunk size confirmed optimal for memory ingestion, balancing speed and relationship context.
+- [HIGH] [PROJECT:Hindsight] [decision] Hindsight multi-bank architecture confirmed: isolated databases with shared consolidation engine.
+- [HIGH] [PROJECT:Dreammode] [decision] Dreammode system reliability confirmed; keep active.
+- [HIGH] [PROJECT:orb-night] [task] [PROJECT:OpenClaw Backup] Create missing backup script at `/home/ubuntu/.openclaw/workspace/backup/skills/openclaw-backup/scripts/backup.sh`.
+- [HIGH] [PROJECT:Hindsight] [task] Run observation phase: process 8,883 pending items (~$2-3 cost estimate).
+- [HIGH] [PROJECT:orb-night] [task] [PROJECT:Astra Memory] Connect Astra instance to Hindsight bank for memory recall capability.
+- [HIGH] [PROJECT:orb-night] [task] [PROJECT:Sol Memory] Design Sol's memory bank structure as part of the memory upgrade project.
+
+
+## Extracted 2026-03-14
+- [HIGH] [PROJECT:general] [task] [PROJECT:Daily Weather Revelstoke] Generate daily weather report for Revelstoke, BC with 3-day forecast.
+- [HIGH] [PROJECT:general] [decision] [PROJECT:Daily Weather Revelstoke] Use wttr.in API (curl wttr.in/Revelstoke?format=j1) to fetch weather data.
+- [HIGH] [PROJECT:general] [task] [PROJECT:Daily Weather Revelstoke] Format output exactly with specified emojis and structure: current conditions, daily breakdowns (morning/noon/evening/night), precipitation info, and friendly comment.
+- [HIGH] [PROJECT:general] [task] [PROJECT:Daily Weather Revelstoke] Send both formatted text and generated voice audio to Telegram recipient 5083035103.
+- [HIGH] [PROJECT:general] [project] [PROJECT:Daily Weather Revelstoke] Cron job identifier: "Daily Weather - Revelstoke BC".
+
+
+## Extracted 2026-03-14
+- [HIGH] [PROJECT:sol-memory] [task] HIGH [PROJECT:OpenClaw Backup] Scheduled backup via cron (ID: a6b57952) to run daily after debrief.
+- [HIGH] [PROJECT:sol-memory] [task] HIGH [PROJECT:OpenClaw Backup] Execute backup script: bash /home/ubuntu/.openclaw/workspace/backup/skills/openclaw-backup/scripts/backup.sh
+- [HIGH] [PROJECT:sol-memory] [task] HIGH [PROJECT:OpenClaw Backup] Report backup success/failure and include GitHub repository link.
+- [HIGH] [PROJECT:sol-memory] [task] HIGH [PROJECT:OpenClaw Backup] Backup succeeded: commit 98e2488,
