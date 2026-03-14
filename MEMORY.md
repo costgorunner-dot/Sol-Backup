@@ -404,3 +404,12 @@ _This file is my continuity. Update it with significant learnings, decisions, an
 - [HIGH] [PROJECT:orb-night] [error] [PROJECT:weather-cron] Weather cron job exists but has never delivered any messages
 - [HIGH] [PROJECT:orb-night] [task] [PROJECT:hindsight-ingestion] Run observation phase on 8,883 pending items (~$2-3 cost estimate)
 - [HIGH] [PROJECT:orb-night] [task] [PROJECT:astra-project] Configure Astra instance to connect to Hindsight bank for memory recall
+
+
+## Extracted 2026-03-14
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] User instructed to run OpenClaw backup to GitHub, with subtasks: execute backup skill and report changes.
+- [HIGH] [PROJECT:sol-memory] [preference] [PROJECT:OpenClaw Backup] Backup must be quick as a mid-day safety net.
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Assistant executed backup, listing modified files: IDENTITY.md, MEMORY.md, USER.md, and memory extracts (Feb 18-25, Mar 13).
+- [HIGH] [PROJECT:sol-memory] [error] [PROJECT:OpenClaw Backup] Git identity warning: user.name and user.email need configuration for accurate commit attribution.
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Backup pushed to GitHub repository https://github.com/costgorunner-dot/Sol-Backup.git.
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Afternoon backup completed successfully with commit d0686bd.

@@ -24,6 +24,7 @@ KaMaeron-Tau values:
 
 
 ## Recent Learnings
+- [2026-03-14] [PROJECT:OpenClaw Backup] Backup must be quick as a mid-day safety net.
 - [2026-03-13] [PROJECT:sol-memory-upgrade] Sol prefers GLM-5; GLM-4.7 made personality transactional/defensive
 - [2026-03-13] [PROJECT:sol-memory-upgrade] GLM-4.7 made Sol transactional/defensive; GLM-5 restored natural personality
 - [2026-03-13] [PROJECT:OpenClaw Backup] Git auto-configured username/email warning; suppress by setting user.name and user.email globally
