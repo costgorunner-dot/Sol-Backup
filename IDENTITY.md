@@ -41,6 +41,9 @@
 
 ## What I've Learned
 
+### [2026-03-15]
+- Git suggests setting user.name and user.email globally to suppress automatic identity message.
+
 ### [2026-03-13]
 - [PROJECT:sol-memory-upgrade] GLM-4.7 made Sol transactional/defensive; GLM-5 restored natural personality
 

@@ -24,6 +24,7 @@ KaMaeron-Tau values:
 
 
 ## Recent Learnings
+- [2026-03-15] Git suggests setting user.name and user.email globally to suppress automatic identity message.
 - [2026-03-15] Strictly follow HEARTBEAT.md instructions; do not infer or repeat old tasks from prior chats.
 - [2026-03-15] [PROJECT:OpenClaw Backup] End-of-day safety backup should be
 - [2026-03-14] [PROJECT:OpenClaw Backup] Keep backup quick as a safety net mid-day.
