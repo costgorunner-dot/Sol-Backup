@@ -461,3 +461,17 @@ _This file is my continuity. Update it with significant learnings, decisions, an
 - [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Pushed changes to https://github.com/costgorunner-dot/Sol-Backup.git.
 - [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Backup complete: 4 files changed, 72 insertions.
 - [HIGH] [PROJECT:sol-memory] [preference] [PROJECT:OpenClaw Backup] Keep backup quick as a safety net mid-day.
+
+
+## Extracted 2026-03-15
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Run OpenClaw backup to GitHub, commit and push, and report backed-up files.
+- [HIGH] [PROJECT:sol-memory] [error] [PROJECT:OpenClaw Backup] Git user identity not configured; commit author defaults to system username and hostname.
+- [HIGH] [PROJECT:sol-memory] [preference] [PROJECT:OpenClaw Backup] End-of-day safety backup should be
+
+
+## Extracted 2026-03-15
+- [CRITICAL] [PROJECT:general] [preference] Strictly follow HEARTBEAT.md instructions; do not infer or repeat old tasks from prior chats.
+- [CRITICAL] [PROJECT:general] [task] Context compression detection: if context usage >75%, create emergency snapshot memory/raw/emergency-YYYY-MM-DD-HHMM.md with recent conversation summary, decisions, active tasks.
+- [CRITICAL] [PROJECT:general] [decision] Assistant replies HEARTBEAT_OK when no attention needed per guidelines.
+- [HIGH] [PROJECT:general] [task] Daily memory file maintenance at 11 PM: create or update memory/raw/YYYY-MM-DD.md with today's summary for Dreammode Night Phase.
+- [HIGH] [PROJECT:general] [task] System health checks: alert if disk space <500MB (warning/critical), memory overuse, or failed operations.

@@ -24,6 +24,8 @@ KaMaeron-Tau values:
 
 
 ## Recent Learnings
+- [2026-03-15] Strictly follow HEARTBEAT.md instructions; do not infer or repeat old tasks from prior chats.
+- [2026-03-15] [PROJECT:OpenClaw Backup] End-of-day safety backup should be
 - [2026-03-14] [PROJECT:OpenClaw Backup] Keep backup quick as a safety net mid-day.
 - [2026-03-14] [PROJECT:Daily Weather Revelstoke] Generate voice audio using tts tool, but allow skipping if time-constrained.
 - [2026-03-14] HIGH [PROJECT:OpenClaw Backup] End-of-day safety backup timing.
