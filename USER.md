@@ -24,6 +24,7 @@ KaMaeron-Tau values:
 
 
 ## Recent Learnings
+- [2026-03-16] Git suggests setting global user.name and user.email to suppress automatic identity messages in commits.
 - [2026-03-16] [PROJECT:OpenClaw Backup] Keep the backup process quick.
 - [2026-03-16] HIGH [PROJECT:Daily Weather - Revelstoke BC] Output must match exact format with emojis, daily period breakdowns (morning/noon/evening/night), and precipitation info.
 - [2026-03-15] Git suggests setting user.name and user.email globally to suppress automatic identity message.

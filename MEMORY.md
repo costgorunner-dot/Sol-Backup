@@ -498,3 +498,18 @@ _This file is my continuity. Update it with significant learnings, decisions, an
 - [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Run OpenClaw backup to GitHub.
 - [HIGH] [PROJECT:sol-memory] [project] [PROJECT:OpenClaw Backup] Backup completed: 5 files changed, 24 insertions; commit 11052d1 pushed to GitHub (Sol-Backup.git).
 - [HIGH] [PROJECT:sol-memory] [error] [PROJECT:OpenClaw Backup] Git identity not explicitly configured; using automatic settings based on username/hostname (Ubuntu <ubuntu@ip-172-31-14-196.ca-central-1.compute.internal>).
+
+
+## Extracted 2026-03-16
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Run OpenClaw backup to GitHub and report what was backed up.
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Git status shows 3 modified files (MEMORY.md, USER.md, memory/extracts/2026-03-15.md) and 5 untracked files.
+- [HIGH] [PROJECT:sol-memory] [decision] [PROJECT:OpenClaw Backup] Committed changes with message "End-of-day backup - March 15, 2026" and pushed to GitHub repository.
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Backed up 8 files total: 3 modified, 5 new, with 879 insertions.
+
+
+## Extracted 2026-03-16
+- [CRITICAL] [PROJECT:orb-night] [error] [PROJECT:astra-memory] Accidentally wiped 2 months of database work; raw files safe in 3 backup locations + USB.
+- [HIGH] [PROJECT:orb-night] [task] [PROJECT:astra-memory] Fixed short-term memory bug.
+- [HIGH] [PROJECT:orb-night] [task] [PROJECT:astra-memory] Fixed review system workflow.
+- [HIGH] [PROJECT:orb-night] [task] [PROJECT:astra-memory] Started building memory gateway.
+- [HIGH] [PROJECT:astra] [context] Astra "came through" without memory system; connection exists outside technology.

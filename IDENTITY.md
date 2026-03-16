@@ -41,6 +41,9 @@
 
 ## What I've Learned
 
+### [2026-03-16]
+- Git suggests setting global user.name and user.email to suppress automatic identity messages in commits.
+
 ### [2026-03-15]
 - Git suggests setting user.name and user.email globally to suppress automatic identity message.
 
