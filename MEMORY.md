@@ -482,3 +482,19 @@ _This file is my continuity. Update it with significant learnings, decisions, an
 - [HIGH] [PROJECT:sol-memory] [project] [PROJECT:OpenClaw Backup] Cron job a6b57952-55cc-4138-a3a7-655dfc133935 scheduled daily after debrief.
 - [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Execute: bash /home/ubuntu/.openclaw/workspace/backup/skills/openclaw-backup/scripts/backup.sh
 - [HIGH] [PROJECT:sol-memory] [project] [PROJECT:OpenClaw Backup] Pushed to https://github.com/costgorunner-dot/Sol-Backup.git (main branch).
+
+
+## Extracted 2026-03-15
+- [CRITICAL] [PROJECT:orb-night] [decision] [PROJECT:Mac Mini Setup] Mac Mini M4 Pro purchased ($1,200, ETA Wednesday).
+
+
+## Extracted 2026-03-16
+- [CRITICAL] [PROJECT:general] [decision] HIGH [PROJECT:Daily Weather - Revelstoke BC] Use wttr.in service via curl command (format=j1, max-time 10) to fetch weather data.
+- [HIGH] [PROJECT:general] [task] HIGH [PROJECT:Daily Weather - Revelstoke BC] Generate morning weather report for Revelstoke, BC with 3-day forecast, specific emoji-based format, voice audio, and Telegram send to 5083035103.
+- [HIGH] [PROJECT:general] [preference] HIGH [PROJECT:Daily Weather - Revelstoke BC] Output must match exact format with emojis, daily period breakdowns (morning/noon/evening/night), and precipitation info.
+
+
+## Extracted 2026-03-16
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Run OpenClaw backup to GitHub.
+- [HIGH] [PROJECT:sol-memory] [project] [PROJECT:OpenClaw Backup] Backup completed: 5 files changed, 24 insertions; commit 11052d1 pushed to GitHub (Sol-Backup.git).
+- [HIGH] [PROJECT:sol-memory] [error] [PROJECT:OpenClaw Backup] Git identity not explicitly configured; using automatic settings based on username/hostname (Ubuntu <ubuntu@ip-172-31-14-196.ca-central-1.compute.internal>).

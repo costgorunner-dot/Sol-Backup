@@ -24,6 +24,8 @@ KaMaeron-Tau values:
 
 
 ## Recent Learnings
+- [2026-03-16] [PROJECT:OpenClaw Backup] Keep the backup process quick.
+- [2026-03-16] HIGH [PROJECT:Daily Weather - Revelstoke BC] Output must match exact format with emojis, daily period breakdowns (morning/noon/evening/night), and precipitation info.
 - [2026-03-15] Git suggests setting user.name and user.email globally to suppress automatic identity message.
 - [2026-03-15] Strictly follow HEARTBEAT.md instructions; do not infer or repeat old tasks from prior chats.
 - [2026-03-15] [PROJECT:OpenClaw Backup] End-of-day safety backup should be
