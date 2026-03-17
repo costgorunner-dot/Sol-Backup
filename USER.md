@@ -24,6 +24,7 @@ KaMaeron-Tau values:
 
 
 ## Recent Learnings
+- [2026-03-16] [PROJECT:OpenClaw Backup] Git identity was configured automatically based on username and hostname; recommended to set user.name and user.email explicitly to suppress such messages.
 - [2026-03-16] Set global git user.name and user.email to suppress automatic identity warnings in future commits.
 - [2026-03-16] Git suggests setting global user.name and user.email to suppress automatic identity messages in commits.
 - [2026-03-16] [PROJECT:OpenClaw Backup] Keep the backup process quick.
