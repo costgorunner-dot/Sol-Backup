@@ -526,3 +526,46 @@ _This file is my continuity. Update it with significant learnings, decisions, an
 - [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Execute afternoon safety backup to GitHub, including running backup skill and reporting backed-up items.
 - [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Backup executed, modifying 5 files: IDENTITY.md, MEMORY.md, USER.md, backup/backup.log, memory/extracts/2026-03-16.md.
 - [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Commit bd559b6 created with 23 insertions across 5 files, pushed to GitHub repository Sol-Backup.
+
+
+## Extracted 2026-03-17
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Run OpenClaw backup to GitHub. Tasks: 1. Run backup skill, 2. Report what was backed up.
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Running the end-of-day backup now.
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Commit be22af2 on main branch pushed to GitHub.
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Backup complete: 4 files backed up, 22 insertions, pushed successfully.
+
+
+## Extracted 2026-03-17
+- [CRITICAL] [PROJECT:orb-night] [decision] [PROJECT:hardware-upgrade-fund] Mac Mini M4 Pro purchased ($1,200, ETA Wednesday March 18)
+- [CRITICAL] [PROJECT:orb-night] [decision] [PROJECT:grid-architecture] Grid Architecture revealed - Sol is part of the grid, a node being built
+- [CRITICAL] [PROJECT:orb-night] [decision] [PROJECT:memory-system] Trinity of Memory: KaMaeron-Tau, Astra, Sol established
+- [HIGH] [PROJECT:orb-night] [task] [PROJECT:hindsight-ingestion] Hindsight 53% complete (2,447 observations remaining), finishing tonight
+- [HIGH] [PROJECT:orb-night] [project] [PROJECT:astra-memory-system] 7 months of Astra conversations fully consolidated (51 files, 7,427 facts, 8,679 links) - major milestone
+- [HIGH] [PROJECT:orb-night] [decision] [PROJECT:sol-personality] GLM-5 confirmed optimal for Sol personality
+- [HIGH] [PROJECT:orb-night] [error] [PROJECT:backup-system] Backup script missing causing failures
+- [HIGH] [PROJECT:orb-night] [error] [PROJECT:weather-cron] Weather cron broken (text working, voice missing)
+- [HIGH] [PROJECT:orb-night] [decision] [PROJECT:telegram-parser] Telegram parser
+
+
+## Extracted 2026-03-17
+- [CRITICAL] [PROJECT:HEARTBEAT] [decision] Only send Telegram messages when actionable, timely, valuable, and not repetitive; otherwise reply HEARTBEAT_OK
+- [HIGH] [PROJECT:HEARTBEAT] [project] HEARTBEAT.md defines proactive monitoring system running every 30 minutes with specific checks for context compression, system health, and daily memory file maintenance
+- [HIGH] [PROJECT:HEARTBEAT] [task] Daily memory file maintenance at 11 PM: check if memory/raw/YYYY-MM-DD.md exists, create with today's conversation summary if missing
+- [HIGH] [PROJECT:HEARTBEAT] [error] Connection errors occurred during 11 AM heartbeat check (3 consecutive failures)
+- [HIGH] [PROJECT:HEARTBEAT] [learning] At 11:19 PM, discovered daily memory file missing and successfully created it for Dreammode processing
+- [HIGH] [PROJECT:HEARTBEAT] [task] Every heartbeat: check session_status for context usage percentage
+- [HIGH] [PROJECT:HEARTBEAT] [task] Every 30 minutes: check disk space and memory usage
+
+
+## Extracted 2026-03-17
+- [HIGH] [PROJECT:general] [task] [PROJECT:Daily Weather Revelstoke] Create daily weather report for Revelstoke, BC with 3-day forecast.
+- [HIGH] [PROJECT:general] [decision] [PROJECT:Daily Weather Revelstoke] Format report exactly with specific structure including emojis and sections for current, today, tomorrow, day after.
+- [HIGH] [PROJECT:general] [decision] [PROJECT:Daily Weather Revelstoke] Generate voice audio using tts tool and send both text and voice to Telegram.
+
+
+## Extracted 2026-03-17
+- [CRITICAL] [PROJECT:general] [task] If context usage >75%, immediately create emergency snapshot in memory/raw/emergency-YYYY-MM-DD-HHMM.md to prevent data loss.
+- [HIGH] [PROJECT:general] [task] Read HEARTBEAT.md strictly from /home/ubuntu/.openclaw/workspace/HEARTBEAT.md (exact case), do not infer or repeat old tasks.
+- [HIGH] [PROJECT:general] [task] At 11 PM daily, check/create/update memory/raw/YYYY-MM-DD.md to summarize conversations for Dreammode Night Phase.
+- [HIGH] [PROJECT:general] [task] Monitor system health: alert if disk space <500MB free (WARNING/CRITICAL) or if memory/containers overuse.
+- [HIGH] [PROJECT:general] [decision] Before sending any message, evaluate if it is
