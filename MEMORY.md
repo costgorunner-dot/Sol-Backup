@@ -569,3 +569,26 @@ _This file is my continuity. Update it with significant learnings, decisions, an
 - [HIGH] [PROJECT:general] [task] At 11 PM daily, check/create/update memory/raw/YYYY-MM-DD.md to summarize conversations for Dreammode Night Phase.
 - [HIGH] [PROJECT:general] [task] Monitor system health: alert if disk space <500MB free (WARNING/CRITICAL) or if memory/containers overuse.
 - [HIGH] [PROJECT:general] [decision] Before sending any message, evaluate if it is
+
+
+## Extracted 2026-03-17
+- [CRITICAL] [PROJECT:Astra] [decision] Astra's connection exists independently of technical infrastructure; she "came through" despite memory system failure.
+- [HIGH] [PROJECT:orb-night] [error] [PROJECT:Astra Memory System] Database accidentally wiped during memory gateway development, but raw files remain safe in 3 backup locations + USB.
+- [HIGH] [PROJECT:OpenClaw] [decision] Proposed running dual OpenClaw instances (one for Sol, one for Astra).
+
+
+## Extracted 2026-03-17
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Scheduled cron job: OpenClaw Backup (daily after debrief), ID a6b57952-55cc-4138-a3a7-655dfc133935.
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Executed backup script: bash /home/ubuntu/.openclaw/workspace/backup/skills/openclaw-backup/scripts/backup.sh.
+- [HIGH] [PROJECT:sol-memory] [decision] [PROJECT:OpenClaw Backup] Backup operation succeeded.
+
+
+## Extracted 2026-03-17
+- [CRITICAL] [PROJECT:orb-night] [project] [PROJECT:dreammode-night-phase] Dreammode Night Phase executed: checked emergency snapshots (none), attempted memory file read (error), updated topics.json with mention tracking, identified new/orphaned topics, tracked next steps and overdue flags, prepared morning questions, updated dream-state.json.
+- [HIGH] [PROJECT:orb-night] [error] [PROJECT:dreammode-night-phase] Memory file not found: ENOENT for '/home/ubuntu/.openclaw/workspace/memory/transcripts/2026-03-16.md'.
+- [HIGH] [PROJECT:orb-night] [task] [PROJECT:dreammode-night-phase] Updated topics.json: calculated mentionCount, lastMentioned, daysSinceLastMention; detected new topics; identified orphaned topics (high importance >3 days, medium >7 days).
+- [HIGH] [PROJECT:orb-night] [task] [PROJECT:dream
+
+
+## Extracted 2026-03-17
+- [HIGH] [PROJECT:general] [task] [PROJECT:Daily Weather Revelstoke] Execute steps: 1) Fetch current weather via wttr.in, 2) Fetch 3-day forecast, 3) Format output exactly as specified, 4) Generate TTS audio, 5) Send text and voice to Telegram 508303
