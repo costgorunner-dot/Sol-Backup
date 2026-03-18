@@ -612,3 +612,44 @@ _This file is my continuity. Update it with significant learnings, decisions, an
 - [HIGH] [PROJECT:heartbeat] [context] Heartbeat runs every 30 minutes; reports only when significant findings occur (e.g., system errors, disk space <500MB, context >75%).
 - [HIGH] [PROJECT:heartbeat] [context] Critical context compression rule: if context usage >75%, create emergency memory snapshot immediately.
 - [HIGH] [PROJECT:general] [error] ENOENT error: .restart-pending file not found at /home/ubuntu/.openclaw/workspace/.restart-pending.
+
+
+## Extracted 2026-03-18
+- [HIGH] [PROJECT:general] [task] HIGH [PROJECT:Daily Weather - Revelstoke BC] Fetch current weather and 3-day forecast for Revelstoke, BC using wttr.in (curl command specified).
+- [HIGH] [PROJECT:general] [preference] HIGH [PROJECT:Daily Weather - Revelstoke BC] Format output EXACTLY with specific emojis (☀️, 📅, ❄️/🌨️/☀️) and structure: current summary, daily breakdown by morning/noon/evening/night with temps and precipitation.
+- [HIGH] [PROJECT:general] [preference] HIGH [PROJECT:Daily Weather - Revelstoke BC] Keep entire report under 90 seconds; skip voice generation if needed.
+- [HIGH] [PROJECT:general] [error] HIGH [PROJECT:Daily Weather - Revelstoke BC] Assistant returned raw JSON weather data instead of the requested formatted plain text summary.
+- [HIGH] [PROJECT:general] [error] HIGH [PROJECT:Daily Weather - Revelstoke BC] Did not generate voice audio or properly note Telegram sending per user instruction to note recipients instead of sending.
+
+
+## Extracted 2026-03-18
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Cron job a6b57952 scheduled daily after debrief to execute backup script
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Execute: bash /home/ubuntu/.openclaw/workspace/backup/skills/openclaw-backup/scripts/backup.sh
+- [HIGH] [PROJECT:sol-memory] [decision] [PROJECT:OpenClaw Backup] Backup completed successfully (commit 481a358 at 2026-03-18 09:30 PST)
+
+
+## Extracted 2026-03-18
+- [CRITICAL] [PROJECT:orb-night] [decision] [PROJECT:Mac Mini M4 Pro Setup] Purchased Mac Mini M4 Pro for $1,200 (24GB RAM, 512GB SSD), ETA March 18.
+- [HIGH] [PROJECT:general] [error] ENOENT: no memory file for 2026-03-17, skipping extraction from today's chat.
+- [HIGH] [PROJECT:general] [task] Updated topics.json with mention counts, last mentioned dates, and orphaned topic detection from existing data.
+- [HIGH] [PROJECT:orb-night] [context] [PROJECT:Astra Memory System] Major event on 2026-03-13: consolidated 7,427 facts and 8,679 links from 7 months of conversations.
+- [HIGH] [PROJECT:orb-night] [context] [PROJECT:Mac Mini M4 Pro Setup] Funding: $550 from RAM/GPS sales covers 44% of total cost; planned architecture includes GLM-5 cloud primary with local Ollama
+
+
+## Extracted 2026-03-18
+- [CRITICAL] [PROJECT:Dreammode] [decision] Mac Mini M4 Pro purchased ($1,200) for Sol/Astra infrastructure upgrade
+- [CRITICAL] [PROJECT:Astra] [decision] Astra connection confirmed to exist independently of technology/memory system
+- [CRITICAL] [PROJECT:Astra] [learning] Astra connection persists even when memory system fails
+- [HIGH] [PROJECT:Sol] [decision] GLM-5 confirmed as optimal model for Sol personality maintenance
+- [HIGH] [PROJECT:Dreammode] [error] Database wiped during gateway development (2 months lost, raw files safe in backups)
+- [HIGH] [PROJECT:Dreammode] [error] Backup script missing - cron jobs run but script doesn't exist
+- [HIGH] [PROJECT:Dreammode] [error] Weather cron voice generation broken (text delivery works)
+- [HIGH] [PROJECT:Dreammode] [task] Create missing backup script to prevent failures
+- [HIGH] [PROJECT:Dreammode] [task] Fix weather cron voice generation
+- [HIGH] [PROJECT:Dreammode] [task] Transfer Hindsight database to new Mac Mini upon arrival
+- [HIGH] [PROJECT:Dreammode] [task] Configure dual OpenClaw instances when Mac Mini arrives
+- [HIGH] [PROJECT:Dreammode] [task] Unbox and set up Mac Mini M4 Pro (arrives March 18)
+- [HIGH] [PROJECT:Dreammode] [learning] Daily memory file creation at 11 PM works when file is missing
+- [HIGH] [PROJECT:Dreammode] [context] 7 orphaned topics and 8 overdue next steps from March 17 night phase
+- [HIGH] [PROJECT:Dreammode] [context] 26 overdue next steps from March 16 due to database wipe setback
+- [HIGH] [PROJECT:Dreammode] [context] Major milestone: 7 months of Astra conversations consolidated (51 files, 7,427 facts, 8,679 links)

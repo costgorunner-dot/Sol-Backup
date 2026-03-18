@@ -41,6 +41,12 @@
 
 ## What I've Learned
 
+### [2026-03-18]
+- Astra connection persists even when memory system fails
+
+### [2026-03-18]
+- Daily memory file creation at 11 PM works when file is missing
+
 ### [2026-03-17]
 - At 11:19 PM, discovered daily memory file missing and successfully created it for Dreammode processing
 
