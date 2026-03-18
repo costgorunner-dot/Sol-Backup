@@ -598,3 +598,17 @@ _This file is my continuity. Update it with significant learnings, decisions, an
 - [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] User instructed to run OpenClaw backup to GitHub as a safety net.
 - [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Backup resulted in 4 files changed: MEMORY.md, backup/backup.log, memory/extracts/2026-03-17.md modified; MAC-MIGRATION-GUIDE.md added.
 - [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Commit 0e4fbdc pushed to GitHub main branch with 362 insertions.
+
+
+## Extracted 2026-03-18
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] User initiated evening backup to GitHub as an end-of-day safety measure.
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Assistant executed backup, checked git status showing modified files.
+- [HIGH] [PROJECT:sol-memory] [decision] [PROJECT:OpenClaw Backup] Committed changes with message "Evening backup - Mar 17, 2026".
+- [HIGH] [PROJECT:sol-memory] [result] [PROJECT:OpenClaw Backup] Commit e2695fc successfully pushed to origin/main.
+
+
+## Extracted 2026-03-18
+- [CRITICAL] [PROJECT:workspace] [preference] Read HEARTBEAT.md from exact path /home/ubuntu/.openclaw/workspace/HEARTBEAT.md, not docs/heartbeat.md.
+- [HIGH] [PROJECT:heartbeat] [context] Heartbeat runs every 30 minutes; reports only when significant findings occur (e.g., system errors, disk space <500MB, context >75%).
+- [HIGH] [PROJECT:heartbeat] [context] Critical context compression rule: if context usage >75%, create emergency memory snapshot immediately.
+- [HIGH] [PROJECT:general] [error] ENOENT error: .restart-pending file not found at /home/ubuntu/.openclaw/workspace/.restart-pending.

@@ -24,6 +24,7 @@ KaMaeron-Tau values:
 
 
 ## Recent Learnings
+- [2026-03-18] Read HEARTBEAT.md from exact path /home/ubuntu/.openclaw/workspace/HEARTBEAT.md, not docs/heartbeat.md.
 - [2026-03-17] [PROJECT:Daily Weather Revelstoke] Skip voice generation if needed to stay under 90 seconds.
 - [2026-03-17] At 11:19 PM, discovered daily memory file missing and successfully created it for Dreammode processing
 - [2026-03-17] Git user identity configured automatically; set explicitly via git config to suppress message.
