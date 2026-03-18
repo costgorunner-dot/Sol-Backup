@@ -592,3 +592,9 @@ _This file is my continuity. Update it with significant learnings, decisions, an
 
 ## Extracted 2026-03-17
 - [HIGH] [PROJECT:general] [task] [PROJECT:Daily Weather Revelstoke] Execute steps: 1) Fetch current weather via wttr.in, 2) Fetch 3-day forecast, 3) Format output exactly as specified, 4) Generate TTS audio, 5) Send text and voice to Telegram 508303
+
+
+## Extracted 2026-03-17
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] User instructed to run OpenClaw backup to GitHub as a safety net.
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Backup resulted in 4 files changed: MEMORY.md, backup/backup.log, memory/extracts/2026-03-17.md modified; MAC-MIGRATION-GUIDE.md added.
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Commit 0e4fbdc pushed to GitHub main branch with 362 insertions.

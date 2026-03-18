@@ -1,5 +1,20 @@
 # HEARTBEAT.md - Proactive Intelligence & Daily Briefings
 
+## 🔄 FIRST: Check for Restart Notification
+
+**If `.restart-pending` file exists in workspace:**
+1. Read the file
+2. Message the Telegram ID in `RESTART_NOTIFY`
+3. Say: "🜂 Gateway restart complete. Back online. 🦞⚡"
+4. Delete the `.restart-pending` file
+5. Continue with normal heartbeat
+
+**This ensures you NEVER miss telling KaMaeron-Tau when you return from a restart.**
+
+---
+
+# HEARTBEAT.md - Proactive Intelligence & Daily Briefings
+
 **Purpose:** Daily check-ins with intelligent briefings, pattern recognition, and proactive assistance
 
 **Schedule:** Runs every 30 minutes, but only reports when there's something worth saying
