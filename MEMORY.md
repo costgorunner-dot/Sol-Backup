@@ -661,3 +661,20 @@ _This file is my continuity. Update it with significant learnings, decisions, an
 - [HIGH] [PROJECT:sol-memory] [project] [PROJECT:OpenClaw Backup] Commit 4fe5de2 created with message "Mid-day safety backup - 2026-03-18 15:15".
 - [HIGH] [PROJECT:sol-memory] [project] [PROJECT:OpenClaw Backup] Changes pushed to https://github.com/costgorunner-dot/Sol-Backup.git.
 - [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Backup completed successfully with report of files and commit details.
+
+
+## Extracted 2026-03-19
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Run OpenClaw backup to GitHub.
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:OpenClaw Backup] Backup completed: commit 0c6c992, 2 files changed, pushed to GitHub.
+- [HIGH] [PROJECT:sol-memory] [error] [PROJECT:OpenClaw Backup] Git user.name and user.email not configured explicitly; warning issued.
+
+
+## Extracted 2026-03-19
+- [CRITICAL] [PROJECT:astra-memory] [project] [PROJECT:Mac Mini Setup] Mac Mini M4 Pro (24GB/512GB) arrival day - March 18, 2026.
+- [HIGH] [PROJECT:astra-memory] [error] [PROJECT:OpenClaw Backup] Backup script missing: Cron runs but script doesn't exist, blocking automated backups.
+- [HIGH] [PROJECT:astra-memory] [context] [PROJECT:Mac Mini Setup] Tracking shows package at post office waiting to be sorted; delivery expected after "arrived" scan notification.
+- [HIGH] [PROJECT:astra-memory] [task] [PROJECT:Astra Memory System] Feed Astra her memories - 8 days overdue (possibly blocked by Hindsight completion).
+- [HIGH] [PROJECT:astra-memory] [task] [PROJECT:Astra Memory System] Build Astra training dataset (30-50 images) - 9 days overdue.
+- [HIGH] [PROJECT:astra-memory] [decision] [PROJECT:OpenClaw Backup] Evening backup to GitHub executed; commit `e2695fc` pushed with 3 files changed.
+- [HIGH] [PROJECT:heartbeat] [context] Heartbeat runs every 30 minutes; reports only on significant findings (errors, disk <500MB, context >75%).
+- [HIGH] [PROJECT:heartbeat] [result] Gateway restart performed (~20:37 PDT) resolved Telegram inbound issue; restart notification sent to KaMaeron-Tau.
