@@ -4,7 +4,7 @@
 
 set -e
 
-WORKSPACE="/home/ubuntu/.openclaw/workspace"
+WORKSPACE="/Users/user/.openclaw/workspace"
 BACKUP_DIR="$WORKSPACE/backup"
 LOG_FILE="$BACKUP_DIR/backup.log"
 TIMESTAMP=$(date +%Y-%m-%d_%H-%M-%S)

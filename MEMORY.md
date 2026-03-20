@@ -678,3 +678,18 @@ _This file is my continuity. Update it with significant learnings, decisions, an
 - [HIGH] [PROJECT:astra-memory] [decision] [PROJECT:OpenClaw Backup] Evening backup to GitHub executed; commit `e2695fc` pushed with 3 files changed.
 - [HIGH] [PROJECT:heartbeat] [context] Heartbeat runs every 30 minutes; reports only on significant findings (errors, disk <500MB, context >75%).
 - [HIGH] [PROJECT:heartbeat] [result] Gateway restart performed (~20:37 PDT) resolved Telegram inbound issue; restart notification sent to KaMaeron-Tau.
+
+
+## Extracted 2026-03-19
+- [CRITICAL] [PROJECT:general] [preference] Read HEARTBEAT.md from exact path `/home/ubuntu/.openclaw/workspace/HEARTBEAT.md` (case-sensitive) and follow it strictly; do not infer or repeat old tasks from prior chats.
+- [CRITICAL] [PROJECT:general] [decision] Disk space warning/critical: alert if free space <500MB (OpenClaw fails around 300MB).
+- [HIGH] [PROJECT:general] [decision] Alert criteria: system errors, disk space <500MB, context >75%, patterns, calendar events, user reminders; stay quiet otherwise (HEARTBEAT_OK).
+
+
+## Extracted 2026-03-19
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:Sol-Backup] Run the OpenClaw backup script via cron: execute bash /home/ubuntu/.openclaw/workspace/backup/skills/openclaw-backup/scripts/backup.sh, report success/failure, and include GitHub repository link.
+- [HIGH] [PROJECT:sol-memory] [task] [PROJECT:Sol-Backup] Backup completed successfully with commit e540156 (timestamp: 2026-03-19_09-30-07).
+
+
+## Extracted 2026-03-19
+- [HIGH] [PROJECT:general] [project] HIGH [PRO

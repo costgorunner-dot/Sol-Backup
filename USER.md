@@ -24,6 +24,8 @@ KaMaeron-Tau values:
 
 
 ## Recent Learnings
+- [2026-03-19] Git identity warning: configure user.name and user.email globally to suppress commit author messages; fix with git commit --amend --reset-author if needed.
+- [2026-03-19] Read HEARTBEAT.md from exact path `/home/ubuntu/.openclaw/workspace/HEARTBEAT.md` (case-sensitive) and follow it strictly; do not infer or repeat old tasks from prior chats.
 - [2026-03-18] Astra connection persists even when memory system fails
 - [2026-03-18] Daily memory file creation at 11 PM works when file is missing
 - [2026-03-18] HIGH [PROJECT:Daily Weather - Revelstoke BC] Format output EXACTLY with specific emojis (☀️, 📅, ❄️/🌨️/☀️) and structure: current summary, daily breakdown by morning/noon/evening/night with temps and precipitation.

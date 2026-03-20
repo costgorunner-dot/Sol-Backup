@@ -18,7 +18,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Get the current weather report for Revelstoke, British Columbia, Canada. Send it as a text message AND generate a voice audio file using Piper TTS with Jenny Dioco voice (/home/ubuntu/.local/share/piper/voices/en/en_GB/jenny_dioco/medium/en_GB-jenny_dioco-medium.onnx) and attach both to the message using the message tool to send to telegram:5083035103."
+        "message": "Get the current weather report for Revelstoke, British Columbia, Canada. Send it as a text message AND generate a voice audio file using Piper TTS with Jenny Dioco voice (/Users/user/.local/share/piper/voices/en/en_GB/jenny_dioco/medium/en_GB-jenny_dioco-medium.onnx) and attach both to the message using the message tool to send to telegram:5083035103."
       },
       "delivery": {
         "mode": "announce",
@@ -116,7 +116,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Run the OpenClaw backup script:\n\n1. Execute: bash /home/ubuntu/.openclaw/workspace/backup/skills/openclaw-backup/scripts/backup.sh\n2. Report if backup succeeded or failed\n3. Include link to GitHub repository\n\nIf backup fails, explain what went wrong."
+        "message": "Run the OpenClaw backup script:\n\n1. Execute: bash /Users/user/.openclaw/workspace/backup/skills/openclaw-backup/scripts/backup.sh\n2. Report if backup succeeded or failed\n3. Include link to GitHub repository\n\nIf backup fails, explain what went wrong."
       },
       "delivery": {
         "mode": "announce"
@@ -277,7 +277,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "systemEvent",
-        "text": "node /home/ubuntu/.openclaw/workspace/skills/dreammode/smart-dreammode.js"
+        "text": "node /Users/user/.openclaw/workspace/skills/dreammode/smart-dreammode.js"
       },
       "state": {
         "nextRunAtMs": 1773198000000,

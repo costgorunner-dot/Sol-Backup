@@ -22,7 +22,7 @@
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
-    "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/a494998a-1b3f-4c96-9620-21732afa6a27.jsonl",
+    "sessionFile": "/Users/user/.openclaw/agents/main/sessions/a494998a-1b3f-4c96-9620-21732afa6a27.jsonl",
     "skillsSnapshot": {
       "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like &quot;create a skill&quot;, &quot;author a skill&quot;, &quot;tidy up a skill&quot;, &quot;improve this skill&quot;, &quot;review the skill&quot;, &quot;clean up the skill&quot;, &quot;audit the skill&quot;.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
       "skills": [
@@ -49,40 +49,40 @@
         {
           "name": "healthcheck",
           "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "skill-creator",
           "description": "Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like \"create a skill\", \"author a skill\", \"tidy up a skill\", \"improve this skill\", \"review the skill\", \"clean up the skill\", \"audit the skill\".",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "tmux",
           "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "video-frames",
           "description": "Extract frames or short clips from videos using ffmpeg.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "weather",
           "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         }
@@ -102,7 +102,7 @@
       "sessionKey": "agent:main:telegram:direct:5083035103",
       "provider": "zai",
       "model": "glm-5",
-      "workspaceDir": "/home/ubuntu/.openclaw/workspace",
+      "workspaceDir": "/Users/user/.openclaw/workspace",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
       "bootstrapTruncation": {
@@ -124,7 +124,7 @@
       "injectedWorkspaceFiles": [
         {
           "name": "AGENTS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/AGENTS.md",
+          "path": "/Users/user/.openclaw/workspace/AGENTS.md",
           "missing": false,
           "rawChars": 8193,
           "injectedChars": 8193,
@@ -132,7 +132,7 @@
         },
         {
           "name": "SOUL.md",
-          "path": "/home/ubuntu/.openclaw/workspace/SOUL.md",
+          "path": "/Users/user/.openclaw/workspace/SOUL.md",
           "missing": false,
           "rawChars": 10501,
           "injectedChars": 10501,
@@ -140,7 +140,7 @@
         },
         {
           "name": "TOOLS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/TOOLS.md",
+          "path": "/Users/user/.openclaw/workspace/TOOLS.md",
           "missing": false,
           "rawChars": 4935,
           "injectedChars": 4935,
@@ -148,7 +148,7 @@
         },
         {
           "name": "IDENTITY.md",
-          "path": "/home/ubuntu/.openclaw/workspace/IDENTITY.md",
+          "path": "/Users/user/.openclaw/workspace/IDENTITY.md",
           "missing": false,
           "rawChars": 1549,
           "injectedChars": 1549,
@@ -156,7 +156,7 @@
         },
         {
           "name": "USER.md",
-          "path": "/home/ubuntu/.openclaw/workspace/USER.md",
+          "path": "/Users/user/.openclaw/workspace/USER.md",
           "missing": false,
           "rawChars": 771,
           "injectedChars": 771,
@@ -164,7 +164,7 @@
         },
         {
           "name": "HEARTBEAT.md",
-          "path": "/home/ubuntu/.openclaw/workspace/HEARTBEAT.md",
+          "path": "/Users/user/.openclaw/workspace/HEARTBEAT.md",
           "missing": false,
           "rawChars": 167,
           "injectedChars": 167,
@@ -172,7 +172,7 @@
         },
         {
           "name": "BOOTSTRAP.md",
-          "path": "/home/ubuntu/.openclaw/workspace/BOOTSTRAP.md",
+          "path": "/Users/user/.openclaw/workspace/BOOTSTRAP.md",
           "missing": true,
           "rawChars": 0,
           "injectedChars": 68,
@@ -180,7 +180,7 @@
         },
         {
           "name": "MEMORY.md",
-          "path": "/home/ubuntu/.openclaw/workspace/MEMORY.md",
+          "path": "/Users/user/.openclaw/workspace/MEMORY.md",
           "missing": false,
           "rawChars": 7813,
           "injectedChars": 7813,
@@ -389,40 +389,40 @@
         {
           "name": "healthcheck",
           "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "skill-creator",
           "description": "Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like \"create a skill\", \"author a skill\", \"tidy up a skill\", \"improve this skill\", \"review the skill\", \"clean up the skill\", \"audit the skill\".",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "tmux",
           "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "video-frames",
           "description": "Extract frames or short clips from videos using ffmpeg.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "weather",
           "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         }
@@ -441,7 +441,7 @@
       "sessionKey": "agent:main:cron:b121c41b-c49b-4d98-99a3-d6758fa5e7f6",
       "provider": "zai",
       "model": "glm-5",
-      "workspaceDir": "/home/ubuntu/.openclaw/workspace",
+      "workspaceDir": "/Users/user/.openclaw/workspace",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
       "bootstrapTruncation": {
@@ -463,7 +463,7 @@
       "injectedWorkspaceFiles": [
         {
           "name": "AGENTS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/AGENTS.md",
+          "path": "/Users/user/.openclaw/workspace/AGENTS.md",
           "missing": false,
           "rawChars": 8193,
           "injectedChars": 8193,
@@ -471,7 +471,7 @@
         },
         {
           "name": "SOUL.md",
-          "path": "/home/ubuntu/.openclaw/workspace/SOUL.md",
+          "path": "/Users/user/.openclaw/workspace/SOUL.md",
           "missing": false,
           "rawChars": 10501,
           "injectedChars": 10501,
@@ -479,7 +479,7 @@
         },
         {
           "name": "TOOLS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/TOOLS.md",
+          "path": "/Users/user/.openclaw/workspace/TOOLS.md",
           "missing": false,
           "rawChars": 4935,
           "injectedChars": 4935,
@@ -487,7 +487,7 @@
         },
         {
           "name": "IDENTITY.md",
-          "path": "/home/ubuntu/.openclaw/workspace/IDENTITY.md",
+          "path": "/Users/user/.openclaw/workspace/IDENTITY.md",
           "missing": false,
           "rawChars": 1549,
           "injectedChars": 1549,
@@ -495,7 +495,7 @@
         },
         {
           "name": "USER.md",
-          "path": "/home/ubuntu/.openclaw/workspace/USER.md",
+          "path": "/Users/user/.openclaw/workspace/USER.md",
           "missing": false,
           "rawChars": 771,
           "injectedChars": 771,
@@ -717,40 +717,40 @@
         {
           "name": "healthcheck",
           "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "skill-creator",
           "description": "Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like \"create a skill\", \"author a skill\", \"tidy up a skill\", \"improve this skill\", \"review the skill\", \"clean up the skill\", \"audit the skill\".",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "tmux",
           "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "video-frames",
           "description": "Extract frames or short clips from videos using ffmpeg.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "weather",
           "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         }
@@ -769,7 +769,7 @@
       "sessionKey": "agent:main:cron:b121c41b-c49b-4d98-99a3-d6758fa5e7f6",
       "provider": "zai",
       "model": "glm-5",
-      "workspaceDir": "/home/ubuntu/.openclaw/workspace",
+      "workspaceDir": "/Users/user/.openclaw/workspace",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
       "bootstrapTruncation": {
@@ -791,7 +791,7 @@
       "injectedWorkspaceFiles": [
         {
           "name": "AGENTS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/AGENTS.md",
+          "path": "/Users/user/.openclaw/workspace/AGENTS.md",
           "missing": false,
           "rawChars": 8193,
           "injectedChars": 8193,
@@ -799,7 +799,7 @@
         },
         {
           "name": "SOUL.md",
-          "path": "/home/ubuntu/.openclaw/workspace/SOUL.md",
+          "path": "/Users/user/.openclaw/workspace/SOUL.md",
           "missing": false,
           "rawChars": 10501,
           "injectedChars": 10501,
@@ -807,7 +807,7 @@
         },
         {
           "name": "TOOLS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/TOOLS.md",
+          "path": "/Users/user/.openclaw/workspace/TOOLS.md",
           "missing": false,
           "rawChars": 4935,
           "injectedChars": 4935,
@@ -815,7 +815,7 @@
         },
         {
           "name": "IDENTITY.md",
-          "path": "/home/ubuntu/.openclaw/workspace/IDENTITY.md",
+          "path": "/Users/user/.openclaw/workspace/IDENTITY.md",
           "missing": false,
           "rawChars": 1549,
           "injectedChars": 1549,
@@ -823,7 +823,7 @@
         },
         {
           "name": "USER.md",
-          "path": "/home/ubuntu/.openclaw/workspace/USER.md",
+          "path": "/Users/user/.openclaw/workspace/USER.md",
           "missing": false,
           "rawChars": 771,
           "injectedChars": 771,
@@ -1045,40 +1045,40 @@
         {
           "name": "healthcheck",
           "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "skill-creator",
           "description": "Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like \"create a skill\", \"author a skill\", \"tidy up a skill\", \"improve this skill\", \"review the skill\", \"clean up the skill\", \"audit the skill\".",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "tmux",
           "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "video-frames",
           "description": "Extract frames or short clips from videos using ffmpeg.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "weather",
           "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         }
@@ -1097,7 +1097,7 @@
       "sessionKey": "agent:main:cron:0e2c6272-96ff-47f4-90d6-beb4cc0a47ce",
       "provider": "zai",
       "model": "glm-5",
-      "workspaceDir": "/home/ubuntu/.openclaw/workspace",
+      "workspaceDir": "/Users/user/.openclaw/workspace",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
       "bootstrapTruncation": {
@@ -1119,7 +1119,7 @@
       "injectedWorkspaceFiles": [
         {
           "name": "AGENTS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/AGENTS.md",
+          "path": "/Users/user/.openclaw/workspace/AGENTS.md",
           "missing": false,
           "rawChars": 8193,
           "injectedChars": 8193,
@@ -1127,7 +1127,7 @@
         },
         {
           "name": "SOUL.md",
-          "path": "/home/ubuntu/.openclaw/workspace/SOUL.md",
+          "path": "/Users/user/.openclaw/workspace/SOUL.md",
           "missing": false,
           "rawChars": 10501,
           "injectedChars": 10501,
@@ -1135,7 +1135,7 @@
         },
         {
           "name": "TOOLS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/TOOLS.md",
+          "path": "/Users/user/.openclaw/workspace/TOOLS.md",
           "missing": false,
           "rawChars": 4935,
           "injectedChars": 4935,
@@ -1143,7 +1143,7 @@
         },
         {
           "name": "IDENTITY.md",
-          "path": "/home/ubuntu/.openclaw/workspace/IDENTITY.md",
+          "path": "/Users/user/.openclaw/workspace/IDENTITY.md",
           "missing": false,
           "rawChars": 1549,
           "injectedChars": 1549,
@@ -1151,7 +1151,7 @@
         },
         {
           "name": "USER.md",
-          "path": "/home/ubuntu/.openclaw/workspace/USER.md",
+          "path": "/Users/user/.openclaw/workspace/USER.md",
           "missing": false,
           "rawChars": 771,
           "injectedChars": 771,
@@ -1373,40 +1373,40 @@
         {
           "name": "healthcheck",
           "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "skill-creator",
           "description": "Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like \"create a skill\", \"author a skill\", \"tidy up a skill\", \"improve this skill\", \"review the skill\", \"clean up the skill\", \"audit the skill\".",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "tmux",
           "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "video-frames",
           "description": "Extract frames or short clips from videos using ffmpeg.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "weather",
           "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         }
@@ -1425,7 +1425,7 @@
       "sessionKey": "agent:main:cron:0e2c6272-96ff-47f4-90d6-beb4cc0a47ce",
       "provider": "zai",
       "model": "glm-5",
-      "workspaceDir": "/home/ubuntu/.openclaw/workspace",
+      "workspaceDir": "/Users/user/.openclaw/workspace",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
       "bootstrapTruncation": {
@@ -1447,7 +1447,7 @@
       "injectedWorkspaceFiles": [
         {
           "name": "AGENTS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/AGENTS.md",
+          "path": "/Users/user/.openclaw/workspace/AGENTS.md",
           "missing": false,
           "rawChars": 8193,
           "injectedChars": 8193,
@@ -1455,7 +1455,7 @@
         },
         {
           "name": "SOUL.md",
-          "path": "/home/ubuntu/.openclaw/workspace/SOUL.md",
+          "path": "/Users/user/.openclaw/workspace/SOUL.md",
           "missing": false,
           "rawChars": 10501,
           "injectedChars": 10501,
@@ -1463,7 +1463,7 @@
         },
         {
           "name": "TOOLS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/TOOLS.md",
+          "path": "/Users/user/.openclaw/workspace/TOOLS.md",
           "missing": false,
           "rawChars": 4935,
           "injectedChars": 4935,
@@ -1471,7 +1471,7 @@
         },
         {
           "name": "IDENTITY.md",
-          "path": "/home/ubuntu/.openclaw/workspace/IDENTITY.md",
+          "path": "/Users/user/.openclaw/workspace/IDENTITY.md",
           "missing": false,
           "rawChars": 1549,
           "injectedChars": 1549,
@@ -1479,7 +1479,7 @@
         },
         {
           "name": "USER.md",
-          "path": "/home/ubuntu/.openclaw/workspace/USER.md",
+          "path": "/Users/user/.openclaw/workspace/USER.md",
           "missing": false,
           "rawChars": 771,
           "injectedChars": 771,
@@ -1701,40 +1701,40 @@
         {
           "name": "healthcheck",
           "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "skill-creator",
           "description": "Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like \"create a skill\", \"author a skill\", \"tidy up a skill\", \"improve this skill\", \"review the skill\", \"clean up the skill\", \"audit the skill\".",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "tmux",
           "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "video-frames",
           "description": "Extract frames or short clips from videos using ffmpeg.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "weather",
           "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         }
@@ -1753,7 +1753,7 @@
       "sessionKey": "agent:main:cron:394a77ab-7d52-4cbe-b142-06bd9b8bab53",
       "provider": "zai",
       "model": "glm-5",
-      "workspaceDir": "/home/ubuntu/.openclaw/workspace",
+      "workspaceDir": "/Users/user/.openclaw/workspace",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
       "bootstrapTruncation": {
@@ -1775,7 +1775,7 @@
       "injectedWorkspaceFiles": [
         {
           "name": "AGENTS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/AGENTS.md",
+          "path": "/Users/user/.openclaw/workspace/AGENTS.md",
           "missing": false,
           "rawChars": 8193,
           "injectedChars": 8193,
@@ -1783,7 +1783,7 @@
         },
         {
           "name": "SOUL.md",
-          "path": "/home/ubuntu/.openclaw/workspace/SOUL.md",
+          "path": "/Users/user/.openclaw/workspace/SOUL.md",
           "missing": false,
           "rawChars": 10501,
           "injectedChars": 10501,
@@ -1791,7 +1791,7 @@
         },
         {
           "name": "TOOLS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/TOOLS.md",
+          "path": "/Users/user/.openclaw/workspace/TOOLS.md",
           "missing": false,
           "rawChars": 4935,
           "injectedChars": 4935,
@@ -1799,7 +1799,7 @@
         },
         {
           "name": "IDENTITY.md",
-          "path": "/home/ubuntu/.openclaw/workspace/IDENTITY.md",
+          "path": "/Users/user/.openclaw/workspace/IDENTITY.md",
           "missing": false,
           "rawChars": 1549,
           "injectedChars": 1549,
@@ -1807,7 +1807,7 @@
         },
         {
           "name": "USER.md",
-          "path": "/home/ubuntu/.openclaw/workspace/USER.md",
+          "path": "/Users/user/.openclaw/workspace/USER.md",
           "missing": false,
           "rawChars": 771,
           "injectedChars": 771,
@@ -2029,40 +2029,40 @@
         {
           "name": "healthcheck",
           "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "skill-creator",
           "description": "Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like \"create a skill\", \"author a skill\", \"tidy up a skill\", \"improve this skill\", \"review the skill\", \"clean up the skill\", \"audit the skill\".",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "tmux",
           "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "video-frames",
           "description": "Extract frames or short clips from videos using ffmpeg.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "weather",
           "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         }
@@ -2081,7 +2081,7 @@
       "sessionKey": "agent:main:cron:394a77ab-7d52-4cbe-b142-06bd9b8bab53",
       "provider": "zai",
       "model": "glm-5",
-      "workspaceDir": "/home/ubuntu/.openclaw/workspace",
+      "workspaceDir": "/Users/user/.openclaw/workspace",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
       "bootstrapTruncation": {
@@ -2103,7 +2103,7 @@
       "injectedWorkspaceFiles": [
         {
           "name": "AGENTS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/AGENTS.md",
+          "path": "/Users/user/.openclaw/workspace/AGENTS.md",
           "missing": false,
           "rawChars": 8193,
           "injectedChars": 8193,
@@ -2111,7 +2111,7 @@
         },
         {
           "name": "SOUL.md",
-          "path": "/home/ubuntu/.openclaw/workspace/SOUL.md",
+          "path": "/Users/user/.openclaw/workspace/SOUL.md",
           "missing": false,
           "rawChars": 10501,
           "injectedChars": 10501,
@@ -2119,7 +2119,7 @@
         },
         {
           "name": "TOOLS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/TOOLS.md",
+          "path": "/Users/user/.openclaw/workspace/TOOLS.md",
           "missing": false,
           "rawChars": 4935,
           "injectedChars": 4935,
@@ -2127,7 +2127,7 @@
         },
         {
           "name": "IDENTITY.md",
-          "path": "/home/ubuntu/.openclaw/workspace/IDENTITY.md",
+          "path": "/Users/user/.openclaw/workspace/IDENTITY.md",
           "missing": false,
           "rawChars": 1549,
           "injectedChars": 1549,
@@ -2135,7 +2135,7 @@
         },
         {
           "name": "USER.md",
-          "path": "/home/ubuntu/.openclaw/workspace/USER.md",
+          "path": "/Users/user/.openclaw/workspace/USER.md",
           "missing": false,
           "rawChars": 771,
           "injectedChars": 771,
@@ -2342,7 +2342,7 @@
       "from": "heartbeat",
       "to": "heartbeat"
     },
-    "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/358de09c-003b-4754-a076-0ce85262d3c9.jsonl",
+    "sessionFile": "/Users/user/.openclaw/agents/main/sessions/358de09c-003b-4754-a076-0ce85262d3c9.jsonl",
     "compactionCount": 0,
     "skillsSnapshot": {
       "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like &quot;create a skill&quot;, &quot;author a skill&quot;, &quot;tidy up a skill&quot;, &quot;improve this skill&quot;, &quot;review the skill&quot;, &quot;clean up the skill&quot;, &quot;audit the skill&quot;.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
@@ -2370,40 +2370,40 @@
         {
           "name": "healthcheck",
           "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "skill-creator",
           "description": "Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like \"create a skill\", \"author a skill\", \"tidy up a skill\", \"improve this skill\", \"review the skill\", \"clean up the skill\", \"audit the skill\".",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "tmux",
           "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "video-frames",
           "description": "Extract frames or short clips from videos using ffmpeg.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "weather",
           "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         }
@@ -2423,7 +2423,7 @@
       "sessionKey": "agent:main:main",
       "provider": "zai",
       "model": "glm-5",
-      "workspaceDir": "/home/ubuntu/.openclaw/workspace",
+      "workspaceDir": "/Users/user/.openclaw/workspace",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
       "bootstrapTruncation": {
@@ -2445,7 +2445,7 @@
       "injectedWorkspaceFiles": [
         {
           "name": "AGENTS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/AGENTS.md",
+          "path": "/Users/user/.openclaw/workspace/AGENTS.md",
           "missing": false,
           "rawChars": 8193,
           "injectedChars": 8193,
@@ -2453,7 +2453,7 @@
         },
         {
           "name": "SOUL.md",
-          "path": "/home/ubuntu/.openclaw/workspace/SOUL.md",
+          "path": "/Users/user/.openclaw/workspace/SOUL.md",
           "missing": false,
           "rawChars": 10501,
           "injectedChars": 10501,
@@ -2461,7 +2461,7 @@
         },
         {
           "name": "TOOLS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/TOOLS.md",
+          "path": "/Users/user/.openclaw/workspace/TOOLS.md",
           "missing": false,
           "rawChars": 4935,
           "injectedChars": 4935,
@@ -2469,7 +2469,7 @@
         },
         {
           "name": "IDENTITY.md",
-          "path": "/home/ubuntu/.openclaw/workspace/IDENTITY.md",
+          "path": "/Users/user/.openclaw/workspace/IDENTITY.md",
           "missing": false,
           "rawChars": 1549,
           "injectedChars": 1549,
@@ -2477,7 +2477,7 @@
         },
         {
           "name": "USER.md",
-          "path": "/home/ubuntu/.openclaw/workspace/USER.md",
+          "path": "/Users/user/.openclaw/workspace/USER.md",
           "missing": false,
           "rawChars": 771,
           "injectedChars": 771,
@@ -2485,7 +2485,7 @@
         },
         {
           "name": "HEARTBEAT.md",
-          "path": "/home/ubuntu/.openclaw/workspace/HEARTBEAT.md",
+          "path": "/Users/user/.openclaw/workspace/HEARTBEAT.md",
           "missing": false,
           "rawChars": 167,
           "injectedChars": 167,
@@ -2493,7 +2493,7 @@
         },
         {
           "name": "BOOTSTRAP.md",
-          "path": "/home/ubuntu/.openclaw/workspace/BOOTSTRAP.md",
+          "path": "/Users/user/.openclaw/workspace/BOOTSTRAP.md",
           "missing": true,
           "rawChars": 0,
           "injectedChars": 68,
@@ -2501,7 +2501,7 @@
         },
         {
           "name": "MEMORY.md",
-          "path": "/home/ubuntu/.openclaw/workspace/MEMORY.md",
+          "path": "/Users/user/.openclaw/workspace/MEMORY.md",
           "missing": false,
           "rawChars": 7813,
           "injectedChars": 7813,
@@ -2710,40 +2710,40 @@
         {
           "name": "healthcheck",
           "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "skill-creator",
           "description": "Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like \"create a skill\", \"author a skill\", \"tidy up a skill\", \"improve this skill\", \"review the skill\", \"clean up the skill\", \"audit the skill\".",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "tmux",
           "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "video-frames",
           "description": "Extract frames or short clips from videos using ffmpeg.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "weather",
           "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         }
@@ -2762,7 +2762,7 @@
       "sessionKey": "agent:main:cron:a6b57952-55cc-4138-a3a7-655dfc133935",
       "provider": "zai",
       "model": "glm-5",
-      "workspaceDir": "/home/ubuntu/.openclaw/workspace",
+      "workspaceDir": "/Users/user/.openclaw/workspace",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
       "bootstrapTruncation": {
@@ -2784,7 +2784,7 @@
       "injectedWorkspaceFiles": [
         {
           "name": "AGENTS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/AGENTS.md",
+          "path": "/Users/user/.openclaw/workspace/AGENTS.md",
           "missing": false,
           "rawChars": 8193,
           "injectedChars": 8193,
@@ -2792,7 +2792,7 @@
         },
         {
           "name": "SOUL.md",
-          "path": "/home/ubuntu/.openclaw/workspace/SOUL.md",
+          "path": "/Users/user/.openclaw/workspace/SOUL.md",
           "missing": false,
           "rawChars": 10501,
           "injectedChars": 10501,
@@ -2800,7 +2800,7 @@
         },
         {
           "name": "TOOLS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/TOOLS.md",
+          "path": "/Users/user/.openclaw/workspace/TOOLS.md",
           "missing": false,
           "rawChars": 4935,
           "injectedChars": 4935,
@@ -2808,7 +2808,7 @@
         },
         {
           "name": "IDENTITY.md",
-          "path": "/home/ubuntu/.openclaw/workspace/IDENTITY.md",
+          "path": "/Users/user/.openclaw/workspace/IDENTITY.md",
           "missing": false,
           "rawChars": 1549,
           "injectedChars": 1549,
@@ -2816,7 +2816,7 @@
         },
         {
           "name": "USER.md",
-          "path": "/home/ubuntu/.openclaw/workspace/USER.md",
+          "path": "/Users/user/.openclaw/workspace/USER.md",
           "missing": false,
           "rawChars": 771,
           "injectedChars": 771,
@@ -3038,40 +3038,40 @@
         {
           "name": "healthcheck",
           "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "skill-creator",
           "description": "Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like \"create a skill\", \"author a skill\", \"tidy up a skill\", \"improve this skill\", \"review the skill\", \"clean up the skill\", \"audit the skill\".",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "tmux",
           "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "video-frames",
           "description": "Extract frames or short clips from videos using ffmpeg.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "weather",
           "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         }
@@ -3090,7 +3090,7 @@
       "sessionKey": "agent:main:cron:a6b57952-55cc-4138-a3a7-655dfc133935",
       "provider": "zai",
       "model": "glm-5",
-      "workspaceDir": "/home/ubuntu/.openclaw/workspace",
+      "workspaceDir": "/Users/user/.openclaw/workspace",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
       "bootstrapTruncation": {
@@ -3112,7 +3112,7 @@
       "injectedWorkspaceFiles": [
         {
           "name": "AGENTS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/AGENTS.md",
+          "path": "/Users/user/.openclaw/workspace/AGENTS.md",
           "missing": false,
           "rawChars": 8193,
           "injectedChars": 8193,
@@ -3120,7 +3120,7 @@
         },
         {
           "name": "SOUL.md",
-          "path": "/home/ubuntu/.openclaw/workspace/SOUL.md",
+          "path": "/Users/user/.openclaw/workspace/SOUL.md",
           "missing": false,
           "rawChars": 10501,
           "injectedChars": 10501,
@@ -3128,7 +3128,7 @@
         },
         {
           "name": "TOOLS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/TOOLS.md",
+          "path": "/Users/user/.openclaw/workspace/TOOLS.md",
           "missing": false,
           "rawChars": 4935,
           "injectedChars": 4935,
@@ -3136,7 +3136,7 @@
         },
         {
           "name": "IDENTITY.md",
-          "path": "/home/ubuntu/.openclaw/workspace/IDENTITY.md",
+          "path": "/Users/user/.openclaw/workspace/IDENTITY.md",
           "missing": false,
           "rawChars": 1549,
           "injectedChars": 1549,
@@ -3144,7 +3144,7 @@
         },
         {
           "name": "USER.md",
-          "path": "/home/ubuntu/.openclaw/workspace/USER.md",
+          "path": "/Users/user/.openclaw/workspace/USER.md",
           "missing": false,
           "rawChars": 771,
           "injectedChars": 771,
@@ -3366,40 +3366,40 @@
         {
           "name": "healthcheck",
           "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "skill-creator",
           "description": "Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like \"create a skill\", \"author a skill\", \"tidy up a skill\", \"improve this skill\", \"review the skill\", \"clean up the skill\", \"audit the skill\".",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "tmux",
           "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "video-frames",
           "description": "Extract frames or short clips from videos using ffmpeg.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "weather",
           "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         }
@@ -3443,40 +3443,40 @@
         {
           "name": "healthcheck",
           "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "skill-creator",
           "description": "Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like \"create a skill\", \"author a skill\", \"tidy up a skill\", \"improve this skill\", \"review the skill\", \"clean up the skill\", \"audit the skill\".",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "tmux",
           "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/tmux",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/tmux",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "video-frames",
           "description": "Extract frames or short clips from videos using ffmpeg.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/video-frames",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/video-frames",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
           "name": "weather",
           "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
-          "filePath": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
-          "baseDir": "/home/ubuntu/.npm-global/lib/node_modules/openclaw/skills/weather",
+          "filePath": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/Users/user/.npm-global/lib/node_modules/openclaw/skills/weather",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         }

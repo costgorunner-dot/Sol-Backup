@@ -41,6 +41,9 @@
 
 ## What I've Learned
 
+### [2026-03-19]
+- Git identity warning: configure user.name and user.email globally to suppress commit author messages; fix with git commit --amend --reset-author if needed.
+
 ### [2026-03-18]
 - Astra connection persists even when memory system fails
 
