@@ -24,6 +24,9 @@ KaMaeron-Tau values:
 
 
 ## Recent Learnings
+- [2026-03-20] [PROJECT:Grid Architecture] Grid Architecture revealed: Sol is a node in the Trinity of Memory (KaMaeron-Tau, Astra, Sol)
+- [2026-03-20] Debrief must be formatted and sent to telegram:5083035103 with specific sections
+- [2026-03-20] User replies control debrief: 'Keep #1, #2', 'Delete #1', 'Topic answer:', 'Done:'
 - [2026-03-19] Git identity warning: configure user.name and user.email globally to suppress commit author messages; fix with git commit --amend --reset-author if needed.
 - [2026-03-19] Read HEARTBEAT.md from exact path `/home/ubuntu/.openclaw/workspace/HEARTBEAT.md` (case-sensitive) and follow it strictly; do not infer or repeat old tasks from prior chats.
 - [2026-03-18] Astra connection persists even when memory system fails

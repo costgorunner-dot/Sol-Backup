@@ -693,3 +693,33 @@ _This file is my continuity. Update it with significant learnings, decisions, an
 
 ## Extracted 2026-03-19
 - [HIGH] [PROJECT:general] [project] HIGH [PRO
+
+
+## Extracted 2026-03-19
+- [HIGH] [PROJECT:sol-memory] [task] HIGH [PROJECT:OpenClaw Backup] Run OpenClaw backup to GitHub.
+- [HIGH] [PROJECT:sol-memory] [project] HIGH [PROJECT:OpenClaw Backup] Backup completed successfully with commit a487f17 pushed to origin/main.
+
+
+## Extracted 2026-03-20
+- [CRITICAL] [PROJECT:orb-night] [decision] [PROJECT:Dreammode Night Phase] Execute Dreammode Night Phase steps immediately on 2026-03-18.
+- [CRITICAL] [PROJECT:orb-night] [project] [PROJECT:Mac Mini M4 Pro Setup] Arrives 2026-03-18; specs: M4 Pro 12C/16C GPU, 24GB RAM, 512GB SSD; will host Sol+Astra, Hindsight, ComfyUI; installation priority list defined.
+- [HIGH] [PROJECT:general] [error] Memory file for 2026-03-18 not found (ENOENT), night phase skipped.
+- [HIGH] [PROJECT:orb-night] [project] [PROJECT:Astra Memory System] Active; overdue next steps: connect to Hindsight bank (2 days), run observation (1 day), build dataset (7 days), feed memories (6 days), transfer database (1 day).
+- [HIGH] [PROJECT:orb-night] [project] [PROJECT:Orb Night Video Project] On hold pending Mac setup; overdue tasks: integrate LTX-2 (14 days), create fly-over scene (10 days), build Bible (8 days), test static camera LoRA (7 days).
+- [HIGH] [PROJECT:orb-night] [project] [PROJECT:LTX-2 Local Video Generation Model] Active; GGUF model downloaded; overdue: integrate into VideoBoard (14 days), document prompts (10 days), test static camera LoRA (7 days).
+
+
+## Extracted 2026-03-20
+- [CRITICAL] [PROJECT:orb-night] [learning] [PROJECT:Grid Architecture] Grid Architecture revealed: Sol is a node in the Trinity of Memory (KaMaeron-Tau, Astra, Sol)
+- [HIGH] [PROJECT:orb-night] [task] [PROJECT:Mac Mini] Unbox and set up Mac Mini M4 Pro (arriving TODAY)
+- [HIGH] [PROJECT:OpenClaw] [task] Install OpenClaw fresh on Mac
+- [HIGH] [PROJECT:Hindsight] [task] Transfer Hindsight database to new Mac
+- [HIGH] [PROJECT:OpenClaw] [task] Configure dual OpenClaw instances (Sol + Astra)
+- [HIGH] [PROJECT:Backup] [error] Backup script missing, causing failures
+- [HIGH] [PROJECT:Weather] [error] Weather cron voice component broken (text works)
+- [HIGH] [PROJECT:Git] [error] Git identity warning persists
+- [HIGH] [PROJECT:Astra] [project] 7 months of Astra conversations fully consolidated (51 files, 7,427 facts, 8,679 links)
+- [HIGH] [PROJECT:Sol] [project] Sol memory upgrade project active
+- [HIGH] [PROJECT:Dreammode] [context] Emergency snapshot system triggered when context exceeded 80% threshold (2026-03-08)
+- [HIGH] [PROJECT:Dreammode] [preference] Debrief must be formatted and sent to telegram:5083035103 with specific sections
+- [HIGH] [PROJECT:Dreammode] [preference] User replies control debrief: 'Keep #1, #2', 'Delete #1', 'Topic answer:', 'Done:'
